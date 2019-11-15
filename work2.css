@@ -18,12 +18,12 @@ h1, h2, h3, a, p{
 
 h1{
   font-size: 1.5rem;
-  padding: 20px;
-  line-height: 1.2;
+  padding: 40px;
 }
 
 p{
   font-size: 1.2rem;
+  /* border: 1px solid red; */
 }
 
 span{
@@ -45,15 +45,6 @@ span{
   /* border: 1px solid red; */
   display: flex;
   position: relative;
-}
-
-.start{
-  border-top: 2px solid black;
-}
-
-#card{
-  background: whitesmoke;
-  /* padding: 120px; */
 }
 
 .screen > span{
@@ -97,6 +88,10 @@ span{
   align-items: center;
 }
 
+.halfheight{
+  height: 50vh;
+}
+
 .col{
   flex-direction: column;
 }
@@ -104,6 +99,10 @@ span{
 .fixed{
   position: fixed;
   display: flex;
+}
+
+.fixed > p{
+    /* font-size: 2rem; */
 }
 
 .divider{
@@ -115,32 +114,16 @@ span{
   margin-right: 40px;
 }
 
+.quarter{
+  width: 25%;
+}
+
 .divider > p{
   padding: 60px;
 }
 
 .divider > img{
   height: 100%;
-}
-
-.menu{
-  flex-direction: column;
-  justify-content: flex-end;
-  margin: 0;
-  position: absolute;
-  /* top: 50%; */
-  right: 0;
-}
-
-.menu > h1{
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.intro{
-  position: fixed;
-  display: flex;
-  z-index: -1;
 }
 
 .img-wrap{
@@ -159,12 +142,12 @@ span{
   background: white;
 }
 
-.smoke{
-  background: whitesmoke;
-}
-
 .full{
   height: 100%;
+}
+
+.threeq{
+  width: 75%;
 }
 
 .nomargin{
@@ -191,7 +174,9 @@ span{
 }
 
 .spacer > p{
-  width: 100%;
+  /* position: absolute; */
+  /* left: 0; */
+  /* bottom: 0; */
   font-size: 1rem;
   padding: 40px;
   background: whitesmoke;
@@ -199,22 +184,19 @@ span{
 
 .heading{
   width: 100%;
+  height: 25vh;
+  /* background: linear-gradient(to top, white 0%, white 30%, rgba(254,223,189,0) 100%); */
+  /* border: 1px solid black; */
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
 }
 
 .heading > h1{
-  margin-left: 20%;
+  margin-left: 120px;
   background: whitesmoke;
   border: 2px solid black;
-  border-bottom: 0;
   padding: 0 5px;
-}
-
-#video{
-  width: 75%;
-  height: 100%;
 }
 
 .mobile{
