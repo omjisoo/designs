@@ -42,21 +42,14 @@ span{
   width: 100vw;
   height: 100vh;
   /* background: whitesmoke; */
-  /* border: 1px solid red; */
   display: flex;
   position: relative;
 }
 
-.screen > span{
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 2rem;
-}
-
-.sticky{
-  position: sticky;
-  top: 0;
+.fullscreen{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
 .top{
@@ -102,8 +95,9 @@ span{
   height: 100%;
   /* border: 1px solid blue; */
   display: flex;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* margin-right: 40px; */
+  /* margin: 40px; */
 }
 
 .divider > p{
@@ -112,17 +106,15 @@ span{
 
 .divider > img{
   width: 100%;
-  margin: 40px 0;
+  height: auto;
   /* height: 100%; */
 }
 
 .content{
-  display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  overflow-y:scroll;
-  padding-left: 50%;
-  z-index: 99;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
 }
 
 .content > img{
@@ -135,6 +127,12 @@ span{
   margin-bottom: 50px;
 }
 
+.category{
+  position: fixed;
+  align-items: flex-end;
+  z-index: -1;
+}
+
 .start{
   border-top: 2px solid black;
 }
@@ -143,7 +141,7 @@ span{
   flex-direction: column;
   justify-content: flex-end;
   margin: 0;
-  position: absolute;
+  position: fixed;
   right: 0;
   overflow-y: scroll;
 }
@@ -218,20 +216,25 @@ span{
   /* background: whitesmoke; */
 }
 
+.mobilespacer{
+  display: none;
+  height: 80px;
+}
+
 .heading{
   width: 100%;
   position: absolute;
+  top: 20px;
+  left: 20px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
 }
 
 .heading > h1{
-  /* margin-left: 20%; */
   background: whitesmoke;
   border: 2px solid black;
-  border-right: 0;
-  border-bottom: 0;
+  /* border-right: 0; */
   padding: 0 5px;
 }
 
@@ -251,4 +254,40 @@ span{
   .mobile{
     display: block;
   } */
+  .screen{
+    flex-direction: column;
+    /* height: 100%; */
+  }
+  .fullscreen{
+    flex-direction: column;
+    height: 100%;
+  }
+  .divider{
+    width: 100%;
+    padding: 20px;
+  }
+  .content{
+    padding: 0 30px;
+  }
+  .menu{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* margin-right: 40px; */
+    /* justify-content: center; */
+    /* align-items: flex-end; */
+  }
+  .category{
+    padding: 0;
+  }
+  .spacer{
+    justify-content: flex-end;
+  }
+  .spacer > p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .mobilespacer{
+    display: block;
+  }
 }
