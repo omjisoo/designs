@@ -47,15 +47,6 @@ span{
   position: relative;
 }
 
-.start{
-  border-top: 2px solid black;
-}
-
-#card{
-  background: whitesmoke;
-  /* padding: 120px; */
-}
-
 .screen > span{
   position: absolute;
   left: 0;
@@ -112,7 +103,7 @@ span{
   /* border: 1px solid blue; */
   display: flex;
   overflow: hidden;
-  margin-right: 40px;
+  /* margin-right: 40px; */
 }
 
 .divider > p{
@@ -120,7 +111,32 @@ span{
 }
 
 .divider > img{
-  height: 100%;
+  width: 100%;
+  margin: 40px 0;
+  /* height: 100%; */
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-y:scroll;
+  padding-left: 50%;
+  z-index: 99;
+}
+
+.content > img{
+  width: 100%;
+}
+
+.content > p{
+  font-size: 1rem;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.start{
+  border-top: 2px solid black;
 }
 
 .menu{
@@ -128,8 +144,8 @@ span{
   justify-content: flex-end;
   margin: 0;
   position: absolute;
-  /* top: 50%; */
   right: 0;
+  overflow-y: scroll;
 }
 
 .menu > h1{
@@ -141,6 +157,11 @@ span{
   position: fixed;
   display: flex;
   z-index: -1;
+  padding-right: 40px;
+}
+
+.intro > h1{
+  /* width: 80%; */
 }
 
 .img-wrap{
@@ -151,7 +172,7 @@ span{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: whitesmoke;
+  /* background: whitesmoke; */
   /* border: 1px solid black; */
 }
 
@@ -194,20 +215,22 @@ span{
   width: 100%;
   font-size: 1rem;
   padding: 40px;
-  background: whitesmoke;
+  /* background: whitesmoke; */
 }
 
 .heading{
   width: 100%;
+  position: absolute;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
 .heading > h1{
-  margin-left: 20%;
+  /* margin-left: 20%; */
   background: whitesmoke;
   border: 2px solid black;
+  border-right: 0;
   border-bottom: 0;
   padding: 0 5px;
 }
@@ -222,10 +245,10 @@ span{
 }
 
 @media screen and (max-width: 1024px){
-  .pc{
+  /* .pc{
     display: none;
   }
   .mobile{
     display: block;
-  }
+  } */
 }
