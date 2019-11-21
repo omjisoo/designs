@@ -37,7 +37,6 @@ a{
   /* border: 5px solid white; */
   background: rgb(255, 225, 225);
   overflow-y: scroll;
-  /* box-shadow: 0px 0px 5px rgba(0,0,0,0.5); */
 }
 
 .divider{
@@ -61,7 +60,7 @@ a{
   padding: 5px 10px;
   margin-bottom: 15px;
   background: white;
-  transition: all 0.5s ease;
+  /* transition: all 0.5s ease; */
 }
 
 .active{
@@ -80,7 +79,7 @@ a{
 .inactive:hover{
   transform: translate(0, 0);
   box-shadow: 5px 5px rgba(0,0,0,0.5);
-  border: 2px solid black;
+  /* border: 2px solid black; */
   color: blue;
 }
 

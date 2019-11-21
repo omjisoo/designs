@@ -21,94 +21,70 @@ p, a{
 
 .screen{
   width: 100vw;
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 40px;
-  border: 1px solid red;
-}
-
-.full {
   height: 100vh;
-}
-
-.half {
-  height: 50vh;
-}
-
-.fit{
-  height: 100%;
-}
-
-.menu {
-  position: fixed;
-  z-index: 1;
-  /* background: white; */
-  width: 100%;
-  padding: 5px;
-  font-size: 24px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.img-wrap{
-  width: 100%;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
 }
 
-.col{
-  flex-direction: column;
+.carousel{
+  width: 800px;
+  height: 500px;
 }
 
-.img-wrap > img {
-  width: 100%;
-}
-
-.content {
-  width: 100%;
+.carousel-cell {
+  width: 100%; /* half-width */
   /* height: 100%; */
-  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.info{
-  position: absolute;
-  top: 20px;
-  transform: translateY(25%);
-  max-width: 25%;
-  border: 2px solid rgba(0,0,0,0.75);
-  border-radius: 2px;
-  background: white;
-  box-shadow: 0px 0px rgba(0,0,0,1);
-  padding: 20px;
-  transition: box-shadow 0.5s ease;
+.carousel-cell > img {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-.info:hover{
-  box-shadow: 7px 7px rgba(0,0,0,1);
+/* no circle */
+.flickity-button {
+  background: transparent;
 }
 
-.process{
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  left: 100%;
-  background: yellow;
+/* big previous & next buttons */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+/* icon color */
+.flickity-button-icon {
+  fill: gray;
+  transition: fill 0.5s ease;
 }
 
-@media screen and (max-width: 800px){
-  .screen{
-    padding: 30px;
-    flex-direction: column;
-  }
-  .img-wrap{
-    flex-direction: column;
-    height: 100%;
-  }
+.flickity-button-icon:hover {
+  fill: black;
+}
+
+/* hide disabled button */
+.flickity-button:disabled {
+  display: none;
+}
+
+/* position dots in carousel */
+.flickity-page-dots {
+  bottom: -100px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid black;
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: black;
 }

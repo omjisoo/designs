@@ -63,7 +63,7 @@ h1, h2, a{
 .inactive:hover{
   transform: translate(0, 0);
   box-shadow: 5px 5px rgba(0,0,0,0.5);
-  border: 2px solid black;
+  /* border: 2px solid black; */
   color: blue;
 }
 

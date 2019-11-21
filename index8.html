@@ -5,57 +5,25 @@
     <meta charset="utf-8">
     <meta background="viewport" content="width=device-width, initial-scale=1">
     <title></title>
+    <link rel="stylesheet" href="flickity.css" media="screen">
     <link rel="stylesheet" href="style8.css">
+
   </head>
 
   <body>
     <div class="screen">
-      <div class="img-wrap">
-        <img src="img/marryme1.jpg">
-        <img src="img/marryme2.jpg">
-      </div>
-    </div>
-    <div class="screen full">
-      <div class="img-wrap">
-        <img src="img/marryme3.jpg">
-      </div>
-    </div>
-    <div class="screen full">
-        <div class="img-wrap">
-          <img src="img/marryme4.jpg">
+      <div class="carousel" data-flickity='{ "autoPlay": true }'>
+        <div class="carousel-cell">
+          <img src="img/marryme1.jpg">
+          <p>some text</p>
         </div>
-    </div>
-    <div class="screen full">
-        <div class="img-wrap">
-          <img src="img/marryme5.jpg">
-        </div>
-    </div>
-    <div class="screen full">
-        <div class="img-wrap">
-          <img src="img/marryme6.jpg">
-        </div>
-    </div>
-    <div class="screen full">
-        <div class="img-wrap">
-          <img src="img/marryme7.jpg">
-        </div>
-        <div class="img-wrap">
-          <img src="img/marryme8.jpg">
-        </div>
-    </div>
-    <div class="screen">
-      <div class="img-wrap">
-        <img src="img/marryme9.jpg">
+        <div class="carousel-cell"><img src="img/marryme2.jpg"></div>
+        <div class="carousel-cell"><img src="img/marryme3.jpg"></div>
+        <div class="carousel-cell"><img src="img/marryme4.jpg"></div>
+        <div class="carousel-cell"><img src="img/marryme5.jpg"></div>
       </div>
-      <div class="img-wrap">
-        <img src="img/marryme10.jpg">
-      </div>
-      <div class="img-wrap">
-        <img src="img/marryme11.jpg">
-      </div>
-    </div>
-    <div class="screen process">process
     </div>
   </body>
+  <script src="flickity.pkgd.min.js"></script>
   <script src="functions.js"></script>
 </html>
