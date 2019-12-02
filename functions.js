@@ -28,7 +28,19 @@ document.onmousemove = function(){
     eyeball[i].style.top = y;
     eyeball[i].style.transform = "translate(-"+x+", -"+y+")";
   }
-}
+};
+
+var eyeball2 = document.getElementsByClassName("eyeball2");
+document.onmousemove = function(){
+  var x = event.clientX * 100 / window.innerWidth + "%";
+  var y = event.clientY * 100 / window.innerHeight + "%";
+
+  for(var i=0;i<2;i++){
+    eyeball2[i].style.left = y;
+    eyeball2[i].style.top = -x;
+    eyeball2[i].style.transform = "translate(-"+y+",-"+x+")";
+  }
+};
 
 var elem = document.querySelector('.main-carousel');
 var flkty = new Flickity( elem, {
@@ -45,13 +57,6 @@ var flkty = new Flickity( '.main-carousel', {
   // options
 });
 //
-// $('.carousel').flickity({
-//   // options
-//   cellAlign: 'center',
-//   contain: true,
-//   selectedAttraction: 0.01,
-//   friction: 0.15
-// });
 
 var slideIndex = 0;
 showSlides();

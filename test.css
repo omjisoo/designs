@@ -276,7 +276,7 @@ h1, h2, h3, a, p{
   width: 180px;
   font-size: 1.9rem;
   background: white;
-  padding: 3px 5px;
+  padding: 3px 0 4px 8px;
   border: 1px solid;
 }
 
