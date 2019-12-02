@@ -18,7 +18,7 @@ h1, h2, h3, a, p{
 
 h1{
   font-size: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 p{
@@ -27,6 +27,11 @@ p{
 
 .universe{
   display: flex;
+}
+
+.pc{
+  display: flex;
+  flex-direction: column;
 }
 
 .screen{
@@ -51,7 +56,7 @@ p{
 }
 
 .fixed > h1{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background: whitesmoke;
   padding-right: 5px;
 }
@@ -65,16 +70,29 @@ p{
   background: whitesmoke;
 }
 
+.divider > img{
+  width: 30vw;
+  height: 100%;
+}
+
 .intro{
-  width: 50%;
-  position: absolute;
-  top: 0;
-  /* display: flex; */
+  /* position: absolute;
+  top: 0; */
+  /* displasy: flex; */
   padding: 20px;
 }
 
-.intro > p{
+
+.intro>h1{
+  width: 15%;
+  margin-right: 20px;
+}
+.intro > div{
+  /* width: 45%; */
   font-size: 1.5rem;
+  line-height: 1.25;
+  margin-right: 20px;
+
 }
 
 .content{
@@ -138,7 +156,8 @@ p{
 
 .slideshow {
   width: 80%;
-  position: relative;
+  height: 100vh;
+  /* position: relative; */
   margin-bottom: 20px;
 }
 
@@ -153,12 +172,14 @@ p{
 
 .logo{
   position: fixed;
-  top: 20px;
+  transform: scale(0.75);
+  /* left: 50%; */
+  bottom: 20px;
   right: 20px;
+  font-size: 1.9rem;
   display: flex;
-  opacity: 0.25;
-  transform: scale(0.8);
   transition: all 0.2s ease;
+  z-index: 9999;
 }
 
 .eyes{
@@ -170,11 +191,11 @@ p{
 }
 
 .eye{
-  width: 30px;
-  height: 30px;
-  border: 3px solid black;
+  width: 25px;
+  height: 25px;
+  border: 2.5px solid black;
   border-radius: 50%;
-  margin: 2px;
+  margin: 1px;
   position: relative;
   overflow: hidden;
   background: white;
@@ -197,7 +218,7 @@ p{
 } */
 
 .logo:hover{
-  transform: scale(0.9);
+  /* transform: scale(0.9); */
   opacity: 1;
 }
 
@@ -220,9 +241,11 @@ p{
   }
 
   .pc{
+    width: 100vw;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    display: flex;
+    justify-content: center;
   }
 
   .screen{

@@ -1,0 +1,126 @@
+@import "compass/css3";
+
+// Spinner Module
+
+// Count Of Items in spinner_board sets correct time offset and animation offsets
+$item-count: 20;
+
+.spinner {
+
+  //Module Font Settings
+  font-family: sans-serif;
+  color: #cecece;
+
+  // spinner list reset
+  ul, li { list-style: none; padding: 0; margin: 0; }
+}
+
+  .show-area {
+    height: 1em;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 100%;
+    border: 1px solid #cecece;
+    position: relative;
+    overflow:hidden;
+    font-size: 5em;
+  }
+
+  .board {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: $item-count * 2 + em;
+
+    //Animation Controls
+    -webkit-animation: slideshow $item-count + s linear infinite;
+    -moz-animation:    slideshow $item-count + s linear infinite;
+
+      li {
+          width: 100%;
+          height: 1em;
+          padding: .5em 0;
+          position: relative;
+          left: 0;
+          top: 0;
+
+           //Animation Controls
+          animation: slide linear 1s;
+          animation-iteration-count: infinite;
+          -webkit-animation: slide linear 1s;
+          -webkit-animation-iteration-count: infinite;
+          -moz-animation: slide linear 1s;
+          -moz-animation-iteration-count: infinite;
+      }
+  }
+
+
+// ANIMATION KEYS
+
+//overall container movement
+@-webkit-keyframes slideshow {
+  0%    { top: .5em; }
+  100%  { top: -($item-count * 2 - 0.5 + em); }
+}
+@-moz-keyframes slideshow {
+  0%    { top: .5em; }
+  100%  { top: -($item-count * 2 - 0.5 + em); }
+}
+
+//animation to fake slowing down position
+
+@-webkit-keyframes slide{
+  0% {
+    left: 0;
+    top: 0;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;
+  }
+  50% {
+    left: 0;
+    top: 0;
+    opacity:0.75;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;
+  }
+  75% {
+    left: 0;
+    top: .45em;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;
+  }
+}
+
+@-moz-keyframes slide{
+  0% {
+    left: 0;
+    top: 0;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;
+  }
+  50% {
+    left: 0;
+    top: 0;
+    opacity:0.75;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;
+  }
+  75% {
+    left: 0;
+    top: .45em;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;
+  }
+  100% {
+    left: 0;
+    top: 0;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg) ;
+  }
+}

@@ -31,15 +31,16 @@ a{
 
 .intro{
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 20px;
+  left: 20px;
   width: 50%;
+  z-index: -1;
 }
 
 .person {
   position: absolute;
   width: 50%;
-  /* right: 0; */
+  right: 0;
   bottom: -20vw;
   /* border: 1px solid blue; */
 }
@@ -116,12 +117,12 @@ a{
   }
 }
 
-@keyframes floatObj{
+@keyframes floatBtn{
   0%{
     transform: translateY(0);
   }
   100%{
-    transform: translateY(-10px)
+    transform: translateY(5px)
   }
 }
 
@@ -143,39 +144,60 @@ a{
 .button{
   position: relative;
   background: white;
-  border: 2.5px solid yellow;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  padding: 5px 10px;
+  border: 2.5px solid black;
+  padding: 3px 10px;
   margin-bottom: 15px;
   box-shadow: 0 0 rgba(0,0,0,0.5);
   transform: translate(5px, 5px);
   font-size: 1.5em;
   transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #wholesome{
   animation:
-  move 5s ease forwards;
-  /* float 1.5s ease-in-out infinite alternate; */
+  move 5s ease forwards,
+  floatBtn 1.5s ease-in-out infinite alternate;
 }
 
 #illust{
+  margin-left: 50px;
   animation:
-  move 6s ease forwards;
-  /* float 1.5s ease-in-out infinite alternate; */
+  move 6s ease forwards,
+  floatBtn 1.5s ease-in-out infinite alternate;
 
 }
 
 #archive{
   animation:
-  move 7s ease forwards;
-  /* float 1.5s ease-in-out infinite alternate; */
+  move 7s ease forwards,
+  floatBtn 1.5s ease-in-out infinite alternate;
 }
 
 .button:hover{
    transform: translate(0,0);
+}
+
+.featured{
+  border: 5px solid forestgreen;
+  background: whitesmoke;
+  width: 75vw;
+  height: 100vh;
+  padding: 20px;
+  transition: all 3s ease;
+  transform: scale(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border-radius: 50px; */
+}
+
+.expand{
+  transform: scale(1);
+  /* z-index: 2; */
+  border-radius: 0;
 }
 
 @keyframes move{
@@ -200,8 +222,8 @@ a{
     bottom: -240px;
   }
   .eye{
-    width: 6vw;
-    height: 9vw;
+    width: 6.5vw;
+    height: 10vw;
     border: 0.4vw solid black;
   }
   .intro{
