@@ -5,59 +5,122 @@
 body{
   margin: 0;
   font-family: sans-serif;
-  font-weight: normal;
+  background: forestgreen;
 }
 
-h1, h2, h3 {
+h1, h2, h3, a, p{
   text-decoration: none;
   margin: 0;
   font-weight: normal;
+  color: inherit;
 }
 
-a{
-  text-decoration: none;
-}
-
-.universe{
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
+.object{
+  position: absolute;
+  right: 190px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 50px;
+  background: yellow;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 50%;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: forestgreen;
+  animation: object 10s linear infinite;
+  top: 60%;
+}
+
+.object > img{
+  width: 300px;
+}
+
+.obj-wrap:hover .object{
+  animation-play-state: paused;
+}
+
+@keyframes object{
+  0% {top: 60%}
+  50% {}
+  100% {top: -50%}
+}
+
+.featured{
+  background: whitesmoke;
+  /* border: 2px solid blue; */
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  transition: transform 3s ease;
+  transform: scale(0);
+  transform-origin: 25% 50%;
+  z-index: 9990;
+  /* border-radius: 50px; */
+}
+
+.divider{
+  width:75vw;
+  height:100vh;
+  position:absolute;
+  right:0;
+}
+
+.illust{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 5px solid blue; */
+  background: rgba(255, 180, 180,0.98);
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  transition: transform 3s ease;
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  z-index: 9990;
+}
+
+.expand{
+  transform: scale(1);
+  z-index: 9999;
+}
+
+.contact{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.jisoo-wrap{
+  width: 500px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   overflow: hidden;
-}
-
-.intro{
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 50%;
-  z-index: -1;
-}
-
-.person {
-  position: absolute;
-  width: 50%;
-  right: 0;
-  bottom: -20vw;
-  /* border: 1px solid blue; */
 }
 
 .eyes{
   position: absolute;
-  top: 13%;
-  left: 46%;
+  bottom: 230px;
+  right: 260px;
   text-align: center;
   display: flex;
-  z-index: 3;
+  z-index: 5;
 }
 
 .eye{
-  width: 3.5vw;
-  height: 5.5vw;
-  border: 0.24vw solid black;
+  width: 45px;
+  height: 70px;
+  border: 2.5px solid black;
   border-radius: 50%;
   margin: 0.1vw;
   position: relative;
@@ -76,73 +139,25 @@ a{
   border-radius: 50%;
 }
 
-.eyes:hover .ball{
+.eyes:hover .eyeball{
   width: 100%;
   height: 5%;
   border-radius: 0%;
 }
 
-.cap{
-  position: absolute;
-  width: 43.1%;
-  left: 37.7%;
-  animation:
-  moveCap 5s ease forwards,
-  float 1.5s 1s ease-in-out infinite alternate;
-}
-
-#arm{
-  z-index:6;
-}
-
-#body{
-  z-index:2;
-}
-
-@keyframes moveCap{
-  0% {
-    top: -21%;
-  }
-  100% {
-    top: -60%;
-  }
-}
-
-@keyframes float{
-  0%{
-    transform: translateY(0);
-  }
-  100%{
-    transform: translateY(-5px)
-  }
-}
-
-@keyframes floatBtn{
-  0%{
-    transform: translateY(0);
-  }
-  100%{
-    transform: translateY(5px)
-  }
-}
-
 .button-wrap{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 50%;
-  height:40vw;
+  height: 500px;
+  padding-top: 30px;
+  margin-right: 30px;
+  border: 1px solid blue;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  /* border: 1px solid red; */
-  padding: 20px;
-  z-index: 1;
+  align-items: center;
+  z-index: 2;
 }
 
-.button{
-  position: relative;
+.button-wrap > div{
   background: white;
   border: 2.5px solid black;
   padding: 3px 10px;
@@ -150,89 +165,107 @@ a{
   box-shadow: 0 0 rgba(0,0,0,0.5);
   transform: translate(5px, 5px);
   font-size: 1.5em;
-  transition: all 0.5s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  animation: button 5s ease forwards;
 }
 
-#wholesome{
-  animation:
-  move 5s ease forwards,
-  floatBtn 1.5s ease-in-out infinite alternate;
-}
-
-#illust{
-  margin-left: 50px;
-  animation:
-  move 6s ease forwards,
-  floatBtn 1.5s ease-in-out infinite alternate;
-
-}
-
-#archive{
-  animation:
-  move 7s ease forwards,
-  floatBtn 1.5s ease-in-out infinite alternate;
-}
-
-.button:hover{
-   transform: translate(0,0);
-}
-
-.featured{
-  border: 5px solid forestgreen;
-  background: whitesmoke;
-  width: 75vw;
-  height: 100vh;
-  padding: 20px;
-  transition: all 3s ease;
-  transform: scale(0);
-  position: absolute;
-  top: 0;
-  left: 0;
-  /* border-radius: 50px; */
-}
-
-.expand{
-  transform: scale(1);
-  /* z-index: 2; */
-  border-radius: 0;
-}
-
-@keyframes move{
+@keyframes button {
   0%{
-    left: 45%;
-    top: 100%;
-  }
-  50%{
-    left:45%;
-    top: 100%;
+  transform: translateY(100px)
   }
   100%{
-    left: 45%;
-    top: 20%;
+  transform: translateY(0)
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .person{
-    width: 90%;
-    left: 50px;
-    bottom: -240px;
+.svg-wrap{
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  /* right: 20px; */
+  bottom: -10px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.svg{
+  position: absolute;
+}
+
+.cap-wrap{
+  height: 25%;
+  display: flex;
+  align-items: flex-end;
+  z-index: 3;
+  animation: cap 6s ease forwards;
+  /* border: 1px solid red; */
+}
+
+@keyframes cap {
+  0%{
+  transform: translateY(115%)
   }
-  .eye{
-    width: 6.5vw;
-    height: 10vw;
-    border: 0.4vw solid black;
+  100%{
+  transform: translateY(-105%)
   }
-  .intro{
-    width: 100%;
-    font-size: 2em;
-  }
-  .object{
-    left: 54%;
-    width: 20vw;
-    height: 20vw;
-  }
+}
+
+.intro{
+  position:absolute;
+  top:20px;
+  left:20px;
+  width: 60vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+}
+
+.dropbtn {
+  background: transparent;
+  color: black;
+  font-size: 2rem;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: yellow;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 400px;
+  border: 2px solid;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: skyblue; color: yellow}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+@media screen and (max-width: 1024px){
+
 }

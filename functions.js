@@ -1,22 +1,22 @@
-var a = document.getElementById("myDiv");
-var b = document.getElementById("illust");
-var c = document.querySelector('#featured-btn');
-var d = document.querySelector('#illust-btn');
-
-
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
 function myFunction() {
-   a.classList.toggle("expand");
-   b.classList.remove("expand");
-   c.classList.toggle("active");
-   d.classList.remove("active");
+  document.getElementById("myDropdown").classList.toggle("show");
 }
 
-function expandIllust() {
-  a.classList.remove("expand");
-  b.classList.toggle("expand");
-  c.classList.remove("active");
-  d.classList.toggle("active");
-}
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+};
 
 var eyeball = document.getElementsByClassName("eyeball");
 document.onmousemove = function(){
@@ -27,18 +27,6 @@ document.onmousemove = function(){
     eyeball[i].style.left = x;
     eyeball[i].style.top = y;
     eyeball[i].style.transform = "translate(-"+x+", -"+y+")";
-  }
-};
-
-var eyeball2 = document.getElementsByClassName("eyeball2");
-document.onmousemove = function(){
-  var x = event.clientX * 100 / window.innerWidth + "%";
-  var y = event.clientY * 100 / window.innerHeight + "%";
-
-  for(var i=0;i<2;i++){
-    eyeball2[i].style.left = y;
-    eyeball2[i].style.top = -x;
-    eyeball2[i].style.transform = "translate(-"+y+",-"+x+")";
   }
 };
 

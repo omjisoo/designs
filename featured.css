@@ -42,42 +42,72 @@ img{
 
 .header{
   position: fixed;
-  /* position: sticky;
-  top: 0; */
+  /* position: absolute; */
+  top: 0;
   width: 100%;
-  padding: 4px 5px 2px 5px;
+  padding: 20px;
   display: flex;
+  /* justify-content: space-between; */
   align-items: baseline;
-  justify-content: flex-start;
-  border-bottom: 2px dotted blue;
-  background: rgba(245,245,245,0.95);
-  z-index: 999;
 }
 
 .header > h1{
-  font-size: 1.3rem;
-  /* background: whitesmoke; */
-  /* border-radius:50px; */
+  font-size: 2rem;
 }
 
-.category{
-  position: sticky;
-  top: 0;
-  width: 100%;
-  padding: 4px 5px 2px 5px;
-  display: flex;
-  /* align-items: baseline; */
-  justify-content: flex-end;
-  z-index: 9999;
+.dropbtn {
+  background: whitesmoke;
+  color: black;
+  font-size: 2rem;
+  border: 2px solid black;
+  cursor: pointer;
 }
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: yellow;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 400px;
+  border: 2px solid;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 10px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: skyblue; color: yellow}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 .logo{
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   transition: 1s ease;
   transform-origin: top left;
-  /* border: 1px solid blue; */
 }
 
 .eyes{
@@ -89,9 +119,9 @@ img{
 }
 
 .eye{
-  width: 20px;
-  height: 20px;
-  border: 2px solid black;
+  width: 26px;
+  height: 26px;
+  border: 2.5px solid black;
   border-radius: 50%;
   margin: 1px;
   position: relative;
@@ -121,12 +151,21 @@ img{
   opacity: 1;
 }
 
-/* .fixed{
+.fixed{
   position: fixed;
-  margin: 10px;
-  padding:2px 5px;
-  z-index: 99;
-} */
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  text-shadow: 1px 1px 20px white;
+}
+
+.fixed > h1{
+
+}
 
 .footer{
   position: fixed;
@@ -134,16 +173,21 @@ img{
   bottom: 0;
   background: rgba(245,245,245,0.95);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border-top: 2px dotted blue;
+  /* border-top: 2px dotted blue; */
   padding: 4px 5px 2px 5px;
   z-index: 999;
 }
 
+.footer > h1{
+  margin-bottom: 20px;
+}
+
 .content{
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   /* overflow: hidden; */
   /* display: flex; */
   /* flex-direction: column; */
@@ -156,7 +200,7 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   /* position: relative; */
 }
 
@@ -172,12 +216,9 @@ img{
 }
 
 .section > p{
-  position: absolute;
-  right: 80px;
-  top: 90%;
   margin-top: 20px;
-  width: 40%;
-  display: flex;
+  /* width: 40%; */
+  /* display: flex; */
   font-size: 1rem;
   color: dimgray;
 }
@@ -280,22 +321,28 @@ img{
 }
 
 #illust{
-  /* flex-flow: row wrap; */
-  justify-content:flex-start;
+  flex-flow: row wrap;
+  justify-content:center;
   align-items:center;
-  border-bottom: 2px dotted lightgray;
   height:100%;
   padding: 20px;
   font-size: 1.5rem;
-  overflow-x: scroll;
 }
 
 #illust > img{
-  /* min-width: 500px; */
-  height: 600px;
+  width: 600px;
   margin: 20px;
   border-radius: 2px;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+#itsc{
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+#itsc > img{
+  width: 800px;
 }
 
 #archive {
@@ -306,6 +353,20 @@ img{
   padding: 20px;
   font-size: 1.5rem;
   overflow-x: scroll;
+}
+
+#italy{
+  flex-flow: row wrap;
+  justify-content:center;
+  align-items:flex-start;
+  height:100%;
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+#italy > img{
+  width: 600px;
+  margin: 10px;
 }
 
 .active{

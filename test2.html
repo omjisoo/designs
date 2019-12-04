@@ -43,7 +43,7 @@
           <img class="svg" src="img/jisoo-shadow2.svg" style="z-index: 1;">
         </div>
         <div class="txt-wrap">
-          <p>Jisoo Shin is currently finishing up her graphic design studies at VCUarts. You may find her skills and ideas useful for your purpose.</p>
+          <p>Jisoo Shin is a designer and illustrator, among many other things. She is currently finishing up her graphic design studies at VCUarts.</p>
         </div>
 
       </div>
@@ -51,4 +51,17 @@
     </div>
   </body>
   <script src="functions.js"></script>
+  <script>
+  var eyeball2 = document.getElementsByClassName("eyeball2");
+  document.onmousemove = function(){
+    var x = event.clientX * 100 / window.innerWidth + "%";
+    var y = event.clientY * 100 / window.innerHeight + "%";
+
+    for(var i=0;i<2;i++){
+      eyeball2[i].style.left = y;
+      eyeball2[i].style.top = -x;
+      eyeball2[i].style.transform = "translate(-"+y+",-"+x+")";
+    }
+  };
+</script>
 </html>

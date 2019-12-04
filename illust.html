@@ -5,43 +5,82 @@
     <meta charset="utf-8">
     <meta background="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <link rel="stylesheet" href="illust.css">
+    <link rel="icon" type="img/png" href="favi.png">
+    <link rel="stylesheet" href="featured.css">
+
   </head>
 
   <body>
-    <div class="universe">
-      <div class="divider menu">
-          <div class="inactive"><a href="featured.html">Featured Work</a></div>
-          <div class="active">Illustration</div>
-          <div class="inactive">Archive</div>
-          <div class="inactive">About</div>
-      </div>
+    <div class="pc">
       <div class="screen">
-        <div class="divider" id="content">
-          <div class="img-wrap">
-            <img src="img/italy-bridge.jpg">
+        <div class="header">
+          <div class="logo">
+            <div>JIS</div>
+            <div class="eyes">
+              <div class="eye">
+                <div class="eyeball"></div>
+              </div>
+              <div class="eye">
+                <div class="eyeball"></div>
+              </div>
+              <div>&nbsp;→&nbsp;</div>
+            </div>
           </div>
-          <div class="img-wrap">
-            <img src="img/italy-rocamaggiore.jpg">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">experiences</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="marryme.html">a space dedicated to self-love</a>
+              <a href="#">a mobile app to pick up Korean</a>
+              <a href="#">an adoption kiosk for tote bags</a>
+              <a href="#">a labyrinth for meditation</a>
+              <a href="#">a multicultural festival</a>
+            </div>
           </div>
-          <div class="img-wrap">
-            <img src="img/excelstencil.jpg">
+          <h1>&nbsp;+&nbsp;</h1>
+          <button class="dropbtn"><a href="illust.html">illustrations</a></button>
+          <h1>&nbsp;+&nbsp;</h1>
+          <button class="dropbtn"><a href="illust.html">many more</a></button>
           </div>
-          <div class="img-wrap">
-            <img src="img/italy-sangimignano.jpg">
-          </div>
-          <div class="img-wrap">
-            <img src="img/italy-waiting.jpg">
-          </div>
-          <div class="img-wrap">
-            <img src="img/placeholder.jpg">
-          </div>
-          <div class="img-wrap">
-            <img src="img/placeholder.jpg">
           </div>
         </div>
+
+
+        <div class="content">
+          <div class="section" id="itsc">
+            <img src="img/itsc-journey-map.png">
+          </div>
+          <div class="section full" id="italy">
+            <img src="img/italy-sangimignano.jpg">
+            <img src="img/italy-rosegarden.jpg">
+            <img src="img/italy-rocamaggiore.jpg">
+            <img src="img/italy-bridge.jpg">
+          </div>
+          <div class="section" id="illust">
+            <img src="img/firstsnow-roll.jpg">
+            <img src="img/firstsnow.jpg">
+            <img src="img/firstsnow-closeup.jpg">
+
+          </div>
+          <div class="section" id="illust">
+            <img src="img/excelstencil.jpg">
+          </div>
+        </div>
+
+        <!-- <div class="footer">
+          <h1><a href=#featured>DESIGNER</a></h1>
+          <h1><a href=#illust>ILLUSTRATOR</a></h1>
+          <h1><a href=#>AND MORE!</a></h1>
+        </div> -->
+
       </div>
+     </div>
+
+    </div>
+
+
+    <div class="mobile">
     </div>
   </body>
-  <!-- <script src="functions.js"></script> -->
+  <!-- <script src="flickity.pkgd.min.js"></script> -->
+  <script src="functions.js"></script>
 </html>
