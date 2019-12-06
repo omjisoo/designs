@@ -41,13 +41,13 @@ img{
 }
 
 .header{
-  position: fixed;
-  /* position: absolute; */
+  /* position: fixed; */
+  position: absolute;
   top: 0;
   width: 100%;
   padding: 20px;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: baseline;
 }
 

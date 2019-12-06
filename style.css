@@ -33,6 +33,19 @@ h1, h2, h3, a, p{
   top: 60%;
 }
 
+.unfinished{
+  text-align:center
+}
+
+#clickme{
+  animation-delay: 2s;
+  background:pink;
+}
+
+#clickme:hover{
+  text-decoration: underline wavy;
+}
+
 .object > img{
   width: 300px;
 }
@@ -93,7 +106,7 @@ h1, h2, h3, a, p{
   bottom: 0;
   left: 0;
   padding: 20px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .jisoo-wrap{
