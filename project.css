@@ -132,10 +132,12 @@ img{
   height: 100%;
   padding: 20px;
   display: flex;
+  /* border: 1px solid; */
 }
 
 .intro > div{
-  width: 100%;
+  width: 75%;
+  /* border: 1px solid; */
 }
 
 .intro > div > h2{

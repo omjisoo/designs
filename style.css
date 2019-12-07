@@ -280,5 +280,23 @@ h1, h2, h3, a, p{
 .show {display:block;}
 
 @media screen and (max-width: 1024px){
-
+  .jisoo-wrap{
+    transform: scale(0.75);
+    transform-origin: bottom right;
+    right:0;
+    overflow: visible;
+  }
+  @keyframes cap {
+    0%{
+    transform: translateY(90%)
+    }
+    100%{
+    transform: translateY(-250%)
+    }
+  }
+  @keyframes object{
+    0% {top: 60%}
+    50% {}
+    100% {top: -60%}
+  }
 }

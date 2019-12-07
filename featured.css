@@ -38,27 +38,78 @@ img{
   width: 100vw;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 .header{
-  /* position: fixed; */
-  position: absolute;
+  position: fixed;
+  /* position: absolute; */
   top: 0;
   width: 100%;
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .header > h1{
   font-size: 2rem;
 }
 
-.dropbtn {
+.title{
+  position: fixed;
+  bottom: 20px;
   background: whitesmoke;
   color: black;
   font-size: 2rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.menubtn{
+  position: fixed;
+  right: 20px;
+  top:10px;
+  /* width: 35px;
+  height: 35px; */
+  font-size: 3rem;
+  background: transparent;
+  border: none;
+  /* background: yellow; */
+  /* border: 2px solid; */
+  z-index: 999;
+  text-shadow: 0 0 20px whitesmoke;
+}
+
+.menubtn:hover{
+  color: magenta;
+  text-shadow: 0 0 20px cyan;
+  cursor:pointer;
+}
+
+.menubox{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.75);
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.open {
+  display: flex;
+  flex-direction: column;
+  /* align-items: baseline; */
+}
+
+.dropbtn {
+  background: whitesmoke;
+  color: black;
+  font-size: 1.8rem;
   border: 2px solid black;
   cursor: pointer;
 }
@@ -72,42 +123,49 @@ img{
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 9999;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: whitesmoke;
-  min-width: 400px;
-  border: 2px solid;
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+  right: 0;
   z-index: 1;
-  margin-top: 10px;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
+  min-width: 175px;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+  background:whitesmoke;
   color: black;
+  border: 2px solid black;
   padding: 10px 16px;
   text-decoration: none;
   display: block;
   font-size: 1.5rem;
-  text-align: left;
+  text-align: right;
+  margin-top: 10px;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: skyblue; color: yellow}
+.dropdown-content a:hover {
+  background-color: skyblue;
+  color: yellow;
+}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
 .logo{
+  position: fixed;
   font-size: 2rem;
   display: flex;
   align-items: center;
   transition: 1s ease;
   transform-origin: top left;
+  z-index: 9999;
 }
 
 .eyes{
