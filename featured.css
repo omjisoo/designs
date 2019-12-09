@@ -38,72 +38,19 @@ img{
   width: 100vw;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
-.header{
-  position: fixed;
-  /* position: absolute; */
-  top: 0;
+.nav{
+  position:fixed;
+  display:flex;
+  /* flex-direction: column; */
+  justify-content:flex-start;
+  align-items: baseline;
   width: 100%;
+  z-index: 9999;
   padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.header > h1{
-  font-size: 2rem;
-}
-
-.title{
-  position: fixed;
-  bottom: 20px;
-  background: whitesmoke;
-  color: black;
-  font-size: 2rem;
-  border: 2px solid black;
-  display: flex;
-  align-items: center;
-}
-
-.menubtn{
-  position: fixed;
-  right: 20px;
-  top:10px;
-  /* width: 35px;
-  height: 35px; */
-  font-size: 3rem;
-  background: transparent;
-  border: none;
-  /* background: yellow; */
-  /* border: 2px solid; */
-  z-index: 999;
-  text-shadow: 0 0 20px whitesmoke;
-}
-
-.menubtn:hover{
-  color: magenta;
-  text-shadow: 0 0 20px cyan;
-  cursor:pointer;
-}
-
-.menubox{
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(255,255,255,0.75);
-  padding: 20px;
-  font-size: 2rem;
-}
-
-.open {
-  display: flex;
-  flex-direction: column;
-  /* align-items: baseline; */
+  font-size: 1.8rem;
 }
 
 .dropbtn {
@@ -112,6 +59,7 @@ img{
   font-size: 1.8rem;
   border: 2px solid black;
   cursor: pointer;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
 }
 
 /* Dropdown button on hover & focus */
@@ -121,7 +69,8 @@ img{
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  position: relative;
+  /* position:fixed;
+  right:20px; */
   display: inline-block;
   z-index: 9999;
 }
@@ -130,22 +79,19 @@ img{
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 0;
   z-index: 1;
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  min-width: 175px;
+  display: block;
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
-  background:whitesmoke;
+  background: whitesmoke;
   color: black;
   border: 2px solid black;
-  padding: 10px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 1.5rem;
-  text-align: right;
+  padding: 5px 7px;
+  font-size: 1.6rem;
+  text-align: left;
   margin-top: 10px;
 }
 
@@ -156,16 +102,25 @@ img{
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block;}
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
 .logo{
-  position: fixed;
+  /* position: fixed; */
   font-size: 2rem;
   display: flex;
   align-items: center;
   transition: 1s ease;
   transform-origin: top left;
   z-index: 9999;
+  text-shadow:
+ -1px -1px 0 rgba(255,255,255,0.5),
+  1px -1px 0 rgba(255,255,255,0.5),
+  -1px 1px 0 rgba(255,255,255,0.5),
+   1px 1px 0 rgba(255,255,255,0.5);
 }
 
 .eyes{
@@ -173,7 +128,6 @@ img{
   text-align: center;
   display: flex;
   align-items: center;
-  /* background: whitesmoke; */
 }
 
 .eye{
@@ -185,6 +139,12 @@ img{
   position: relative;
   overflow: hidden;
   background: white;
+  box-shadow:
+  -1px -1px 0 rgba(255,255,255,0.5),
+   1px -1px 0 rgba(255,255,255,0.5),
+   -1px 1px 0 rgba(255,255,255,0.5),
+    1px 1px 0 rgba(255,255,255,0.5);
+  transition: transform 30s ease;
 }
 
 .eyeball{
@@ -198,16 +158,35 @@ img{
   border-radius: 50%;
 }
 
-.hidden{
-  width: 0;
-  opacity: 0;
-  transition: 1s ease;
+.logo:hover .eye{
+  /* background: magenta; */
 }
 
-.logo:hover .hidden{
-  width: 100%;
-  opacity: 1;
+.logo:hover .eyeball{
+  /* background: magenta; */
+  border: 6px dotted cyan;
 }
+
+.about{
+  width: 25px;
+  height: 25px;
+  display: none;
+  position: absolute;
+  font-size: 1.2rem;
+  top: 60px;
+  left: 110px;
+  background: white;
+  border: 2px solid blue;
+  border-radius: 50%;
+  padding: 0 3px;
+}
+
+.logo:hover .about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .fixed{
   position: fixed;
@@ -219,10 +198,6 @@ img{
   justify-content: flex-start;
   align-items: baseline;
   text-shadow: 1px 1px 20px white;
-}
-
-.fixed > h1{
-
 }
 
 .footer{
@@ -244,49 +219,57 @@ img{
 
 .content{
   width: 100vw;
-  /* height: 100vh; */
-  height: 100%;
-  /* overflow: hidden; */
-  /* display: flex; */
+  display: flex;
   /* flex-direction: column; */
+  padding: 20px;
 }
 
 .section{
-  padding: 20px;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* overflow-y: hidden; */
-  /* position: relative; */
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px;
 }
 
 .full{
-  margin-top: 0;
-  height: 100vh;
+  height: 100%;
 }
 
-.section > img{
-  width: 60%;
-  /* margin-bottom: 20px; */
-  /* height: 100%; */
+.section div > img{
+  height: 100%;
+  /* box-shadow: 0px 0px 5px rgba(0,0,0,0.2); */
 }
 
-.section > p{
+.thumb{
+  width: 200px;
+  height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.text{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.caption{
   margin-top: 20px;
-  /* width: 40%; */
-  /* display: flex; */
   font-size: 1rem;
   color: dimgray;
 }
 
 .img-wrap{
   width: 500px;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
   position: relative;
-  /* border: 1px solid red; */
   border-radius: 2px;
   display: flex;
   justify-content: center;
@@ -294,17 +277,17 @@ img{
   margin: 20px;
   transition: 0.75s ease;
   box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-
 }
 
 .cover{
   position: absolute;
-  width: 400px;
+  width: 300px;
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  /* background: whitesmoke; */
   opacity: 0;
 }
 
@@ -316,22 +299,17 @@ img{
 
 .img-wrap > img{
   width: 700px;
-  /* opacity: 0.5; */
-  transition: 0.5s ease;
-
 }
 
 .img-wrap:hover{
+  width: 1000px;
+  height: 400px;
   transform: translate(-7px, -7px);
   box-shadow: 7px 7px rgba(0, 0, 0, 0.5);
-  border: 1px solid blue;
+  border: 2px solid blue;
 }
 
 .img-wrap:hover .cover{
-  opacity: 1;
-}
-
-.img-wrap:hover img{
   opacity: 1;
 }
 
@@ -344,63 +322,31 @@ img{
   color: dimgray;
 }
 
-.shift{
-  margin-top:100px;
-  margin-left:-100px;
-}
-
-#featured{
+#exp{
   height: 100vh;
-  border-bottom: 2px dotted lightgray;
-  /* height:100%; */
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
   /* background: skyblue; */
 }
 
-#featured > div:hover{
+#exp > div:hover{
   background: white;
   color: blue;
 }
 
-#featured > .img-wrap:hover{
-  width: 800px;
-}
-
-#featured > img{
-  /* position: absolute;
-  top: 40%;
-  right: 20px;
-  width: 25%; */
+#exp > img{
   width: 400px;
-  /* margin: 10px; */
   border-radius: 2px;
-  /* box-shadow: 0px 0px 4px rgba(0,0,0,0.2); */
-  /* border: 2px solid black; */
-}
-
-#illust{
-  flex-flow: row wrap;
-  justify-content:center;
-  align-items:center;
-  height:100%;
-  padding: 20px;
-  font-size: 1.5rem;
-}
-
-#illust > img{
-  width: 600px;
-  margin: 20px;
-  border-radius: 2px;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
 }
 
 #itsc{
-  flex-direction: column;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 #itsc > img{
-  width: 800px;
+  width: 900px;
 }
 
 #archive {
@@ -414,11 +360,12 @@ img{
 }
 
 #italy{
+  display: flex;
   flex-flow: row wrap;
   justify-content:center;
-  align-items:flex-start;
-  height:100%;
-  padding: 20px;
+  align-items:center;
+  /* height:100%; */
+  /* padding: 20px; */
   font-size: 1.5rem;
 }
 
@@ -432,6 +379,7 @@ img{
   color: blue;
   padding: 2px 5px 0 5px;
 }
+
 
 @media screen and (max-width: 1024px){
   .intro, .img-wrap, .section{
@@ -451,12 +399,6 @@ img{
   .section > p{
     position: static;
     width: 100%;
-  }
-  #illust{
-  }
-  #illust > img{
-    /* width: 100%; */
-    height: 100%;
   }
   .img-wrap > img{
     /* width: 100%; */

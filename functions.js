@@ -1,3 +1,8 @@
+function showMore() {
+  document.querySelector('.more').classList.add("hide");
+  document.querySelector('.hidden').classList.remove("hidden");
+};
+
 function openMenu() {
   document.getElementById("menu").classList.toggle("open");
 };
