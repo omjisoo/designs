@@ -10,6 +10,10 @@ body{
   overflow-x: hidden;
 }
 
+@keyframes fadeIn{
+  from {transform:translateY(100vh);overflow:hidden} to {transform:translateY(0)}
+}
+
 h1, h2, h3, a, p{
   text-decoration: none;
   margin: 0;
@@ -22,7 +26,7 @@ h1{
 }
 
 h2{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 p{
@@ -39,14 +43,18 @@ img{
   flex-direction: column;
 }
 
-.nav{
-  /* position:fixed; */
+/* .nav{
+  position:fixed;
   display:flex;
   justify-content:flex-start;
   align-items: baseline;
   z-index: 9999;
   padding: 20px;
   font-size: 1.8rem;
+} */
+
+.startbtn{
+  /* color: transparent; */
 }
 
 .dropbtn {
@@ -200,7 +208,7 @@ img{
 
 .intro{
   width: 100vw;
-  height: 50vh;
+  /* height: 50vh; */
   padding: 20px;
   display: flex;
   margin-top: 40px;
@@ -214,22 +222,19 @@ img{
 
 .intro > div > h2{
   font-variant: small-caps;
+  line-height: 1.5;
 }
 
 .intro > div > p{
   width: 80%;
-  font-size: 1.5rem;
-}
-
-.process{
-  font-size: 1.5rem;
-  font-style: italic;
+  font-size: 1.3rem;
 }
 
 .content{
   width: 100vw;
   display: flex;
   flex-direction: column;
+  animation: fadeIn 3s ease;
 }
 
 .section{
@@ -257,7 +262,6 @@ img{
   margin-bottom: 20px;
   border-radius: 2px;
   box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
-  /* height: 100%; */
 }
 
 .section > p{
@@ -309,6 +313,7 @@ img{
 
 .nav{
   position: fixed;
+  padding: 10px;
   right: 10px;
   bottom: 0;
   font-size: 1.4rem;
@@ -317,7 +322,7 @@ img{
 
 .nav a{
   font-size: 3rem;
-  color: dimgray;
+  transition: transform 2s ease;
 }
 
 .nav div{
@@ -338,17 +343,63 @@ img{
 .nav a:hover{
   color: magenta;
   text-shadow: 0 0 20px cyan;
+  transform:rotate(180deg);
 }
 .nav div:hover p{
   display: block;
 }
 
-#joob{
+#joob3{
+  width: 70%;
+  margin-right: -50px;
   box-shadow: none;
-  width: 75%;
+}
+
+#joob4{
+  width: 70%;
+  margin-left: -50px;
+  box-shadow: none;
+}
+
+#rbha{
+  justify-content: center;
+  align-items: center;
+}
+
+#rbha img{
+  width: 600px;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.col img{
+  width: 600px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+}
+
+.center{
+  justify-content: center;
+}
+
+.fxend{
+  justify-content: flex-end;
+}
+
+.fxstart{
+  justify-content: flex-start;
 }
 
 @media screen and (max-width: 1024px){
+  h2{
+    font-size: 3vw;
+  }
   p{
     font-size: 4vw;
   }
@@ -356,13 +407,17 @@ img{
     flex-direction: column;
   }
   .intro{
-    justify-content: center;
+    /* height: 50vh; */
+    margin-bottom: 20px;
   }
   .intro > div{
     width: 100%;
   }
   .intro > div > p{
     width: 90vw;
+    font-size: 4vw;
+  }
+  .intro .summary{
     font-size: 4vw;
   }
   .section{

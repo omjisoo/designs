@@ -5,7 +5,7 @@
 
 body{
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Questrial', sans-serif;
   /* background: forestgreen; */
   background: whitesmoke;
   overflow-x: hidden;
@@ -124,15 +124,9 @@ img{
   font-size: 2rem;
   display: flex;
   align-items: center;
-  transition: 1s ease;
+  /* transition: 1s ease; */
   transform-origin: top left;
   z-index: 9999;
-  /* text-shadow:
- -1px -1px 0 whitesmoke,
-  1px -1px 0 whitesmoke,
-  -1px 1px 0 whitesmoke,
-   1px 1px 0 whitesmoke; */
-
 }
 
 .eyes{
@@ -151,11 +145,6 @@ img{
   position: relative;
   overflow: hidden;
   background: white;
-  /* box-shadow:
-  -1px -1px 0 rgba(255,255,255,0.5),
-   1px -1px 0 rgba(255,255,255,0.5),
-   -1px 1px 0 rgba(255,255,255,0.5),
-    1px 1px 0 rgba(255,255,255,0.5); */
   transition: transform 30s ease;
 }
 
@@ -170,8 +159,8 @@ img{
   border-radius: 50%;
 }
 
-.logo:hover .eye{
-  /* background: magenta; */
+.logo:hover{
+  background: yellow;
 }
 
 .logo:hover .eyeball{
@@ -204,7 +193,12 @@ img{
   width: 100vw;
   display: flex;
   flex-direction: column;
+  animation: fadeIn 3s ease;
   /* align-items: flex-end; */
+}
+
+@keyframes fadeIn{
+  from {transform:translateY(100vh);overflow:hidden} to {transform:translateY(0)}
 }
 
 .section{
@@ -233,7 +227,7 @@ img{
 
 .col img{
   width: 600px;
-  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
 }
 
 .caption{
@@ -315,11 +309,12 @@ img{
   top: 10px;
   font-size: 1.4rem;
   display: flex;
+  z-index: 9999;
 }
 
 .contact a{
   font-size: 3rem;
-  color: dimgray;
+  transition: transform 2s ease;
 }
 
 .contact div{
@@ -340,6 +335,7 @@ img{
 .contact a:hover{
   color: magenta;
   text-shadow: 0 0 20px cyan;
+  transform:rotate(180deg);
 }
 .contact div:hover p{
   display: block;
@@ -372,7 +368,17 @@ img{
   width: 100%;
 }
 
-.showhidden {display:block}
+.showhidden {display:block;}
+
+.threerow{
+  display: flex;
+}
+
+.threerow img{
+  width: 400px;
+  padding: 10px;
+}
+
 
 @media screen and (max-width: 1024px){
   .intro, .img-wrap, .section{

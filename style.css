@@ -6,6 +6,7 @@ body{
   margin: 0;
   font-family: sans-serif;
   background: forestgreen;
+  /* background: tomato; */
 }
 
 h1, h2, h3, a, p{
@@ -30,7 +31,13 @@ h1, h2, h3, a, p{
   justify-content: center;
   align-items: center;
   animation: object 10s linear infinite;
+  animation-delay: 2s;
   top: 60%;
+}
+
+.cover{
+  width: 150px;
+  height: 150px;
 }
 
 .unfinished{
@@ -48,10 +55,16 @@ h1, h2, h3, a, p{
 
 .object > img{
   width: 300px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
 .obj-wrap:hover .object{
   animation-play-state: paused;
+}
+
+.object:hover img{
+  opacity: 1;
 }
 
 @keyframes object{
@@ -78,7 +91,13 @@ h1, h2, h3, a, p{
   flex-direction: column;
   justify-content: flex-start;
   overflow: hidden;
+  animation: fadeIn 4s ease;
 }
+
+@keyframes fadeIn{
+  from {transform:translateY(100%)} to {transform:translateY(0)}
+}
+
 
 .eyes{
   position: absolute;
@@ -169,12 +188,14 @@ h1, h2, h3, a, p{
   align-items: flex-end;
   z-index: 3;
   animation: cap 6s ease forwards;
+  animation-delay: 2s;
+  transform: translateY(123%)
   /* border: 1px solid red; */
 }
 
 @keyframes cap {
   0%{
-  transform: translateY(115%)
+  transform: translateY(123%)
   }
   100%{
   transform: translateY(-105%)
@@ -185,10 +206,11 @@ h1, h2, h3, a, p{
   position:absolute;
   top:20px;
   left:20px;
-  width: 60vw;
+  width: 900px;
   display: flex;
   flex-flow: row wrap;
   align-items: baseline;
+  /* animation: fadeIn 2s ease; */
 }
 
 .dropbtn {
@@ -238,7 +260,22 @@ h1, h2, h3, a, p{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+.mobile {display:none;}
+
+
 @media screen and (max-width: 1024px){
+  .pc{
+    display: none;
+  }
+  .mobile{
+    display: block;
+    width: 100vw;
+    font-size: 3vw;
+  }
+  .intro{
+    width: 100%;
+    flex-flow: column;
+  }
   .jisoo-wrap{
     transform: scale(0.75);
     transform-origin: bottom right;
@@ -247,7 +284,7 @@ h1, h2, h3, a, p{
   }
   @keyframes cap {
     0%{
-    transform: translateY(90%)
+    transform: translateY(118%)
     }
     100%{
     transform: translateY(-250%)
