@@ -152,7 +152,7 @@ h1 {
     height: 9rem;
     right: 2rem;
     background: blue;
-    animation: object 5s 2s ease forwards, rotate 10s infinite;
+    animation: object 5s 2s ease forwards;
   }
   @keyframes object{
     0% {top: 100vh}
