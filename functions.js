@@ -11,8 +11,9 @@ function openMenu() {
 toggle between hiding and showing the dropdown content */
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
-}
-function myFunction() {
+};
+
+function myFunctionMobile() {
   document.getElementById("myDropdownMobile").classList.toggle("show");
 }
 
