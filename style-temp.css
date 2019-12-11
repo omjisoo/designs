@@ -132,14 +132,11 @@ h1 {
   }
 }
 @media screen and (max-width: 500px){
-  .pc{
-    display: none;
-  }
-  body{
-    font-size: 1rem;
+  h1{
+    font-size: 1.5rem;
   }
   h2{
-    font-size: 20px;
+    font-size: 1rem;
   }
   .eyes{
     width: 6rem;
