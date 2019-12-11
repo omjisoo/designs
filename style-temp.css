@@ -138,6 +138,9 @@ h1 {
   body{
     font-size: 1rem;
   }
+  h2{
+    font-size: 20px;
+  }
   .eyes{
     width: 6rem;
     height: 10rem;
@@ -146,7 +149,6 @@ h1 {
     display: block;
     width: 100vw;
     height: 100vh;
-    font-size: 2rem;
   }
   .object{
     width: 9rem;
