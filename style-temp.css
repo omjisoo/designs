@@ -120,7 +120,7 @@ h1 {
 .mobile {display:none;}
 
 
-@media screen and (max-width: 1024px){
+/* @media screen and (max-width: 1024px){
   body{
     font-size: 1.3rem;
   }
@@ -130,8 +130,8 @@ h1 {
     background: blue;
     animation: object 5s 2s ease forwards, rotate 10s infinite;
   }
-}
-@media screen and (max-width: 500px){
+} */
+@media screen and (max-width: 1024px){
   h1{
     font-size: 1.5rem;
   }
