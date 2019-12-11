@@ -5,6 +5,7 @@
 body{
   margin: 0;
   font-family: sans-serif;
+  font-size: 2rem;
   background: forestgreen;
   /* background: tomato; */
 }
@@ -216,7 +217,7 @@ h1, h2, h3, a, p{
 .dropbtn {
   background: transparent;
   color: black;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   border: 2px solid black;
   cursor: pointer;
 }
@@ -260,8 +261,14 @@ h1, h2, h3, a, p{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
-.mobile {display:none;}
+.mobile {
+  display:none;
+  width: 100vw;
+}
 
+.row{
+  display:flex;align-items:baseline;margin-bottom:0;
+}
 
 @media screen and (max-width: 1024px){
   .pc{
@@ -269,18 +276,23 @@ h1, h2, h3, a, p{
   }
   .mobile{
     display: block;
-    width: 100vw;
-    font-size: 3vw;
+  }
+  div, h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
   }
   .intro{
-    width: 100%;
-    flex-flow: column;
+    width: 100vw;
+    flex-flow: column wrap;
   }
   .jisoo-wrap{
     transform: scale(0.75);
     transform-origin: bottom right;
     right:0;
     overflow: visible;
+  }
+  .dropbtn{
+    font-size: 1.5rem;
   }
   @keyframes cap {
     0%{
