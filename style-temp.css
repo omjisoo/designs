@@ -38,13 +38,14 @@ h1 {
   width: 150px;
   height: 150px;
   padding: 20px;
+  background: black;
   overflow: hidden;
   border: 2px solid white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  z-index: 99;
   animation: object 3s ease forwards;
   animation-delay: 2s;
   text-align: center;
@@ -62,6 +63,9 @@ h1 {
   100% {top: 75vh}
 }
 
+@keyframes rotate{
+  100%{transform:rotate(360deg)}
+}
 
 .contact{
   position: fixed;
@@ -123,6 +127,8 @@ h1 {
   .object{
     width: 10rem;
     height: 10rem;
+    background: blue;
+    animation: object 5s 2s ease forwards, rotate 10s infinite;
   }
 }
 @media screen and (max-width: 500px){
@@ -146,6 +152,8 @@ h1 {
     width: 9rem;
     height: 9rem;
     right: 2rem;
+    background: blue;
+    animation: object 5s 2s ease forwards, rotate 10s infinite;
   }
   @keyframes object{
     0% {top: 100vh}
