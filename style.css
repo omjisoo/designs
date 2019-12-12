@@ -4,7 +4,6 @@
 
 body{
   margin: 0;
-  padding: 20px;
   font-family: sans-serif;
   background: forestgreen;
 }
@@ -14,6 +13,10 @@ h1, h2, h3, a, p{
   margin: 0;
   font-weight: normal;
   color: inherit;
+}
+
+.pc{
+  padding: 20px;
 }
 
 @keyframes fadeIn{
@@ -176,7 +179,8 @@ h1, h2, h3, a, p{
 .intro{
   width: 900px;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
+  justify-content: flex-start;
   align-items: baseline;
   animation: fadeIn 3s ease;
 }
@@ -229,15 +233,16 @@ h1, h2, h3, a, p{
 .show {display:block;}
 
 .mobile {
-  position: fixed;
+  /* position: fixed; */
   display:none;
   width: 100vw;
-  /* height: 100vh; */
-  overflow: hidden;
+  padding: 20px;
+  /* overflow: hidden; */
 }
 
 .row{
   display:flex;
+  flex-flow: wrap;
   justify-content: flex-start;
   align-items:baseline;
   margin-bottom:0;
@@ -249,10 +254,16 @@ h1, h2, h3, a, p{
 
   div, h1 {
     font-size: 1.5rem;
-    margin-bottom: 0.4rem;
+    /* margin-bottom: 0.4rem; */
   }
   .intro{
-    width: 100vw;
+    width: 100%;
+    line-height: 1.45;
+  }
+  .intro > h1{
+  }
+  .dropbtn{
+    /* margin-bottom: 0.4rem; */
   }
   .jisoo-wrap{
     transform: scale(0.75);
