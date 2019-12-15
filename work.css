@@ -514,7 +514,7 @@ iframe{
   .eye{width:5.75vw;height:5.75vw;border:5px solid black}
   .dropbtn, .dropdown-content a {border:4px solid black}
   .nav{top:20px;left:20px}
-  
+
   .contact{
     position: relative;
     top: auto;
@@ -541,25 +541,10 @@ iframe{
     text-shadow: 0 0 40px cyan;
     transform:rotate(0);
   }
-  .content{margin-top:160px;margin-bottom:60px;animation:none}
-  .thumb:hover{
-    transform: none;
-    box-shadow: none;
-    border: none;
-  }
-  .thumb:hover .cover{
-    opacity:0;
-  }
-  .caption h1{font-size: 4vw;}
+
   .intro, .img-wrap, .section, .content-wrap{flex-direction: column;}
   .section a{padding:20px}
-  .col{
-    width: 100vw;
-    height: 100vh;
-    /* height: 100%; */
-  }
-  .nav, .thumb img, .img-wrap2, .img-wrap2 img {width: 100%;}
-  .thumb img{width:100%;height:auto}
+  .nav, .img-wrap2, .img-wrap2 img {width: 100%;}
   iframe{
     width: 100vw;
     padding:20px;
