@@ -504,9 +504,9 @@ iframe{
 
 .mobile{display:none;}
 
-@media screen and (max-width: 1024px){
-  /* .mobile{display:block} */
-  /* .pc{display:none} */
+@media screen and (max-width: 1000px){
+  .mobile{display:block}
+  .pc{display:none}
   .badge, .padding, .pconly, .contact .pconly{display:none}
   .nav p, .logo div, .dropbtn{font-size:7vw}
   .dropdown-content a {font-size:6vw;}
@@ -551,12 +551,13 @@ iframe{
   .caption h1{font-size: 4vw;}
   .intro, .img-wrap, .section, .content-wrap{flex-direction: column;}
   .section a{padding:20px}
+  .section a img{height:auto}
   .col{
     width: 100vw;
     height: 100%;
     /* height: 100vh; */
   }
-  .col, .nav, .thumb img, .img-wrap2, .img-wrap2 img {width: 100%;}
+  .nav, .thumb img, .img-wrap2, .img-wrap2 img {width: 100%;}
   iframe{
     width: 100vw;
     padding:20px;
