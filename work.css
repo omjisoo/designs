@@ -66,10 +66,9 @@ img{
   font-size: 1.8rem;
   border: 2px solid black;
   cursor: pointer;
+  text-align: left;
   box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
   z-index: 9999;
-  display: flex;
-  justify-content: flex-start;
 }
 
 /* Dropdown button on hover & focus */
@@ -172,12 +171,12 @@ img{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  animation: bringIn 3s ease;
+  animation: bringIn 3s ease forwards;
   /* align-items: flex-end; */
 }
 
 @keyframes bringIn{
-  from {transform:translateY(100vh);overflow:hidden} to {transform:translateY(0)}
+  from {transform:translateY(100vh); overflow:hidden} to {transform:translateY(0)}
 }
 
 .section{
