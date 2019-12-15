@@ -36,7 +36,6 @@ img{
 
 .screen{
   width: 100vw;
-  height: 100%;
   display: flex;
   flex-direction: column;
   /* padding: 20px; */
@@ -505,7 +504,7 @@ iframe{
 .mobile{display:none;}
 
 @media screen and (max-width: 1000px){
-  .mobile{display:inline-block;}
+  .mobile{display:block}
   .pc{display:none}
   .badge, .padding, .pconly, .contact .pconly{display:none}
 
