@@ -508,11 +508,13 @@ iframe{
   .mobile{display:block}
   .pc{display:none}
   .badge, .padding, .pconly, .contact .pconly{display:none}
+
   .nav p, .logo div, .dropbtn{font-size:7vw}
   .dropdown-content a {font-size:6vw;}
   .eye{width:5.75vw;height:5.75vw;border:5px solid black}
   .dropbtn, .dropdown-content a {border:4px solid black}
   .nav{top:20px;left:20px}
+  
   .contact{
     position: relative;
     top: auto;
@@ -555,9 +557,9 @@ iframe{
     width: 100vw;
     height: 100vh;
     /* height: 100%; */
-    /* height: 100vh; */
   }
   .nav, .thumb img, .img-wrap2, .img-wrap2 img {width: 100%;}
+  .thumb img{width:100%;height:auto}
   iframe{
     width: 100vw;
     padding:20px;
