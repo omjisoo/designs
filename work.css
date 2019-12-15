@@ -505,7 +505,7 @@ iframe{
 .mobile{display:none;}
 
 @media screen and (max-width: 1000px){
-  .mobile{display:block}
+  .mobile{display:inline-block;}
   .pc{display:none}
   .badge, .padding, .pconly, .contact .pconly{display:none}
 
