@@ -167,11 +167,11 @@ img{
   height: 100%;
   display: flex;
   flex-direction: column;
-  animation: fadeIn 3s ease;
+  animation: bringIn 3s ease;
   /* align-items: flex-end; */
 }
 
-@keyframes fadeIn{
+@keyframes bringIn{
   from {transform:translateY(100vh);overflow:hidden} to {transform:translateY(0)}
 }
 
@@ -505,18 +505,17 @@ iframe{
   .dropdown-content a {font-size:6vw;}
   .eye{width:5.75vw;height:5.75vw;border:5px solid black}
   .dropbtn, .dropdown-content a {border:4px solid black}
+  .nav{top:20px;left:20px}
   .contact{
     position:relative;
     top: auto;
     right: auto;
     display: flex;
     justify-content: center;
-    z-index: 9999;
   }
   .contact a{
-    font-size: 12vw;
-    color: magenta;
-    text-shadow: 0 0 40px cyan;
+    font-size: 15vw;
+    color: dimgray;
     transition: transform 2s ease;
   }
 
@@ -525,13 +524,23 @@ iframe{
   }
   .contact div p{
     line-height: 0;
-    font-size: 3vw;
+    font-size: 4vw;
     display: block;
   }
   .contact a:hover{
+    color: magenta;
+    text-shadow: 0 0 40px cyan;
     transform:rotate(0);
   }
-  .content{margin-top:100px;margin-bottom:60px}
+  .content{margin-top:160px;margin-bottom:60px;animation:none}
+  .thumb:hover{
+    transform: none;
+    box-shadow: none;
+    border: none;
+  }
+  .thumb:hover .cover{
+    opacity:0;
+  }
   .caption h1{font-size: 4vw;}
   .intro, .img-wrap, .section, .content-wrap{flex-direction: column;}
   .section a{padding:20px}
@@ -544,6 +553,7 @@ iframe{
   iframe{
     width: 100vw;
     padding:20px;
+    margin-bottom:20px;
   }
   #video{height:50vh;padding:20px}
   #video .caption{width:100%;margin-top:-20px}
