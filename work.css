@@ -254,6 +254,7 @@ img{
 
 .thumb img{
   width: 40vw;
+  height:auto;
 }
 
 .center{
