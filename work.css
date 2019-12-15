@@ -550,7 +550,6 @@ iframe{
   }
   .caption h1{font-size: 4vw;}
   .intro, .img-wrap, .section, .content-wrap{flex-direction: column;}
-  .section {justify-content:flex-start}
   .section a{padding:20px}
   .col{
     width: 100vw;
