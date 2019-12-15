@@ -17,18 +17,24 @@ h1, h2, h3, a, p{
 
 .pc{
   padding: 20px;
+  /* overflow: hidden; */
 }
 
 @keyframes fadeIn{
   from{opacity:0}to{opacity:1}
 }
 
+.obj-wrap{
+  width: 95%;
+  display: flex;
+  justify-content: center;
+}
+
 .object{
   position: absolute;
-  right: 190px;
   width: 150px;
   height: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   background: yellow;
   overflow: hidden;
   border: 2px solid black;
@@ -37,27 +43,7 @@ h1, h2, h3, a, p{
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: object 10s linear infinite;
-  animation-delay: 2s;
-  top: 60%;
-}
-
-.cover{
-  width: 150px;
-  height: 150px;
-}
-
-.unfinished{
-  text-align:center
-}
-
-#clickme{
-  animation-delay: 2s;
-  background:pink;
-}
-
-#clickme:hover{
-  text-decoration: underline wavy;
+  animation: object 12s linear infinite;
 }
 
 .object > img{
@@ -75,8 +61,7 @@ h1, h2, h3, a, p{
 }
 
 @keyframes object{
-  0% {top: 60%}
-  50% {}
+  0% {top: 100%}
   100% {top: -50%}
 }
 
@@ -88,26 +73,36 @@ h1, h2, h3, a, p{
 }
 
 .jisoo-wrap{
+  position: fixed;
+  bottom: -10px;
+  right: 40px;
   width: 500px;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  right: 20px;
+  height: 500px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  overflow: hidden;
-  animation: bringUp 4s ease;
+  animation: bringUp 4s ease forwards, cap 10s ease forwards;
+}
+
+.jisoo{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 @keyframes bringUp{
   from {transform:translateY(100%)} to {transform:translateY(0)}
 }
 
+@keyframes cap {
+  from{height: 500px}to{height: 110%;}
+}
 
 .eyes{
   position: absolute;
-  bottom: 230px;
+  bottom: 240px;
   right: 260px;
   text-align: center;
   display: flex;
@@ -144,10 +139,7 @@ h1, h2, h3, a, p{
 
 .svg-wrap{
   width: 100%;
-  height: 50vh;
-  position: absolute;
-  /* right: 20px; */
-  bottom: -10px;
+  height: auto;
   display: flex;
   align-items: flex-end;
 }
@@ -157,23 +149,10 @@ h1, h2, h3, a, p{
 }
 
 .cap-wrap{
-  height: 25%;
   display: flex;
   align-items: flex-end;
   z-index: 3;
-  animation: cap 6s ease forwards;
   animation-delay: 2s;
-  transform: translateY(123%)
-  /* border: 1px solid red; */
-}
-
-@keyframes cap {
-  0%{
-  transform: translateY(123%)
-  }
-  100%{
-  transform: translateY(-105%)
-  }
 }
 
 .intro{
@@ -182,7 +161,7 @@ h1, h2, h3, a, p{
   flex-flow: column;
   justify-content: flex-start;
   align-items: baseline;
-  animation: fadeIn 3s ease;
+  animation: fadeIn 2s ease;
 }
 
 .dropbtn {
@@ -242,13 +221,13 @@ h1, h2, h3, a, p{
 
 .row{
   display:flex;
-  flex-flow: wrap;
+  /* flex-flow: wrap; */
   justify-content: flex-start;
-  align-items:baseline;
+  align-items: baseline;
   margin-bottom:0;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1024px){
   .pc{display: none;}
   .mobile{display: block;}
 
@@ -263,16 +242,19 @@ h1, h2, h3, a, p{
   .intro > h1{
   }
   .dropbtn{
+    /* background:yellow; */
+    color: pink;
+    font-size: 1.5rem;
     /* margin-bottom: 0.4rem; */
+  }
+  .dropbtn:hover{
+    color:black;
   }
   .jisoo-wrap{
     transform: scale(0.75);
     transform-origin: bottom right;
     right:0;
     overflow: visible;
-  }
-  .dropbtn{
-    font-size: 1.5rem;
   }
   .dropdown-content{
     min-width: 340px;

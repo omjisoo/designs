@@ -151,7 +151,7 @@ h1 {
     width: 8rem;
     height: 8rem;
     right: 2rem;
-    background: blue;
+    /* background: blue; */
     animation: object 5s 2s ease forwards;
   }
   @keyframes object{

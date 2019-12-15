@@ -5,8 +5,7 @@
 
 body{
   margin: 0;
-  font-family: 'Questrial', sans-serif;
-  /* background: forestgreen; */
+  font-family: sans-serif;
   background: whitesmoke;
   overflow-x: hidden;
 }
@@ -47,21 +46,17 @@ img{
   top: 10px;
   left: 10px;
   border-radius: 50%;
-  display:flex;
+  display: flex;
   justify-content:flex-start;
   align-items: baseline;
   z-index: 9999;
   padding: 10px;
+  width: 50%;
   /* background: whitesmoke; */
 }
 
 .nav > p{
   font-size: 1.8rem;
-  /* text-shadow:
- -1px -1px 0 whitesmoke,
-  1px -1px 0 whitesmoke,
-  -1px 1px 0 whitesmoke,
-   1px 1px 0 whitesmoke; */
 }
 
 .dropbtn {
@@ -120,8 +115,9 @@ img{
 }
 
 .logo{
-  /* position: fixed; */
+  border-radius: 50%;
   font-size: 2rem;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   /* transition: 1s ease; */
@@ -164,7 +160,6 @@ img{
 }
 
 .logo:hover .eyeball{
-  /* background: magenta; */
   border: 6px dotted cyan;
 }
 
@@ -209,6 +204,7 @@ img{
   justify-content: center;
   align-items: center;
   padding: 20px;
+  /* margin-bottom: 40px; */
   /* border: 1px solid red; */
 }
 
@@ -223,21 +219,40 @@ img{
   width: 100%;
   height: 100%;
   padding: 20px;
+  /* border: 1px solid red; */
 }
 
 .col img{
-  width: 600px;
+  width: 40vw;
   box-shadow: 0px 1px 5px rgba(0,0,0,0.2);
 }
 
 .caption{
   display: flex;
   justify-content: space-between;
-  width: 600px;
+  align-items: flex-start;
+  /* width: 40vw; */
+  width: 100%;
+}
+
+.caption div{
+  display: flex;
+  flex-direction: column;
+}
+
+.caption h1{
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-align: left;
+  background: white;
+  /* color: blue; */
+  color: dimgray;
+  padding: 2px 5px;
 }
 
 .caption p{
-  margin: 10px 0;
+  font-size: 0.75rem;
+  /* margin: -10px 0; */
   text-align: left;
   background: white;
   /* color: blue; */
@@ -253,7 +268,7 @@ img{
 }
 
 .thumb img{
-  width: 600px;
+  width: 40vw;
 }
 
 .center{
@@ -269,9 +284,38 @@ img{
 }
 
 #bigimg img{
-  width: 800px;
+  width: 60vw;
 }
 
+.badge{
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: rotate(10deg);
+  transition: transform 0.5s ease;
+  z-index:999;
+}
+
+.badge h1 {
+  font-size: 1.5vw;
+}
+
+.badge p{
+  font-size: 0.75vw;
+}
+
+.badge:hover{
+  transform: scale(1.05)
+}
 
 .cover{
   position: absolute;
@@ -372,16 +416,119 @@ img{
 
 .threerow{
   display: flex;
+  justify-content: center;
 }
 
 .threerow img{
-  width: 400px;
+  width: 30%;
   padding: 10px;
 }
 
+.content-wrap{
+  width: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  /* flex-flow: column; */
+  /* align-items: center; */
+  align-items: flex-start
+}
+
+.fit{
+  height: 100%;
+}
+
+.img-wrap2{
+  position:relative;
+  width: 75%;
+  height: 100%;
+  /* margin-bottom: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* overflow: hidden; */
+  /* border: 1px solid; */
+}
+
+.padded{
+  padding: 20px;
+}
+
+.img-wrap2 img{
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+}
+
+.img-wrap2 p{
+  margin-top: 20px;
+}
+
+.padding{
+  width:25%;
+  height: 100%;
+  padding-left: 20px;
+}
+
+.img-wrap{
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* border: 1px solid; */
+}
+
+.img-wrap > img{
+  width: 50%;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+}
+
+.img-wrap > p{
+  width: 40%;
+  font-size: 1rem;
+  position: absolute;
+  left: 50px;
+  bottom: 25px;
+  color: dimgray;
+}
+
+.shift{
+  margin-top: 5%;
+  margin-left:-5%;
+}
+
+iframe{
+  width:70vw;
+  height:100%;
+}
+
+#video{
+  flex-direction:column;
+}
+
+#video .caption{
+  width:70vw;
+  margin-top:-80px;
+}
 
 @media screen and (max-width: 1024px){
-  .intro, .img-wrap, .section{
-    flex-direction: column;
+  .caption h1{font-size: 4vw;}
+  .badge, .padding, .pconly{display:none}
+  .intro, .img-wrap, .section, .content-wrap{flex-direction: column;}
+  .section{padding:0;margin-bottom:60px}
+  .col{
+    width: 100vw;
+    height: 100%;
+    /* height: 100vh; */
   }
+  .col, .nav, .thumb img, .img-wrap2, .img-wrap2 img {width: 100%;}
+  iframe{
+    width: 100vw;
+    padding:20px;
+  }
+  #video{height:50vh;padding:20px}
+  #video .caption{width:100%;margin-top:-20px}
+
 }
