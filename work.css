@@ -167,6 +167,7 @@ img{
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   animation: bringIn 3s ease;
   /* align-items: flex-end; */
 }
