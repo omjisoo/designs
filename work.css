@@ -145,6 +145,7 @@ img{
   overflow: hidden;
   background: white;
   transition: transform 30s ease;
+  box-shadow: 0 0 20px whitesmoke;
 }
 
 .eyeball{
@@ -502,11 +503,11 @@ iframe{
   .badge, .padding, .pconly{display:none}
   .img-wrap, .section, .content-wrap{flex-direction: column}
   .nav, .img-wrap2, .img-wrap2 img, .section img {width: 100%;}
-  .content{margin-top:120px;animation:none;}
+  .content{margin-top:140px;}
   .section{height:100%;padding:40px;}
   .nav{
     top: 20px;
-    left: 20px;
+    left: 30px;
   }
   .logo, .dropbtn, .nav p{
     font-size: 7vw;
@@ -518,7 +519,7 @@ iframe{
     margin: 0.2vw;
   }
   .dropbtn, .dropdown-content a{border:0.4vw solid black;padding-left:10px}
-  .dropdown-content {margin-top:10px}
+  .dropdown-content {margin-top:5px}
   .dropdown-content a {font-size:6vw}
   .contact{
     position:relative;
