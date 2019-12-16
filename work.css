@@ -508,8 +508,9 @@ iframe{
   .nav{
     top: 20px;
     left: 30px;
+    align-items:center;
   }
-  .logo, .dropbtn, .nav p{
+  .logo, .nav p{
     font-size: 7vw;
   }
   .eye{
@@ -518,6 +519,7 @@ iframe{
     border: 0.6vw solid black;
     margin: 0.2vw;
   }
+  .dropbtn{font-size:6.5vw}
   .dropbtn, .dropdown-content a{border:0.4vw solid black;padding-left:10px}
   .dropdown-content {margin-top:5px}
   .dropdown-content a {font-size:6vw}
@@ -551,8 +553,8 @@ iframe{
     padding:40px;
     /* margin-bottom:20px; */
   }
-  .video{height:40vh;padding:20px}
-  .video .caption{width:100%;padding:20px}
+  .video{height:40vh;padding:0}
+  .video .caption{width:100%;padding:40px}
   .caption h1{font-size:4vw;margin-top:2vw}
   #multimedia{font-size:6vw}
 }

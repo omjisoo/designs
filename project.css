@@ -505,7 +505,7 @@ iframe{
   .logo{
     position:absolute;
     top: 20px;
-    left: 20px;
+    left: 30px;
     font-size: 7vw;
   }
   .eye{
@@ -522,10 +522,10 @@ iframe{
     margin-top:60px;
     margin-bottom: 20px;
     padding: 40px;
-    border-top: 4px dotted blue;
+    border-top: 6px dotted blue;
   }
   .intro a{
-    border-bottom: 4px dotted blue;
+    border-bottom: 6px dotted blue;
   }
   .intro div, .padded{
     padding: 0;
@@ -538,8 +538,8 @@ iframe{
     font-size: 5vw;
   }
   .intro .summary{
-    margin-top:20px;
-    font-size: 4vw;
+    margin-top:40px;
+    font-size: 6vw;
   }
   .section{
     height: 100%;
