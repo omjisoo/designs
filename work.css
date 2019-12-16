@@ -504,7 +504,7 @@ iframe{
   .img-wrap, .section, .content-wrap{flex-direction: column}
   .nav, .img-wrap2, .img-wrap2 img, .section img {width: 100%;}
   .content{margin-top:140px}
-  .section{height:100%;padding:0}
+  .section{height:100%;padding:40px}
   .nav{
     top: 20px;
     left: 30px;
@@ -526,7 +526,7 @@ iframe{
     display: flex;
     justify-content: center;
     right:auto;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
   .contact a{
     font-size: 15vw;
@@ -549,8 +549,10 @@ iframe{
   iframe{
     width: 100vw;
     padding:40px;
-    margin-bottom:20px;
+    /* margin-bottom:20px; */
   }
   .video{height:40vh;padding:20px}
-  .video .caption{width:100%;margin-top:-20px}
+  .video .caption{width:100%;padding:20px}
+  .caption h1{font-size:4vw;margin-top:2vw}
+  #multimedia{font-size:6vw}
 }
