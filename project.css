@@ -303,10 +303,12 @@ img{
   bottom: 0;
   font-size: 1.4rem;
   display: flex;
+  z-index:9999;
 }
 
 .nav a{
   font-size: 3rem;
+  text-shadow: 0 0 20px whitesmoke;
   transition: transform 2s ease;
 }
 
@@ -322,6 +324,7 @@ img{
   font-size: 0.75rem;
   background: white;
   color: blue;
+  text-shadow: 0 0 20px whitesmoke;
   display: none;
 }
 
@@ -485,6 +488,8 @@ iframe{
   height:100%;
 }
 
+.nav .mobileonly{display:none}
+
 @media screen and (max-width: 1000px){
   h2{
     font-size: 3vw;
@@ -493,10 +498,12 @@ iframe{
     font-size: 4vw;
   }
   .pconly{display:none}
+  .nav .mobileonly{display:block}
   .screen{
     overflow-x: hidden;
   }
   .logo{
+    position:absolute;
     top: 20px;
     left: 20px;
     font-size: 7vw;
@@ -599,21 +606,15 @@ iframe{
   }
   .nav a{
     font-size: 15vw;
-    color: dimgray;
+    /* color: magenta; */
     transition: transform 2s ease;
-    text-shadow: 0 0 40px cyan;
+    /* text-shadow: 0 0 40px cyan; */
   }
   .nav div{
     margin: 40px 20px;
   }
   .nav div p{
-    line-height: 0;
     font-size: 4vw;
     display: block;
   }
-  .contact a:hover{
-    color: magenta;
-    transform:rotate(0);
-  }
-
 }

@@ -491,27 +491,36 @@ iframe{
   margin-top:-80px;
 }
 
-.mobile{display:none;}
+.mobile, .mobileonly{display:none;}
+
 
 @media screen and (max-width: 1000px){
-  .mobile{display:block}
+  .mobile, .mobileonly{display:block}
   .pc{display:none}
-  .badge, .padding, .pconly, .contact .pconly{display:none}
+  .badge, .padding, .pconly{display:none}
 
   .content{margin-top:120px;animation:none;}
   .section{height:100%}
-  /* .nav p, .logo div, .dropbtn{font-size:7vw}
-  .dropdown-content a {font-size:6vw;}
-  .eye{width:5.75vw;height:5.75vw;border:5px solid black}
-  .dropbtn, .dropdown-content a {border:4px solid black}
-  .nav{top:20px;left:20px} */
-  .nav{transform:scale(2);transform-origin: top left;}
+  .nav{
+    top: 20px;
+    left: 20px;
+  }
+  .logo, .dropbtn, .nav p{
+    font-size: 7vw;
+  }
+  .eye{
+    width: 5.75vw;
+    height: 5.75vw;
+    border: 0.5vw solid black;
+    margin: 0.2vw;
+  }
+  .dropbtn{border:0.4vw solid black;padding-left:10px}
   .contact{
-    position: relative;
+    /* position: relative;
     top: auto;
-    right: auto;
-    display: flex;
-    justify-content: center;
+    right: auto; */
+    /* display: flex;
+    justify-content: center; */
   }
   .contact a{
     font-size: 15vw;
