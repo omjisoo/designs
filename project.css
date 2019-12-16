@@ -514,7 +514,7 @@ iframe{
     border: 0.6vw solid black;
     margin: 0.2vw;
   }
-  .content{animation:none}
+  /* .content{animation:none} */
   .intro, .img-wrap, .content-wrap{
     flex-direction: column;
   }
@@ -543,7 +543,7 @@ iframe{
   }
   .section{
     height: 100%;
-    padding: 40px;
+    padding: 0;
   }
   .section > img{
     width: 100%;
@@ -552,11 +552,12 @@ iframe{
   .section p{
     position: static;
     width: 100%;
-    padding: 20px;
+    padding: 40px;
     font-size: 3vw;
   }
   .img-wrap > img{
     width: 100%;
+    margin:0;
   }
   .img-wrap > p{
     width: 100%;
