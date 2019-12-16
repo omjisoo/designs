@@ -485,11 +485,11 @@ iframe{
   height:100%;
 }
 
-#video{
+.video{
   flex-direction:column;
 }
 
-#video .caption{
+.video .caption{
   width:70vw;
   margin-top:-80px;
 }
@@ -503,7 +503,7 @@ iframe{
   .badge, .padding, .pconly{display:none}
   .img-wrap, .section, .content-wrap{flex-direction: column}
   .nav, .img-wrap2, .img-wrap2 img, .section img {width: 100%;}
-  .content{margin-top:140px;}
+  .content{margin-top:140px}
   .section{height:100%;padding:40px;}
   .nav{
     top: 20px;
@@ -548,9 +548,9 @@ iframe{
   }
   iframe{
     width: 100vw;
-    padding:20px;
+    padding:40px;
     margin-bottom:20px;
   }
-  #video{height:50vh;padding:20px}
-  #video .caption{width:100%;margin-top:-20px}
+  .video{height:40vh;padding:20px}
+  .video .caption{width:100%;margin-top:-20px}
 }
