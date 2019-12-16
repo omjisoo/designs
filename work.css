@@ -497,7 +497,8 @@ iframe{
   .mobile{display:block}
   .pc{display:none}
   .badge, .padding, .pconly, .contact .pconly{display:none}
-  .content{margin-top:120px;}
+
+  .content{margin-top:120px;animation:none;}
   .section{height:100%}
   /* .nav p, .logo div, .dropbtn{font-size:7vw}
   .dropdown-content a {font-size:6vw;}
