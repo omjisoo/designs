@@ -514,27 +514,24 @@ iframe{
   .eye{
     width: 5.75vw;
     height: 5.75vw;
-    border: 0.5vw solid black;
+    border: 0.6vw solid black;
     margin: 0.2vw;
   }
-  .dropbtn{border:0.4vw solid black;padding-left:10px}
+  .dropbtn, .dropdown-content a{border:0.4vw solid black;padding-left:10px}
+  .dropdown-content {margin-top:10px}
+  .dropdown-content a {font-size:6vw}
   .contact{
     position:relative;
     display: flex;
     justify-content: center;
     right:auto;
-    /* position: relative;
-    top: auto;
-    right: auto; */
-    /* display: flex;
-    justify-content: center; */
+    margin-bottom: 40px;
   }
   .contact a{
     font-size: 15vw;
     color: dimgray;
     transition: transform 2s ease;
   }
-
   .contact div{
     margin: 40px 20px;
   }
@@ -546,7 +543,7 @@ iframe{
   .contact a:hover{
     color: magenta;
     text-shadow: 0 0 40px cyan;
-    transform:rotate(0);
+    /* transform:rotate(0); */
   }
   iframe{
     width: 100vw;
