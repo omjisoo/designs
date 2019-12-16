@@ -541,8 +541,8 @@ iframe{
     transform:rotate(0);
   }
 
-  .intro, .img-wrap, .section, .content-wrap{flex-direction: column;}
-  .section a{padding:20px}
+  .img-wrap, .section, .content-wrap{flex-direction: column}
+  /* .section a{padding:20px} */
   .nav, .img-wrap2, .img-wrap2 img, .section img {width: 100%;}
   iframe{
     width: 100vw;
