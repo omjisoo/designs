@@ -46,7 +46,7 @@ img{
   top: 10px;
   left: 10px;
   display: flex;
-  justify-content:flex-start;
+  /* justify-content:flex-start; */
   align-items: baseline;
   z-index: 9999;
   padding: 10px;
@@ -403,23 +403,13 @@ img{
 
 .showhidden {display:block;}
 
-.threerow{
-  display: flex;
-  justify-content: center;
-}
-
-.threerow img{
-  width: 30%;
-  padding: 10px;
-}
-
 .content-wrap{
   width: 100%;
   /* border: 1px solid red; */
   display: flex;
   /* flex-flow: column; */
   /* align-items: center; */
-  align-items: flex-start
+  /* align-items: flex-start */
 }
 
 .fit{
