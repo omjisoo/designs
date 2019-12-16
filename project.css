@@ -151,22 +151,6 @@ img{
   border: 6px dotted magenta;
 }
 
-
-.footer{
-  /* position: fixed;
-  left: 15px;
-  bottom: 15px;
-  padding: 5px; */
-  /* background: whitesmoke; */
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  /* border-top: 2px dotted blue; */
-  z-index: 999;
-  font-size: 1.4rem;
-
-}
-
 .more{
   display: flex;
   justify-content: space-between;
@@ -512,7 +496,17 @@ iframe{
   .screen{
     overflow-x: hidden;
   }
-  .logo{transform:scale(2);transform-origin: top left;}
+  .logo{
+    top: 20px;
+    left: 20px;
+    font-size: 7vw;
+  }
+  .eye{
+    width: 5.5vw;
+    height: 5.5vw;
+    border: 0.6vw solid black;
+    margin: 0.2vw;
+  }
   .content{animation:none}
   .intro, .img-wrap, .content-wrap{
     flex-direction: column;
@@ -604,7 +598,7 @@ iframe{
     justify-content: center;
   }
   .nav a{
-    font-size: 12vw;
+    font-size: 15vw;
     color: dimgray;
     transition: transform 2s ease;
     text-shadow: 0 0 40px cyan;
