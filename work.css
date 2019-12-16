@@ -444,7 +444,6 @@ img{
 
 .img-wrap2 img{
   width: 100%;
-  border-radius: 2px;
   box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
 }
 
@@ -508,12 +507,13 @@ iframe{
   .mobile{display:block}
   .pc{display:none}
   .badge, .padding, .pconly, .contact .pconly{display:none}
+  .content{margin-top:120px;}
   .section{height:100%}
-  .nav p, .logo div, .dropbtn{font-size:7vw}
+  /* .nav p, .logo div, .dropbtn{font-size:7vw}
   .dropdown-content a {font-size:6vw;}
   .eye{width:5.75vw;height:5.75vw;border:5px solid black}
   .dropbtn, .dropdown-content a {border:4px solid black}
-  .nav{top:20px;left:20px}
+  .nav{top:20px;left:20px} */
 
   .contact{
     position: relative;
@@ -543,7 +543,6 @@ iframe{
   }
 
   .img-wrap, .section, .content-wrap{flex-direction: column}
-  /* .section a{padding:20px} */
   .nav, .img-wrap2, .img-wrap2 img, .section img {width: 100%;}
   iframe{
     width: 100vw;
