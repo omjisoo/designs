@@ -212,11 +212,10 @@ h1, h2, h3, a, p{
 .show {display:block;}
 
 .mobile {
-  /* position: fixed; */
   display:none;
   width: 100vw;
   padding: 20px;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .row{
@@ -233,19 +232,16 @@ h1, h2, h3, a, p{
 
   div, h1 {
     font-size: 1.5rem;
-    /* margin-bottom: 0.4rem; */
   }
   .intro{
     width: 100%;
     line-height: 1.45;
   }
-  .intro > h1{
-  }
+  /* .row{align-items: stretch;} */
   .dropbtn{
-    /* background:yellow; */
     color: pink;
-    font-size: 1.5rem;
-    /* margin-bottom: 0.4rem; */
+    font-size: 6.5vw;
+    padding: 0 2vw;
   }
   .dropbtn:hover{
     color:black;
