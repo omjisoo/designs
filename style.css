@@ -157,10 +157,10 @@ h1, h2, h3, a, p{
 
 .intro{
   width: 900px;
-  display: flex;
-  flex-flow: column;
+  display: run-in;
+  /* flex-flow: wrap;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: baseline; */
   animation: fadeIn 2s ease;
 }
 
@@ -231,17 +231,17 @@ h1, h2, h3, a, p{
   .mobile{display: block;}
 
   div, h1 {
-    font-size: 1.5rem;
+    font-size: 6.5vw;
   }
   .intro{
     width: 100%;
     line-height: 1.45;
   }
-  /* .row{align-items: stretch;} */
   .dropbtn{
     color: pink;
     font-size: 6.5vw;
     padding: 0 2vw;
+    border:0.4vw solid black;
   }
   .dropbtn:hover{
     color:black;
