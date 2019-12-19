@@ -214,7 +214,7 @@ h1, h2, h3, a, p{
 .mobile {
   display:none;
   width: 100vw;
-  padding: 20px;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -232,10 +232,12 @@ h1, h2, h3, a, p{
 
   div, h1 {
     font-size: 6.5vw;
-    line-height: 1.45;
+    line-height: 1.5;
   }
   .intro{
     width: 100%;
+    padding: 20px;
+
   }
   a{
     color: pink;
@@ -253,18 +255,20 @@ h1, h2, h3, a, p{
     color:black;
   }
   .jisoo-wrap{
-    transform: scale(0.75);
-    transform-origin: bottom right;
-    right:0;
-    overflow: visible;
-  }
+    position: absolute;
+    bottom: 0;
+    right: auto;
+    transform: scale(0.4);
+    transform-origin: bottom;
+    animation: none;
+}
   .dropdown-content{
     min-width: 340px;
   }
   .dropdown-content a{
     font-size: 1.2rem;
   }
-  @keyframes cap {
+  /* @keyframes cap {
     0%{
     transform: translateY(118%)
     }
@@ -276,5 +280,5 @@ h1, h2, h3, a, p{
     0% {top: 60%}
     50% {}
     100% {top: -60%}
-  }
+  } */
 }
