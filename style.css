@@ -232,16 +232,22 @@ h1, h2, h3, a, p{
 
   div, h1 {
     font-size: 6.5vw;
+    line-height: 1.45;
   }
   .intro{
     width: 100%;
-    line-height: 1.45;
+  }
+  a{
+    color: pink;
+    font-size: 6.5vw;
+    padding: 0 1.5vw;
+    border:0.5vw solid black;
   }
   .dropbtn{
     color: pink;
     font-size: 6.5vw;
     padding: 0 2vw;
-    border:0.4vw solid black;
+    border:0.5vw solid black;
   }
   .dropbtn:hover{
     color:black;
