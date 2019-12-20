@@ -255,8 +255,8 @@ h1, h2, h3, a, p{
     color:black;
   }
   .jisoo-wrap{
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: auto;
     right: auto;
     transform: scale(0.25);
     transform-origin: bottom;
