@@ -41,9 +41,12 @@ h1, h2, h3, a, p{
   border-radius: 50%;
   z-index: 1;
   display: flex;
+  flex-flow: wrap;
   justify-content: center;
   align-items: center;
   animation: object 12s linear infinite;
+  font-size: 1.5rem;
+  text-align:center;
 }
 
 .object > img{
@@ -54,6 +57,11 @@ h1, h2, h3, a, p{
 
 .obj-wrap:hover .object{
   animation-play-state: paused;
+}
+
+.object:hover{
+  background: royalblue;
+  color:white;
 }
 
 .object:hover img{
@@ -156,12 +164,14 @@ h1, h2, h3, a, p{
 }
 
 .intro{
-  width: 900px;
+  width: 68%;
   display: inline-flex;
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: baseline;
   animation: fadeIn 2s ease;
+  line-height: 1.35;
+  /* color: pink; */
 }
 
 .dropbtn {
@@ -210,6 +220,19 @@ h1, h2, h3, a, p{
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
+
+.backbtn{
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  background: transparent;
+  color: black;
+  font-size: 4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.backbtn:hover{color:yellow}
 
 .mobile {
   display: none;
