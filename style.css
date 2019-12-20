@@ -261,10 +261,9 @@ h1, h2, h3, a, p{
     transform: scale(0.5);
     transform-origin: bottom;
     animation: none;
-}
-  .object{
-    animation: float 2s ease-in-out infinite alternate;
   }
+  .cap-wrap img{animation: float 3s ease-in-out infinite alternate}
+  .object{top:-10%;animation: object 10s ease forwards, float 2s ease-in-out infinite alternate;}
   .dropdown-content{
     min-width: 340px;
   }
@@ -280,11 +279,11 @@ h1, h2, h3, a, p{
     }
   }
   @keyframes object{
-    0% {top: 100%}
+    0% {top: 50%}
     100% {top: -5%}
   }
   @keyframes float{
-    0% {top: 10%}
-    100% {top: -5%}
+    0% {transform: translateY(0)}
+    100% {transform: translateY(15%)}
   }
 }
