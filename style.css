@@ -225,9 +225,9 @@ h1, h2, h3, a, p{
   margin-bottom:0;
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 800px){
   .pc{display: none;}
-  .mobile{display: block;}
+  .mobile{display: block;overflow-x:hidden}
 
   div, h1 {
     font-size: 7vw;
