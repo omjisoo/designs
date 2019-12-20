@@ -584,6 +584,9 @@ iframe{
     background:none;
     box-shadow:none;
   }
+  .caption a{
+    border-bottom: 1px solid blue;
+  }
   .marryme h1{
     font-size: 2rem;
   }

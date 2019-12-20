@@ -2,6 +2,10 @@ function goBack() {
   window.history.back();
 }
 
+function goBackMobile() {
+  window.history.back();
+}
+
 function showMore() {
   document.querySelector('.more').classList.add("hide");
   document.querySelector('.hidden').classList.remove("hidden");
