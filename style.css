@@ -212,7 +212,7 @@ h1, h2, h3, a, p{
 .show {display:block;}
 
 .mobile {
-  display:none;
+  display: none;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -227,7 +227,7 @@ h1, h2, h3, a, p{
 
 @media screen and (max-width: 800px){
   .pc{display: none;}
-  .mobile{display: block;overflow-x:hidden}
+  .mobile{display: block}
 
   div, h1 {
     font-size: 7vw;
@@ -236,7 +236,7 @@ h1, h2, h3, a, p{
   .intro{
     width: 100%;
     padding: 20px;
-
+    overflow: hidden;
   }
   a{
     background: pink;
@@ -262,8 +262,13 @@ h1, h2, h3, a, p{
     transform-origin: bottom;
     animation: none;
   }
-  .cap-wrap img{animation: float 3s ease-in-out infinite alternate}
-  .object{top:-10%;animation: object 10s ease forwards, float 2s ease-in-out infinite alternate;}
+  .cap-wrap{
+    animation-delay: none;
+    align-items: flex-start;
+    animation: capIn 8s ease forwards, cap 2s ease-in-out infinite alternate;
+    height:100%;
+  }
+  .object{top:10%; animation: object 8s linear forwards, float 2s ease-in-out infinite alternate;}
   .dropdown-content{
     min-width: 340px;
   }
@@ -271,19 +276,19 @@ h1, h2, h3, a, p{
     font-size: 1.2rem;
   }
   @keyframes cap {
-    0%{
-    transform: translateY(118%)
-    }
-    100%{
-    transform: translateY(-250%)
-    }
+    0% {transform: translateY(-50%)}
+    100% {transform: translateY(-60%)}
   }
   @keyframes object{
-    0% {top: 50%}
+    0% {top: 10%}
     100% {top: -5%}
   }
   @keyframes float{
     0% {transform: translateY(0)}
-    100% {transform: translateY(15%)}
+    100% {transform: translateY(20%)}
+  }
+  @keyframes capIn{
+    0% {transform: translateY(0)}
+    100% {transform: translateY(-25%)}
   }
 }
