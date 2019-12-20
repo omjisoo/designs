@@ -231,7 +231,7 @@ h1, h2, h3, a, p{
   .mobile{display: block;}
 
   div, h1 {
-    font-size: 6.5vw;
+    font-size: 7vw;
     line-height: 1.5;
   }
   .intro{
@@ -241,7 +241,7 @@ h1, h2, h3, a, p{
   }
   a{
     color: pink;
-    font-size: 6.5vw;
+    font-size: 7vw;
     padding: 0 1.5vw;
     border:0.5vw solid black;
   }
@@ -258,7 +258,7 @@ h1, h2, h3, a, p{
     position: absolute;
     bottom: auto;
     right: auto;
-    transform: scale(0.25);
+    transform: scale(0.5);
     transform-origin: bottom;
     animation: none;
 }
