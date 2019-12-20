@@ -488,7 +488,7 @@ iframe{
 
 .video .caption{
   width:70vw;
-  margin-top:-55px;
+  margin-top:-80px;
 }
 
 .mobile, .mobileonly{display:none;}
@@ -547,10 +547,10 @@ iframe{
   iframe{
     width: 100vw;
     padding:40px;
-    /* margin-bottom:20px; */
+    margin-bottom:20px;
   }
   .video{height:40vh}
-  .video .caption{width:100%;padding:0}
+  .video .caption{width:100%}
   .caption h1{font-size:4vw;margin-top:2vw}
   #multimedia{font-size:6vw}
   .img-wrap2 .caption{margin-top:-20px}

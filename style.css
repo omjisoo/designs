@@ -239,13 +239,14 @@ h1, h2, h3, a, p{
 
   }
   a{
-    color: pink;
+    background: pink;
+    /* color: pink; */
     font-size: 7vw;
     padding: 0 1.5vw;
     border:0.5vw solid black;
   }
   .dropbtn{
-    color: pink;
+    /* color: pink; */
     font-size: 6.5vw;
     padding: 0 2vw;
     border:0.5vw solid black;
