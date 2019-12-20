@@ -258,17 +258,20 @@ h1, h2, h3, a, p{
     position: absolute;
     bottom: 0;
     right: auto;
-    transform: scale(0.4);
+    transform: scale(0.25);
     transform-origin: bottom;
     animation: none;
 }
+  .object{
+    animation: float 2s ease-in-out infinite alternate;
+  }
   .dropdown-content{
     min-width: 340px;
   }
   .dropdown-content a{
     font-size: 1.2rem;
   }
-  /* @keyframes cap {
+  @keyframes cap {
     0%{
     transform: translateY(118%)
     }
@@ -277,8 +280,11 @@ h1, h2, h3, a, p{
     }
   }
   @keyframes object{
-    0% {top: 60%}
-    50% {}
-    100% {top: -60%}
-  } */
+    0% {top: 100%}
+    100% {top: -5%}
+  }
+  @keyframes float{
+    0% {top: 10%}
+    100% {top: -5%}
+  }
 }
