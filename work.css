@@ -1,11 +1,11 @@
 *{
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
 }
 
 body{
   margin: 0;
-  font-family: sans-serif;
   background: whitesmoke;
   overflow-x: hidden;
 }
@@ -19,7 +19,6 @@ h1, h2, h3, a, p{
 
 h1{
   font-size: 1.4rem;
-  /* color: blue; */
 }
 
 h2{
@@ -46,11 +45,10 @@ img{
   top: 10px;
   left: 10px;
   display: flex;
-  /* justify-content:flex-start; */
-  align-items: baseline;
+  align-items: center;
   z-index: 9999;
   padding: 10px;
-  width: 50%;
+  min-width: 30%;
   text-shadow: 0 0 20px whitesmoke;
 }
 
@@ -345,13 +343,14 @@ img{
   top: 10px;
   font-size: 1.4rem;
   display: flex;
-  /* align-items:flex-start; */
+  align-items:flex-end;
   z-index: 9999;
 }
 
 .contact a{
   font-size: 3rem;
   transition: transform 2s ease;
+  transform-origin: center;
 }
 
 .contact div{
@@ -372,8 +371,7 @@ img{
 .contact a:hover{
   color: magenta;
   text-shadow: 0 0 20px cyan;
-  transform:rotate(180deg);
-  transform-origin:center;
+  transform: rotate(180deg);
 }
 .contact div:hover p{
   display: block;

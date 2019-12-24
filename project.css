@@ -5,7 +5,7 @@
 
 body{
   margin: 0;
-  font-family: sans-serif;
+  font-family: Arial, sans-serif;
   background: whitesmoke;
   overflow-x: hidden;
 }
@@ -41,10 +41,6 @@ img{
   width: 100vw;
   display: flex;
   flex-direction: column;
-}
-
-.startbtn{
-  /* color: transparent; */
 }
 
 .dropbtn {
@@ -265,10 +261,6 @@ img{
   margin-bottom: 20px;
   border-radius: 2px;
   box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
-}
-
-.img-wrap img:hover{
-  z-index: 2;
 }
 
 .img-wrap > p{
