@@ -183,7 +183,20 @@ h1, h2, h3, a, p{
   align-items: baseline;
   animation: fadeIn 2s ease;
   line-height: 1.35;
-  cursor: default;
+}
+
+.name{
+  animation: fadeIn 2s ease;
+  font-size:14rem;
+  line-height:1;
+  color:green;
+  font-family: filson-pro, sans-serif;
+  transition: 0.25s ease;
+}
+
+.name:hover{
+  color:pink;
+  opacity:0.9;
 }
 
 .dropbtn {
