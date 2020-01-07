@@ -310,6 +310,10 @@ h1, h2, h3, a, p{
   .dropdown-content a{
     font-size: 1.2rem;
   }
+  ::-webkit-scrollbar {
+      width: 0px;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+  }
   @keyframes cap {
     0% {transform: translateY(-50%)}
     100% {transform: translateY(-60%)}
