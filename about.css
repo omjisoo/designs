@@ -6,6 +6,7 @@ body{
   margin: 0;
   font-family: sans-serif;
   background: forestgreen;
+  animation: fadeIn 2s ease;
 }
 
 h1, h2, h3, a, p{
@@ -208,7 +209,6 @@ h1, h2, h3, a, p{
   flex-flow: wrap;
   justify-content: flex-start;
   align-items: baseline;
-  animation: fadeIn 2s ease;
   line-height: 1.35;
   /* color: pink; */
 }
@@ -307,6 +307,7 @@ h1, h2, h3, a, p{
     padding: 0 1.5vw;
     border:0.5vw solid black;
   }
+  .backbtn{font-size:12vw}
   .dropbtn{
     /* color: pink; */
     font-size: 6.5vw;
