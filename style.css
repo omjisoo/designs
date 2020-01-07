@@ -51,15 +51,10 @@ h1, h2, h3, a, p{
   animation: object 12s linear infinite;
   font-size: 1.1rem;
   text-align:center;
+  transition: transform 10s linear;
 }
 
-.object > img{
-  width: 300px;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.object p{opacity:0}
+.object p {opacity:0}
 
 .obj-wrap:hover .object{
   animation-play-state: paused;
@@ -68,15 +63,12 @@ h1, h2, h3, a, p{
 .object:hover{
   background: royalblue;
   color:white;
+  transform: rotate(360deg)
 }
 
 .object:hover p{opacity:1}
 
-.object:hover img{
-  opacity: 1;
-}
-
-/* #obj-design:hover{
+#obj-design:hover{
   background: royalblue;
 }
 
@@ -86,7 +78,7 @@ h1, h2, h3, a, p{
 
 #obj-multi:hover{
   background: mediumpurple;
-} */
+}
 
 @keyframes object{
   0% {top: 100%}
@@ -191,7 +183,7 @@ h1, h2, h3, a, p{
   align-items: baseline;
   animation: fadeIn 2s ease;
   line-height: 1.35;
-  /* color: pink; */
+  cursor: default;
 }
 
 .dropbtn {

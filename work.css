@@ -186,7 +186,6 @@ img{
   justify-content: center;
   align-items: center;
   padding: 20px;
-  /* margin-bottom: 40px; */
   /* border: 1px solid red; */
 }
 
@@ -195,7 +194,7 @@ img{
 }
 
 .end{
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .col{
