@@ -177,12 +177,8 @@ h1, h2, h3, a, p{
   border-radius: 50%;
 }
 
-.logo:hover{
-  /* text-shadow: 0 0 20px whitesmoke; */
-}
-
 .logo:hover .eyeball{
-  border: 6px dotted cyan;
+  border: 6px dotted magenta;
 }
 
 .svg-wrap{

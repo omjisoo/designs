@@ -37,7 +37,6 @@ img{
   width: 100vw;
   display: flex;
   flex-direction: column;
-  /* padding: 20px; */
 }
 
 .nav{
@@ -141,7 +140,7 @@ img{
   overflow: hidden;
   background: white;
   transition: transform 30s ease;
-  box-shadow: 0 0 20px whitesmoke;
+  box-shadow: 0 0 10px whitesmoke;
 }
 
 .eyeball{
@@ -156,7 +155,11 @@ img{
 }
 
 .logo:hover{
-  background: yellow;
+  text-shadow: 0 0 20px pink;
+}
+
+.logo:hover .eye{
+  box-shadow: 0 0 20px pink;
 }
 
 .logo:hover .eyeball{
@@ -408,10 +411,6 @@ img{
 .content-wrap{
   width: 100%;
   display: flex;
-}
-
-.fit{
-  height: 100%;
 }
 
 .img-wrap2{
