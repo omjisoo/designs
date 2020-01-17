@@ -332,7 +332,6 @@ img{
 .thumb:hover{
   transform: translate(-7px, -7px);
   box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
-  border: 2px solid blue;
 }
 
 .thumb:hover .cover{
@@ -546,7 +545,6 @@ iframe{
   .video{height:40vh}
   .video .caption{width:100%}
   .caption h1{font-size:4vw;margin-top:2vw}
-  #multimedia{font-size:6vw}
   .img-wrap2 .caption{margin-top:-20px}
   .img-wrap2 img{margin-bottom:20px;}
   .thumb img{margin-bottom:0}
