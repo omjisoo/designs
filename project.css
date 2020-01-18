@@ -235,7 +235,7 @@ img{
   margin-top: 20px;
   width: 40%;
   display: flex;
-  font-size: 1.1vw;
+  font-size: 1rem;
   color: dimgray;
 }
 
@@ -457,13 +457,13 @@ img{
   color: gray;
   text-align: center;
   margin-top: 20px;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .marryme img{
   box-shadow:none;
   width: auto;
-  height: 50px;
+  height: 60px;
 }
 
 iframe{
@@ -573,10 +573,10 @@ iframe{
   }
   .marryme {margin-top:40px;}
   .marryme h1{
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .marryme p{
-    width: 50vw;
+    width: 75vw;
     margin-top: 10px;
   }
   .marryme img{
