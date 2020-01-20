@@ -43,6 +43,28 @@ img{
   flex-direction: column;
 }
 
+.menubar{
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menubtn{
+  width: 30px; height: 30px;
+  width: 2px solid;
+  z-index: 9999;
+  transition: transform 2s ease;
+}
+
+.menubtn:hover{
+  border-radius:50%;
+  box-shadow: 0 0 20px yellow;
+  transform: rotate(180deg);
+}
+
 .dropbtn {
   background: whitesmoke;
   color: black;
@@ -99,13 +121,8 @@ img{
 }
 
 .logo{
-  position: fixed;
-  top: 15px;
-  left: 10px;
-  padding: 5px 10px;
   border-radius: 50%;
-  background: whitesmoke;
-  font-size: 2rem;
+  font-size: 32px;
   display: flex;
   align-items: center;
   z-index: 9999;
@@ -154,10 +171,10 @@ img{
 
 .intro{
   width: 100vw;
+  height: 50vh;
   padding: 20px;
   display: flex;
-  margin-top: 40px;
-  border-top: 2px dotted blue;
+  /* margin-top: 40px; */
 }
 
 .intro div{
@@ -252,7 +269,7 @@ img{
   width: 50%;
   margin-bottom: 20px;
   border-radius: 2px;
-  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+  /* box-shadow: 0px 1px 4px rgba(0,0,0,0.1); */
 }
 
 .img-wrap > p{
@@ -265,8 +282,9 @@ img{
 }
 
 .shift{
-  margin-top: 5%;
-  margin-left:-5%;
+  margin-top: 10%;
+  margin-left:-10%;
+  border: 20px solid whitesmoke;
 }
 
 #card img{
@@ -381,7 +399,7 @@ img{
 .img-wrap2 img{
   width: 100%;
   border-radius: 2px;
-  box-shadow: 0px 1px 4px rgba(0,0,0,0.1);
+  /* box-shadow: 0px 1px 4px rgba(0,0,0,0.1); */
 }
 
 .img-wrap2 p{

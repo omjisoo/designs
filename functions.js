@@ -6,9 +6,9 @@ function goBackMobile() {
   window.history.back();
 }
 
-function showMore() {
-  document.querySelector('.more').classList.add("hide");
-  document.querySelector('.hidden').classList.remove("hidden");
+function showMenu() {
+  document.querySelector('.menu').classList.toggle("show");
+  document.querySelector('#active').classList.toggle("hidden");
 };
 
 function openMenu() {
@@ -59,13 +59,6 @@ var flkty = new Flickity( elem, {
   selectedAttraction: 0.01,
   sfriction: 0.15
 });
-
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
-});
-//
 
 var slideIndex = 0;
 showSlides();
