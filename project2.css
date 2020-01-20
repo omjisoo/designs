@@ -85,6 +85,7 @@ p{
 .logo{
   border-radius: 50%;
   font-size: 32px;
+  color: rgb(50, 50, 50);
   display: flex;
   align-items: center;
   z-index: 9999;
@@ -192,7 +193,7 @@ p{
 
 .caption p{
   width: 80%;
-  font-size: 1.25vw;
+  font-size: 18px;
   line-height: 1.25;
   color: dimgray;
   background: white;
