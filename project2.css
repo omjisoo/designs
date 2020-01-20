@@ -147,6 +147,7 @@ p{
 }
 
 .container{
+  width: 100vw;
   display: flex;
   justify-content: center;
   padding: 10px;
