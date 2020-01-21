@@ -102,11 +102,17 @@ p{
   z-index: 999;
   transform: translateX(50vw);
   transition: 1.5s ease;
+  animation: hideit 1s ease;
   /* flex-direction: column; */
 }
 
 .showMenu{transform: translateX(0);}
 .hide{opacity:0}
+
+@keyframes hideit{
+  0% {transform:translateX(100vw)}
+  100% {transform: translateX(50vw);}
+}
 
 .menu p{padding-left:40px;font-size:24px;line-height:1.5}
 .menu a{transition: 0.1s ease;}
@@ -199,9 +205,8 @@ p{
   display: flex;
   flex-direction: column;
   /* display: none; */
-  position: absolute;
+  /* position: absolute; */
   z-index: 1;
-  /* background: whitesmoke; */
 }
 
 /* Links inside the dropdown */
