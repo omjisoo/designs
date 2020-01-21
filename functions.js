@@ -8,7 +8,8 @@ function goBackMobile() {
 
 function showMenu() {
   document.querySelector('.menu').classList.toggle("showMenu");
-  document.querySelector('.menubtn').classList.toggle("hide");
+  // document.querySelector('.menubtn').classList.toggle("hide");
+  document.querySelector('body').classList.toggle("stopscroll");
 };
 
 function openMenu() {

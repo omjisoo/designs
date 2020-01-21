@@ -11,7 +11,9 @@ body{
   overflow-x: hidden;
 }
 
-h1, h2, h3, a, p, i{
+.stopscroll{overflow-y:hidden}
+
+h1, h2, h3, a, p, i, em{
   margin: 0;
   text-decoration: none;
   font-weight: normal;
@@ -89,7 +91,7 @@ p{
 }
 
 .menu{
-  position: absolute;
+  position: fixed;
   top:0;
   right:0;
   width: 50vw;
@@ -114,9 +116,7 @@ p{
   100% {transform: translateX(50vw);}
 }
 
-.menu p{padding-left:40px;font-size:24px;line-height:1.5}
-.menu a{transition: 0.1s ease;}
-.menu a:hover{color:pink}
+/* .menu p{padding-left:40px;font-size:24px;line-height:1.5} */
 
 .logo{
   border-radius: 50%;
@@ -227,24 +227,23 @@ p{
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: skyblue;
-  color: yellow;
-}
+.dropdown-content a:hover {background-color: yellow;color: black;}
 
 a.sub {
   width: 100%;
-  padding: 5px 7px;
+  padding: 7px 10px;
   font-size:24px;
   margin-left:20px;
   margin-bottom: 5px;
-  background:whitesmoke;
+  background: none;
+  border: none;
+  box-shadow: none;
 }
-a.last{margin-bottom:10px}
+a.sub:hover{background-color: skyblue;color: yellow;}
+a.last{margin-bottom:20px}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
@@ -261,6 +260,7 @@ a.last{margin-bottom:10px}
   width: 100vw;
   display: flex;
   justify-content: center;
+  align-items:center;
   padding: 10px;
 }
 
@@ -275,10 +275,11 @@ a.last{margin-bottom:10px}
   /* padding: 10px; */
 }
 
-.full{height:100vh;align-items:center}
-.half{height:60vh;align-items:center}
-.qtr{height:25vh;align-items:center;padding-bottom:0;margin-top:-20px}
-.col{flex-direction:column}
+.full{height:100vh;}
+.overhalf{height:60vh;align-items:center}
+.half{height:50vh;align-items:center}
+.qtr{height:25vh;align-items:center;padding-bottom:0}
+.col{display:flex;flex-direction:column}
 
 .center div{
   display: flex;
@@ -291,17 +292,17 @@ a.last{margin-bottom:10px}
 }
 
 .info{padding-left:10px;}
-
 .info div{
   width: 50%;
 }
-
 .info p{
   width: 95%;
   /* font-size: calc(16.06px + 5.94 * (100vw - 480px) / 760); */
 }
+.info a{border-bottom:2px blue dotted}
+.info a:hover{border-bottom:2px magenta dotted;color:blue}
 
-.caption{padding-top: 5px;}
+.caption{padding-top:5px}
 
 .caption p{
   width: 80%;
@@ -311,7 +312,6 @@ a.last{margin-bottom:10px}
   background: white;
   color: dimgray;
   padding: 40px;
-  margin-left: 10px;
   border: 2px solid;
   border-radius: 1px;
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
@@ -372,4 +372,8 @@ iframe{
 
 .shift{
   margin-top: 20%;
+}
+
+#icfsns img{
+  width:400px;
 }

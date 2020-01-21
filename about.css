@@ -77,18 +77,6 @@ h1, h2, h3, a, p{
   opacity: 1;
 }
 
-/* #obj-design:hover{
-  background: royalblue;
-}
-
-#obj-illust:hover{
-  background: tomato;
-}
-
-#obj-multi:hover{
-  background: mediumpurple;
-} */
-
 @keyframes object{
   0% {top: 100%}
   100% {top: -50%}
