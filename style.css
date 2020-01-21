@@ -209,7 +209,7 @@ h1, h2, h3, a, p{
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
-  background-color: yellow;
+  background-color: pink;
 }
 
 /* The container <div> - needed to position the dropdown content */

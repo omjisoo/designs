@@ -7,8 +7,8 @@ function goBackMobile() {
 }
 
 function showMenu() {
-  document.querySelector('.menu').classList.toggle("show");
-  document.querySelector('#active').classList.toggle("hidden");
+  document.querySelector('.menu').classList.toggle("showMenu");
+  document.querySelector('.menubtn').classList.toggle("hide");
 };
 
 function openMenu() {
@@ -74,3 +74,13 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 1600); // Change image every 2 seconds
 };
+
+// Get the modal
+var modal = document.getElementById('.menu');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.classList.toggle("show");
+  }
+}
