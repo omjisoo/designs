@@ -7,7 +7,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: none;
+  background: transparent;
 }
 
 body{
@@ -268,7 +268,7 @@ a.last{margin-bottom:20px}
 .content{
   animation: slideIn 3s ease;
   margin-bottom: 40px;
-  padding-right:10px;
+  /* padding-right:10px; */
 }
 
 .container{
@@ -424,3 +424,7 @@ p.year{color:darkgray}
 
 .video{width:70vw;}
 #slides div{width:100%}
+
+@media screen and (min-width:1441px){
+  .content{margin-right:10px}
+}
