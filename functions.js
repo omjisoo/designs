@@ -8,13 +8,16 @@ function goBackMobile() {
 
 function showMenu() {
   document.querySelector('.menu').classList.toggle("showMenu");
-  // document.querySelector('.menubtn').classList.toggle("hide");
   document.querySelector('body').classList.toggle("stopscroll");
 };
 
 function openMenu() {
   document.getElementById("menu").classList.toggle("open");
 };
+
+function hideNav() {
+  document.querySelector('#nav').classList.toggle("hideNav")
+}
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */

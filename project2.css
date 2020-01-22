@@ -20,6 +20,8 @@ h1, h2, h3, a, p, i, em{
   color: inherit;
 }
 
+b{color:inherit}
+
 h1{font-size:10vw;line-height:1;margin-left:-10px}
 
 h2{
@@ -44,18 +46,21 @@ p{
   padding: 20px;
   position: fixed;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 9999;
+  align-items: baseline;
+  z-index: 999;
+  transition: 1s ease;
 }
 
+.menubar p{font-size:30px;color:black}
+
 .menubtn{
-  position: absolute;
+  position: fixed;
   top: 20px;
   right: 20px;
   width: 30px; height: 30px;
   transition: 1s ease;
-  /* z-index: 9999; */
+  z-index: 999;
+  cursor:pointer;
 }
 
 .menubtn:hover{
@@ -86,10 +91,6 @@ p{
   /* 75% {transform:scale(1.1)} */
 }
 
-.hidden{
-  display:none;
-}
-
 .menu{
   position: fixed;
   top:0;
@@ -101,15 +102,17 @@ p{
   background: forestgreen;
   /* background: rgba(255,255,255,0.9); */
   color: black;
-  z-index: 999;
+  z-index: 9999;
   transform: translateX(50vw);
   transition: 1.5s ease;
-  animation: hideit 1s ease;
+  animation: hideit 0.1s ease;
   /* flex-direction: column; */
 }
 
 .showMenu{transform: translateX(0);}
 .hide{opacity:0}
+.hideNav{transform: translateY(-150%)}
+#nav{display:flex;transition:1s ease;}
 
 @keyframes hideit{
   0% {transform:translateX(100vw)}
@@ -124,6 +127,7 @@ p{
   color: black;
   display: flex;
   align-items: center;
+  cursor:pointer
   /* z-index: 9999; */
 }
 
@@ -184,7 +188,7 @@ p{
   font-size: 28px;
   border: 2px solid black;
   cursor: pointer;
-  padding: 5px 7px;
+  padding: 3px 7px;
   box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);
   margin-bottom: 10px;
 }
@@ -202,9 +206,9 @@ p{
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  display: flex;
-  flex-direction: column;
-  /* display: none; */
+  /* display: flex;
+  flex-direction: column; */
+  display: none;
   /* position: absolute; */
   z-index: 1;
 }
@@ -213,7 +217,7 @@ p{
 .dropdown-content a {
   display: inline-flex;
   flex-direction: column;
-  background: pink;
+  background: whitesmoke;
   color: black;
   padding: 5px 7px;
   font-size: 26px;
@@ -223,6 +227,11 @@ p{
   margin-bottom: 10px;
 }
 
+.menu .dropdown-content a{background: pink;}
+.menu .dropdown-content a.sub{background: none}
+.menu .dropdown-content a.sub:hover{background-color: skyblue;color: yellow;}
+
+
 .dropdown-content div{
   display: inline-flex;
   flex-direction: column;
@@ -230,7 +239,7 @@ p{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: yellow;color: black;}
+.dropdown-content a:hover {background-color: yellow; color: black;}
 
 a.sub {
   width: 100%;
@@ -238,17 +247,19 @@ a.sub {
   font-size:24px;
   margin-left:20px;
   margin-bottom: 5px;
-  background: none;
   border: none;
   box-shadow: none;
 }
-a.sub:hover{background-color: skyblue;color: yellow;}
+a.sub:hover{}
 a.last{margin-bottom:20px}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
+.show, .alwaysshow, .col {
   display: flex;
   flex-direction: column;
+}
+.hidden{
+  display:none;
 }
 
 .content{
@@ -259,8 +270,8 @@ a.last{margin-bottom:20px}
 .container{
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items:center;
+  /* justify-content: center; */
+  /* align-items:center; */
   padding: 10px;
 }
 
@@ -279,7 +290,9 @@ a.last{margin-bottom:20px}
 .overhalf{height:60vh;align-items:center}
 .half{height:50vh;align-items:center}
 .qtr{height:25vh;align-items:center;padding-bottom:0}
-.col{display:flex;flex-direction:column}
+
+.center{justify-content:center}
+.mid{align-items:center}
 
 .center div{
   display: flex;
@@ -289,6 +302,7 @@ a.last{margin-bottom:20px}
 
 .text div{
   width: 50%;
+  /* width:100%; */
 }
 
 .info{padding-left:10px;}
@@ -340,12 +354,13 @@ a.last{margin-bottom:20px}
 iframe{
   width:75vw;
   height:100%;
+  margin-bottom:-40px;
 }
 
 .top a{
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   width: 30px; height: 30px;
   line-height: 1.25;
   opacity: 0.1;
@@ -369,11 +384,40 @@ iframe{
 .menubtn svg:hover{stroke:magenta}
 .closebtn svg{stroke:black}
 
-
+.countershift{margin-top:-100px}
 .shift{
-  margin-top: 20%;
+  margin-top: 200px;
 }
 
 #icfsns img{
   width:400px;
 }
+
+.thumbnail{position:relative}
+.thumbnail p{
+  position:absolute;top:50%;left:50%;transform: translate(-50%, -50%);
+  z-index:1;
+  opacity:0;
+  color:white;background:blue;
+  font-size: 20px;
+  padding: 2px 5px;
+  transition:0.5s ease;
+}
+.thumbnail img{box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.2);}
+.thumbnail:hover p{opacity:1;}
+
+.thumb{transition:0.5s ease}
+.thumb:hover{
+  transform: translate(-7px, -7px);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.35);
+}
+.title{padding:0 20px;display:flex;justify-content:space-between;}
+.title p{
+  font-size:20px;
+  padding:2px 5px;
+  background:white;color:dimgray;
+  margin-top:-10px;margin-bottom:60px}
+p.year{color:darkgray}
+
+.video{width:70vw;}
+#slides div{width:100%}
