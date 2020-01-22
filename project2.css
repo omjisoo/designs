@@ -263,6 +263,7 @@ a.last{margin-bottom:20px}
 .content{
   animation: slideIn 3s ease;
   margin-bottom: 40px;
+  padding-right:10px;
 }
 
 .container{
