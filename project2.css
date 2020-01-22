@@ -5,6 +5,11 @@
   color: #323232;
 }
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
 body{
   margin: 0;
   background: whitesmoke;
