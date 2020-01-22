@@ -339,11 +339,10 @@ a.last{margin-bottom:20px}
 .caption a:hover{border-bottom: 1px blue solid;color:blue}
 
 .project div{
-  width: 20%;
-  /* border: 1px red dashed; */
+  width: 15%;
 }
 
-.project .img{width:60%}
+.project .img{width:70%}
 
 .project img{
   width: 100%;
