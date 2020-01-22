@@ -318,7 +318,7 @@ a.last{margin-bottom:20px}
 
 .caption p{
   width: 80%;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.25;
   color: dimgray;
   background: white;
@@ -330,7 +330,6 @@ a.last{margin-bottom:20px}
 }
 
 .caption a{
-  font-size: 1.25vw;
   line-height: 1.25;
   border-bottom: 1px blue dotted;
   /* padding-left: 10px; */
@@ -357,12 +356,13 @@ iframe{
 .top a{
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  right: 20px;
   width: 30px; height: 30px;
   line-height: 1.25;
   opacity: 0.1;
   transform-origin: bottom;
   transition: 0.5s;
+  z-index:99
 }
 
 .top a:hover{
