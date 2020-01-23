@@ -77,14 +77,6 @@ h1, h2, h3, a, p{
   border-radius: 50%;
 }
 
-.logo:hover{
-  text-shadow: 0 0 20px cyan;
-}
-
-.logo:hover .eye{
-  box-shadow: 0 0 20px cyan;
-}
-
 .logo:hover .eyeball{
   border: 6px dotted magenta;
 }
