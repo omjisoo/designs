@@ -258,7 +258,7 @@ a.last{margin-bottom:20px}
 }
 
 .container{
-  width: 100vw;
+  width: 100%;
   display: flex;
   /* justify-content: center; */
   /* align-items:center; */
@@ -449,5 +449,4 @@ p.year{color:darkgray}
 #slides div{width:100%}
 
 @media screen and (min-width:1441px){
-  .content{margin-right:10px}
 }
