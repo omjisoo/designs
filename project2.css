@@ -283,6 +283,8 @@ a.last{margin-bottom:20px}
 .center{justify-content:center}
 .mid{align-items:center}
 
+.fullwidth{width:100vw}
+
 .center div{
   display: flex;
   justify-content: center;
