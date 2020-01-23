@@ -372,7 +372,7 @@ iframe{
   75% {transform:scaleY(1.1)}
 }
 
-.top a svg, .menubtn svg, .closebtn svg {fill:none;stroke:blue;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}
+.top a svg, .menubtn svg, .closebtn svg {fill:none;stroke:#323232;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;}
 .top a svg:hover{stroke:blue}
 .menubtn svg:hover{stroke:magenta}
 .closebtn svg{stroke:black;transition:0.25s ease}
