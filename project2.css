@@ -308,8 +308,9 @@ a.last{margin-bottom:20px}
 .caption{padding-top:5px}
 
 .caption p{
-  width: 40vw
-  font-size: calc(14px + 2 * (100vw - 480px) / 760);
+  width: 40vw;
+  font-size: calc(12px + 4 * (100vw - 480px) / 760);
+  /* font-size: calc(12px + 4 * (100vw - 480px) / 760); */
   /* font-size: 16px; */
   line-height: 1.3;
   color: dimgray;
