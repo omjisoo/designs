@@ -5,11 +5,6 @@
   color: #323232;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
 body{
   margin: 0;
   background: whitesmoke;
@@ -36,9 +31,7 @@ h2{
 }
 
 h3{
-  /* font-size:28px; */
   font-size:32px;
-  /* line-height:1.75 */
 }
 
 p{
@@ -70,12 +63,6 @@ p{
 
 .menubtn:hover{
   transform: rotate(180deg);
-  /* animation: rotate 2s infinite ease; */
-}
-
-@keyframes rotate{
-  /* 0% {transform:rotate(180deg)} */
-  100% {transform:rotate(180deg)}
 }
 
 .closebtn{
@@ -84,6 +71,7 @@ p{
   right: 20px;
   width: 32px; height: 32px;
   transition: 1s ease;
+  cursor:pointer
 }
 
 .closebtn:hover{
@@ -105,13 +93,11 @@ p{
   padding: 20px;
   font-size: 28px;
   background: forestgreen;
-  /* background: rgba(255,255,255,0.9); */
   color: black;
   z-index: 9999;
   transform: translateX(50vw);
   transition: 1.5s ease;
   animation: hideit 0.1s ease;
-  /* flex-direction: column; */
 }
 
 .showMenu{transform: translateX(0);}
@@ -267,12 +253,12 @@ a.last{margin-bottom:20px}
 
 .content{
   animation: slideIn 3s ease;
-  margin-bottom: 40px;
-  /* padding-right:10px; */
+  /* margin-bottom: 40px; */
+  /* padding:10px; */
 }
 
 .container{
-  width: 100vw;
+  width: 100%;
   display: flex;
   /* justify-content: center; */
   /* align-items:center; */
@@ -289,7 +275,7 @@ a.last{margin-bottom:20px}
   width: 100%;
 }
 
-.full{height:100vh;}
+.full{height:100vh;padding:0}
 .overhalf{height:60vh;align-items:center}
 .half{height:50vh;align-items:center}
 .qtr{height:25vh;align-items:center;padding-bottom:0}
@@ -317,7 +303,7 @@ a.last{margin-bottom:20px}
   /* font-size: calc(16.06px + 5.94 * (100vw - 480px) / 760); */
 }
 .info a{border-bottom:2px blue dotted}
-.info a:hover{border-bottom:2px magenta dotted;color:blue}
+.info a:hover {border-bottom:2px magenta dotted;color:blue}
 
 .caption{padding-top:5px}
 
@@ -360,6 +346,7 @@ iframe{
 
 .top a{
   position: fixed;
+  width: 100%;
   bottom: 20px;
   right: 20px;
   width: 30px; height: 30px;
@@ -385,6 +372,43 @@ iframe{
 .top a svg:hover{stroke:blue}
 .menubtn svg:hover{stroke:magenta}
 .closebtn svg{stroke:black}
+
+.prev, .next, .index{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: darkgray;
+}
+
+.index{justify-content: center;
+}
+
+.next{justify-content: flex-end;}
+
+.prev a, .next a, .index a{display:flex;transition:0.25s ease;}
+.prev p, .next p, .index p{font-size:18px}
+.prev a:hover, .next a:hover, .index a:hover {color:blue}
+.prev a:hover{animation:bounceLeft 1.5s ease infinite;}
+.next a:hover{animation:bounceRight 1.5s ease infinite;}
+.index a:hover{animation:index 1.5s ease infinite;}
+
+@keyframes index{
+  0% {transform:scale(1)}
+  60% {transform:scale(1.1)}
+  /* 75% {transform:scale(1))} */
+}
+
+@keyframes bounceLeft{
+  0% {transform:translateX(0)}
+  60% {transform:translateX(-5px)}
+  /* 75% {transform:translateX(2px)} */
+}
+
+@keyframes bounceRight{
+  0% {transform:translateX(0)}
+  60% {transform:translateX(5px)}
+  /* 75% {transform:translateX(-2px)} */
+}
 
 .countershift{margin-top:-100px}
 .shift{
