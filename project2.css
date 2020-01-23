@@ -88,7 +88,7 @@ p{
   position: fixed;
   top:0;
   right:0;
-  width: 50vw;
+  width: calc(50vw - 10px);
   height: 100vh;
   padding: 20px;
   font-size: 28px;
