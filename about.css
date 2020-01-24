@@ -4,10 +4,7 @@
 
 body{
   margin: 0;
-  padding: 20px;
-  font-family: sans-serif;
-  background: forestgreen;
-  animation: fadeIn 2s ease;
+  font-family: Arial, sans-serif;
 }
 
 h1, h2, h3, a, p{
@@ -17,11 +14,13 @@ h1, h2, h3, a, p{
   color: inherit;
 }
 
-.pc{
-}
-
-@keyframes fadeIn{
-  from{opacity:0}to{opacity:1}
+.screen{
+  background: forestgreen;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 ::-webkit-scrollbar {
@@ -29,7 +28,7 @@ h1, h2, h3, a, p{
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
-.intro{
+.paragraph{
   width: 70%;
   display: inline-flex;
   flex-flow: wrap;
@@ -37,7 +36,13 @@ h1, h2, h3, a, p{
   align-items: baseline;
   line-height: 1.35;
   font-size: 32px;
+  animation: fadeIn 2s ease;
 }
+
+@keyframes fadeIn{
+  from{opacity:0}to{opacity:1}
+}
+
 
 .nav{
   position: fixed;
@@ -145,9 +150,9 @@ button {padding:0 5px}
 
 }
 .backbtn{
-  position: fixed;
+  /* position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 20px; */
   background: transparent;
   color: black;
   font-size: 4rem;
@@ -172,8 +177,8 @@ button {padding:0 5px}
 }
 
 @media screen and (max-width: 800px){
-  .intro{width:100%;}
-  .dropbtn, .intro{font-size: 24px}
+  .paragraph{width:100%;}
+  .dropbtn, .paragraph{font-size: 24px}
   .dropbtn{background:pink}
   .eye{width:22px;height:22px;border:2.4px solid black;}
 }
