@@ -16,7 +16,10 @@ h1, h2, h3, a, p{
 }
 
 .pc{
+  width: 100vw;
+  height: 100vh;
   padding: 20px;
+  overflow-x:hidden;
 }
 
 @keyframes fadeIn{
@@ -273,59 +276,17 @@ h1, h2, h3, a, p{
   margin-bottom:0;
 }
 
-@media screen and (max-width: 800px){
-  .pc{display: none;}
-  .mobile{display: block}
+.mobileonly{display:none}
 
-  div, h1 {
-    font-size: 7vw;
-    line-height: 1.5;
-  }
-  .intro{
-    width: 100vw;
-    padding:20px;
-    overflow: hidden;
-  }
-  a{
-    background: pink;
-    /* color: pink; */
-    font-size: 7vw;
-    padding: 0 1.5vw;
-    border:0.5vw solid black;
-  }
-  .dropbtn{
-    /* color: pink; */
-    font-size: 6.5vw;
-    padding: 0 2vw;
-    border:0.5vw solid black;
-  }
-  .dropbtn:hover{
-    color:black;
-  }
-  .dropdown-content{
-    min-width: 340px;
-  }
-  .dropdown-content a{
-    font-size: 1.2rem;
-  }
-  ::-webkit-scrollbar {
-      width: 0px;  /* Remove scrollbar space */
-      background: transparent;  /* Optional: just make scrollbar invisible */
-  }
-  @keyframes cap {
-    0% {transform: translateY(-50%)}
-    100% {transform: translateY(-60%)}
-  }
-  @keyframes object{
-    0% {top: 10%}
-    100% {top: -5%}
-  }
-  @keyframes float{
-    0% {transform: translateY(0)}
-    100% {transform: translateY(20%)}
-  }
-  @keyframes capIn{
-    0% {transform: translateY(0)}
-    100% {transform: translateY(-25%)}
-  }
+@media screen and (max-width: 800px){
+  .pc{display:flex;flex-direction:column;justify-content: space-between;}
+  .jisoo-wrap{display:none}
+  .name{font-size:25vw;}
+  .mobileonly{width:100%;display:flex;justify-content: space-between;}
+  .object{animation:rotate 50s linear infinite;position:static;width:25vw;height:25vw;margin:0}
+  .object p{opacity:1;font-size:3vw}
+  .object:hover, #obj-illust:hover, #obj-multi:hover{background:mediumpurple}
+  #obj-illust{background:tomato}
+  #obj-multi{background:royalblue}
+  @keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 }
