@@ -486,7 +486,7 @@ p.year{color:darkgray}
   .closebtn, .menubtn, .top a{width:8vw;height:8vw}
 
   .content{animation:none;padding:20px}
-  .spacer{height:calc(10vw + 60px)}
+  .spacer{height:calc(10vw + 20px)}
 
   .container, #slides, #az{flex-direction:column;justify-content: center;align-items: center;}
   .container div, .text div, .project .img {width:100%}
