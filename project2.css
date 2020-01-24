@@ -39,6 +39,8 @@ p{
   line-height:1.25
 }
 
+footer{animation: slideIn 3s ease;}
+
 .menubar{
   width: 100%;
   padding: 20px;
@@ -253,8 +255,7 @@ a.last{margin-bottom:20px}
 
 .content{
   animation: slideIn 3s ease;
-  /* margin-bottom: 40px; */
-  /* padding:10px; */
+  padding: 0 50px;
 }
 
 .container{
@@ -284,6 +285,7 @@ a.last{margin-bottom:20px}
 .mid{align-items:center}
 
 .fullwidth{width:100vw}
+.nopadding{padding:0}
 
 .center div{
   display: flex;
