@@ -5,6 +5,14 @@
 body{
   margin: 0;
   font-family: Arial, sans-serif;
+  background: forestgreen;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, a, p{
@@ -15,13 +23,6 @@ h1, h2, h3, a, p{
 }
 
 .screen{
-  background: forestgreen;
-  padding: 20px;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
 }
 
 ::-webkit-scrollbar {

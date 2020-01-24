@@ -302,21 +302,6 @@ h1, h2, h3, a, p{
   .dropbtn:hover{
     color:black;
   }
-  .jisoo-wrap{
-    position: absolute;
-    bottom: auto;
-    right: auto;
-    transform: scale(0.4);
-    transform-origin: bottom;
-    animation: none;
-  }
-  .cap-wrap{
-    animation-delay: none;
-    align-items: flex-start;
-    animation: capIn 8s ease forwards, cap 2s ease-in-out infinite alternate;
-    height:100%;
-  }
-  .object{top:10%; animation: object 8s linear forwards, float 2s ease-in-out infinite alternate;}
   .dropdown-content{
     min-width: 340px;
   }
