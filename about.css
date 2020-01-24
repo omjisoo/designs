@@ -90,8 +90,6 @@ h1, h2, h3, a, p{
   border: 5px dotted magenta;
 }
 
-
-
 .dropbtn {
   background: transparent;
   color: black;
@@ -176,7 +174,8 @@ button {padding:0 5px}
 @media screen and (max-width: 800px){
   .intro{width:100%;}
   .dropbtn, .intro{font-size:28px}
-  /* .backbtn {position:static;right:none;bottom:none} */
+  .dropbtn{background:pink}
+  #multi{margin-top:5px}
 }
 
 /* @media screen and (max-width: 800px){
