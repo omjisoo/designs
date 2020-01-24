@@ -508,7 +508,7 @@ p.year{color:darkgray}
   footer, .prev a p, .index a p, .next a p, .title p{font-size:5vw}
   .prev, .next{justify-content:center}
 
-  .thumbnail p{opacity:1;background:whitesmoke;color:blue}
+  .thumbnail p{opacity:1;background:whitesmoke;color:blue;font-size:5vw}
 
   #adoptatote{flex-flow:wrap;margin-bottom:20px}
 
