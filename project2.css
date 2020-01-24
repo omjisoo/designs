@@ -468,13 +468,13 @@ p.year{color:darkgray}
   .showMenu{transform:translateX(0)}
   @keyframes hideit {100%{transform:translateX(100vw)}}
   .dropdown-content a{
-    font-size:6vw;
+    font-size:8vw;
     border:0.5vw solid black;
-    padding:5px 10px;
+    padding:5px 20px;
     margin-bottom: 20px;
   }
   .group{margin-bottom:20px}
-  a.sub{font-size:5vw;border:none}
+  a.sub{font-size:6vw;border:none}
   #nav, #pconly{display:none}
   .menubtn, .closebtn {top:40px;right:40px}
   .top a{bottom:40px;right:40px;opacity:0.25}
