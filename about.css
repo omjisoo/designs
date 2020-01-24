@@ -175,4 +175,5 @@ button {padding:0 5px}
   .intro{width:100%;}
   .dropbtn, .intro{font-size: 24px}
   .dropbtn{background:pink}
+  .eye{width:22px;height:22px;border:2.4px solid black;}
 }
