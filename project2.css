@@ -164,7 +164,7 @@ p{
 }
 
 .logo:hover .eyeball{
-  border: 6px dotted cyan;
+  border: 5px dotted cyan;
 }
 
 @keyframes slideIn{

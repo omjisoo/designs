@@ -78,7 +78,7 @@ h1, h2, h3, a, p{
 }
 
 .logo:hover .eyeball{
-  border: 6px dotted magenta;
+  border: 5px dotted magenta;
 }
 
 .intro{
