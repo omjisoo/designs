@@ -510,7 +510,7 @@ p.year{color:darkgray}
 
   iframe{width:100vw;height:40vh}
 
-  footer .container{flex-flow:column-reverse}
+  footer .container, #firstsnow{flex-flow:column-reverse}
   footer{margin-bottom:40px;}
   footer, .prev a p, .index a p, .next a p, .title p{font-size:5vw}
   .prev, .next{justify-content:center}
@@ -522,6 +522,7 @@ p.year{color:darkgray}
   #seed{height:70px}
 
   #rbhainfo {animation:none}
+
 }
 
 /* @media screen and (min-width:1441px){
