@@ -288,7 +288,7 @@ h1, h2, h3, a, p{
   .object p{color:black;opacity:1;font-size:3vw}
   .object:hover p{color:white}
   .object:hover, #obj-illust:hover, #obj-multi:hover{background:mediumpurple}
-  #obj-illust{background:tomato}
-  #obj-multi{background:royalblue}
+  #obj-illust{background:tomato;animation-delay:2s}
+  #obj-multi{background:royalblue;animation-delay:4s}
   @keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 }
