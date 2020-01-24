@@ -457,7 +457,7 @@ p.year{color:darkgray}
 
 
 @media screen and (max-width:1000px){
-  h2{font-size:4vw;padding-left:20px}
+  h2{font-size:4vw;padding-left:20px;line-height:1}
   .menubar, .menu{padding:40px}
   .logo{font-size:8vw}
   .eye{
@@ -490,12 +490,13 @@ p.year{color:darkgray}
   .nopadding{padding:0}
 
   .full {height:100%}
-  .overhalf, .half{height:100%;margin-bottom:80px}
+  .overhalf, .half{height:100%}
   .fullwidth, #icfsns img{width:100%}
 
   .info {margin-top:100px}
   .info p{font-size:5vw;padding:20px}
 
+  /* .container .caption{padding:40px} */
   .caption p{width:100%;font-size:4vw;border:0.4vw solid;}
 
   .shift, .countershift{margin-top:0}
