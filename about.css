@@ -38,6 +38,7 @@ h1, h2, h3, a, p{
   align-items: baseline;
   line-height: 1.35;
   font-size: 32px;
+  margin-bottom: 40px;
   animation: fadeIn 2s ease;
 }
 
