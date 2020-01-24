@@ -470,7 +470,7 @@ p.year{color:darkgray}
 
   .menu{width:100vw;transform: translateX(100vw)}
   .showMenu{transform:translateX(0)}
-  @keyframes hideit {100%{transform:translateX(100vw)}}
+  @keyframes hideit {0% {transform:translateX(150vw)} 100%{transform:translateX(100vw)}}
 
   .dropdown-content a{
     font-size:8vw;
