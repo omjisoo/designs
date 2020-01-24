@@ -183,6 +183,6 @@ button {padding:0 5px}
   .dropbtn, .paragraph{font-size: 24px}
   .dropbtn{background:pink}
   .eye{width:20px;height:20px;border:2.4px solid black;}
-  .dropdown-content{width:300px}
-  .dropdown-content a{font-size:16px}
+  .dropdown-content{width:250px}
+  .dropdown-content a{font-size:18px}
 }
