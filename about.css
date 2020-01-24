@@ -173,74 +173,7 @@ button {padding:0 5px}
 
 @media screen and (max-width: 800px){
   .intro{width:100%;}
-  .dropbtn, .intro{font-size:24px}
+  .dropbtn, .intro{font-size: 24px}
   .dropbtn{background:pink}
   #multi{margin-top:5px}
 }
-
-/* @media screen and (max-width: 800px){
-  .pc{display: none;}
-  .mobile{display: block}
-
-  div, h1 {
-    font-size: 7vw;
-    line-height: 1.5;
-  }
-  .intro{
-    width: 100vw;
-    padding:20px;
-    overflow: hidden;
-  }
-  a{
-    background: pink;
-    font-size: 7vw;
-    padding: 0 1.5vw;
-    border:0.5vw solid black;
-  }
-  .backbtn{font-size:12vw}
-  .dropbtn{
-    font-size: 6.5vw;
-    padding: 0 2vw;
-    border:0.5vw solid black;
-  }
-  .dropbtn:hover{
-    color:black;
-  }
-  .jisoo-wrap{
-    position: absolute;
-    bottom: auto;
-    right: auto;
-    transform: scale(0.4);
-    transform-origin: bottom;
-    animation: none;
-  }
-  .cap-wrap{
-    animation-delay: none;
-    align-items: flex-start;
-    animation: capIn 8s ease forwards, cap 2s ease-in-out infinite alternate;
-    height:100%;
-  }
-  .object{top:10%; animation: object 8s linear forwards, float 2s ease-in-out infinite alternate;}
-  .dropdown-content{
-    min-width: 340px;
-  }
-  .dropdown-content a{
-    font-size: 1.2rem;
-  }
-  @keyframes cap {
-    0% {transform: translateY(-50%)}
-    100% {transform: translateY(-60%)}
-  }
-  @keyframes object{
-    0% {top: 10%}
-    100% {top: -5%}
-  }
-  @keyframes float{
-    0% {transform: translateY(0)}
-    100% {transform: translateY(20%)}
-  }
-  @keyframes capIn{
-    0% {transform: translateY(0)}
-    100% {transform: translateY(-25%)}
-  }
-} */
