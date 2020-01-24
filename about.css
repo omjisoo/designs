@@ -4,6 +4,7 @@
 
 body{
   margin: 0;
+  padding: 20px;
   font-family: sans-serif;
   background: forestgreen;
   animation: fadeIn 2s ease;
@@ -17,7 +18,6 @@ h1, h2, h3, a, p{
 }
 
 .pc{
-  padding: 20px;
 }
 
 @keyframes fadeIn{
@@ -27,6 +27,16 @@ h1, h2, h3, a, p{
 ::-webkit-scrollbar {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.intro{
+  width: 70%;
+  display: inline-flex;
+  flex-flow: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  line-height: 1.35;
+  font-size: 32px;
 }
 
 .nav{
@@ -40,7 +50,6 @@ h1, h2, h3, a, p{
 }
 
 .logo{
-  font-size: 32px;
   display: flex;
   align-items: center;
   transform-origin: top left;
@@ -81,15 +90,7 @@ h1, h2, h3, a, p{
   border: 5px dotted magenta;
 }
 
-.intro{
-  width: 70%;
-  display: inline-flex;
-  flex-flow: wrap;
-  justify-content: flex-start;
-  align-items: baseline;
-  line-height: 1.35;
-  /* color: pink; */
-}
+
 
 .dropbtn {
   background: transparent;
@@ -98,6 +99,8 @@ h1, h2, h3, a, p{
   border: 2px solid black;
   cursor: pointer;
 }
+
+button {padding:0 5px}
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
@@ -138,6 +141,11 @@ h1, h2, h3, a, p{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
 
+.backbtnwrap{
+  display: flex;
+  justify-content: flex-end;
+
+}
 .backbtn{
   position: absolute;
   right: 20px;
@@ -166,6 +174,12 @@ h1, h2, h3, a, p{
 }
 
 @media screen and (max-width: 800px){
+  .intro{width:100%;}
+  .dropbtn, .intro{font-size:28px}
+  /* .backbtn {position:static;right:none;bottom:none} */
+}
+
+/* @media screen and (max-width: 800px){
   .pc{display: none;}
   .mobile{display: block}
 
@@ -180,14 +194,12 @@ h1, h2, h3, a, p{
   }
   a{
     background: pink;
-    /* color: pink; */
     font-size: 7vw;
     padding: 0 1.5vw;
     border:0.5vw solid black;
   }
   .backbtn{font-size:12vw}
   .dropbtn{
-    /* color: pink; */
     font-size: 6.5vw;
     padding: 0 2vw;
     border:0.5vw solid black;
@@ -232,4 +244,4 @@ h1, h2, h3, a, p{
     0% {transform: translateY(0)}
     100% {transform: translateY(-25%)}
   }
-}
+} */
