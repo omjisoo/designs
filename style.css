@@ -285,7 +285,7 @@ h1, h2, h3, a, p{
   .mobileonly{width:100%;display:flex;justify-content: space-between;}
 
   .object{animation:rotate 50s linear infinite;position:static;width:25vw;height:25vw;margin:0;border:1.25px solid black;}
-  .object p{color:#202020;opacity:1;font-size:3vw}
+  .object p{color:black;opacity:1;font-size:3vw}
   .object:hover p{color:white}
   .object:hover, #obj-illust:hover, #obj-multi:hover{background:mediumpurple}
   #obj-illust{background:tomato}
