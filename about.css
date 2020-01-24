@@ -180,7 +180,7 @@ button {padding:0 5px}
 
 @media screen and (max-width: 800px){
   .paragraph{width:100%;}
-  .dropbtn, .paragraph{font-size: 24px}
+  .dropbtn, .paragraph{font-size: 22px}
   .dropbtn{background:pink}
   .eye{width:20px;height:20px;border:2.4px solid black;}
   .dropdown-content{width:250px}
