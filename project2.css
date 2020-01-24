@@ -458,15 +458,20 @@ p.year{color:darkgray}
 
 @media screen and (max-width:1000px){
   h2{font-size:4vw;padding-left:20px;line-height:1}
+  #nav, #pconly, .thumbnail p{display:none}
+
   .menubar, .menu{padding:40px}
+
   .logo{font-size:8vw}
   .eye{
     width:6.5vw;height:6.5vw;
     border:0.6vw solid black;
     margin-right:4px}
+
   .menu{width:100vw;transform: translateX(100vw)}
   .showMenu{transform:translateX(0)}
   @keyframes hideit {100%{transform:translateX(100vw)}}
+
   .dropdown-content a{
     font-size:8vw;
     border:0.5vw solid black;
@@ -475,11 +480,10 @@ p.year{color:darkgray}
   }
   .group{margin-bottom:20px}
   a.sub{font-size:6vw;border:none}
-  #nav, #pconly{display:none}
+
   .menubtn, .closebtn {top:40px;right:40px}
   .top a{bottom:40px;right:40px;opacity:0.25}
   .closebtn, .menubtn, .top a{width:8vw;height:8vw}
-  /* .closebtn svg, .menubtn svg, .top a svg{stroke-width:2px} */
 
   .content{animation:none;padding:20px}
   .spacer{height:calc(10vw + 60px)}
@@ -500,7 +504,6 @@ p.year{color:darkgray}
   .info {margin-top:100px}
   .info p{font-size:5vw;padding:20px}
 
-  /* .container .caption{padding:40px} */
   .caption p{width:100%;font-size:4vw;border:0.4vw solid;}
 
   .shift, .countershift{margin-top:0}
@@ -511,8 +514,6 @@ p.year{color:darkgray}
   footer{margin-bottom:40px;}
   footer, .prev a p, .index a p, .next a p, .title p{font-size:5vw}
   .prev, .next{justify-content:center}
-
-  .thumbnail p{opacity:1;background:whitesmoke;color:blue;font-size:5vw}
 
   #adoptatote{flex-flow:wrap;margin-bottom:20px}
 
