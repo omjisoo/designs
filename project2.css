@@ -493,6 +493,10 @@ p.year{color:darkgray}
   .overhalf, .half{height:100%}
   .fullwidth, #icfsns img{width:100%}
 
+  .content .text {min-height:45vh}
+
+  footer .text{min-height:100%}
+
   .info {margin-top:100px}
   .info p{font-size:5vw;padding:20px}
 
