@@ -475,7 +475,7 @@ p.year{color:darkgray}
   }
   .group{margin-bottom:20px}
   a.sub{font-size:5vw;border:none}
-  #nav{display:none}
+  #nav, #pconly{display:none}
   .menubtn, .closebtn {top:40px;right:40px}
   .top a{bottom:40px;right:40px;opacity:0.25}
   .closebtn, .menubtn, .top a{width:8vw;height:8vw}
@@ -484,7 +484,7 @@ p.year{color:darkgray}
   .content{animation:none;padding:20px}
   .spacer{height:calc(10vw + 60px)}
 
-  .container{flex-direction:column;justify-content: center;align-items: center;}
+  .container, #slides, #az{flex-direction:column;justify-content: center;align-items: center;}
   .container div, .text div, .project .img {width:100%}
 
   .nopadding{padding:0}
@@ -498,14 +498,16 @@ p.year{color:darkgray}
 
   .caption p{width:100%;font-size:4vw;border:0.4vw solid;}
 
-  .shift{margin-top:0}
+  .shift, .countershift{margin-top:0}
 
-  iframe{width:100vw}
+  iframe{width:100vw;height:40vh}
 
   footer .container{flex-flow:column-reverse}
   footer{margin-bottom:40px;}
-  footer, .prev a p, .index a p, .next a p{font-size:4vw}
+  footer, .prev a p, .index a p, .next a p, .title p{font-size:4vw}
   .prev, .next{justify-content:center}
+
+  .thumbnail p{opacity:1;background:whitesmoke;color:blue}
 
   #adoptatote{flex-flow:wrap;margin-bottom:20px}
 
