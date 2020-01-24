@@ -17,6 +17,7 @@ h1, h2, h3, a, p{
 .screen{
   background: forestgreen;
   padding: 20px;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-between;
