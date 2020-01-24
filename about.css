@@ -123,7 +123,7 @@ button {padding:0 5px}
   display: none;
   position: absolute;
   background-color: whitesmoke;
-  min-width: 400px;
+  width: 400px;
   border: 2px solid;
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -136,7 +136,7 @@ button {padding:0 5px}
   padding: 10px 16px;
   text-decoration: none;
   display: block;
-  font-size: 1.5rem;
+  font-size: 24px;
   text-align: left;
 }
 
@@ -183,4 +183,6 @@ button {padding:0 5px}
   .dropbtn, .paragraph{font-size: 24px}
   .dropbtn{background:pink}
   .eye{width:20px;height:20px;border:2.4px solid black;}
+  .dropdown-content{width:300px}
+  .dropdown-content a{font-size:16px}
 }
