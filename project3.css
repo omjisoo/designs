@@ -67,6 +67,11 @@ p{
   padding-top: -10px;
 }
 
+.menubar .nav{
+  width:10%;
+  /* padding-left:10px */
+}
+
 .menubtn{
   position: fixed;
   top: 20px;
