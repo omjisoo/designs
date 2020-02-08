@@ -39,7 +39,7 @@ p{
   line-height:1.25
 }
 
-footer{animation: slideIn 1s linear;}
+/* footer{animation: slideIn 0.5s linear;} */
 
 .menubar{
   width: 100%;
@@ -254,7 +254,7 @@ a.last{margin-bottom:20px}
 }
 
 .content{
-  animation: slideIn 1s linear;
+  /* animation: slideIn 0.5s linear; */
   padding: 0 50px;
 }
 
@@ -425,7 +425,7 @@ iframe{
   width:400px;
 }
 
-#rbhainfo {animation: slideIn 1s linear;padding:10px}
+#rbhainfo {padding:10px}
 
 .thumbnail{position:relative}
 .thumbnail p{
