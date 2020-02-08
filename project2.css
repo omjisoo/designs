@@ -39,7 +39,7 @@ p{
   line-height:1.25
 }
 
-footer{animation: slideIn 3s ease;}
+footer{animation: slideIn 1s linear;}
 
 .menubar{
   width: 100%;
@@ -170,7 +170,8 @@ footer{animation: slideIn 3s ease;}
 }
 
 @keyframes slideIn{
-  from {transform:translateY(100vh);overflow:hidden} to {transform:translateY(0)}
+  from{opacity:0}to{opacity:1}
+  /* from {transform:translateY(100vh);overflow:hidden} to {transform:translateY(0)} */
 }
 
 .dropbtn {
@@ -253,7 +254,7 @@ a.last{margin-bottom:20px}
 }
 
 .content{
-  animation: slideIn 3s ease;
+  animation: slideIn 1s linear;
   padding: 0 50px;
 }
 
@@ -390,9 +391,9 @@ iframe{
 .prev a, .next a, .index a{display:flex;transition:0.25s ease;}
 .prev p, .next p, .index p{font-size:18px}
 .prev a:hover, .next a:hover, .index a:hover {color:blue}
-.prev a:hover{animation:bounceLeft 1.5s ease infinite;}
-.next a:hover{animation:bounceRight 1.5s ease infinite;}
-.index a:hover{animation:index 1.5s ease infinite;}
+.prev a:hover{animation:bounceLeft 1.25s ease infinite;}
+.next a:hover{animation:bounceRight 1.25s ease infinite;}
+.index a:hover{animation:index 1.25s ease infinite;}
 
 @keyframes index{
   0% {transform:scale(1)}
@@ -424,7 +425,7 @@ iframe{
   width:400px;
 }
 
-#rbhainfo {animation: slideIn 3s ease;padding:10px}
+#rbhainfo {animation: slideIn 1s linear;padding:10px}
 
 .thumbnail{position:relative}
 .thumbnail p{
