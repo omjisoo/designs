@@ -36,37 +36,107 @@ h2{
 
 p{
   font-size: 22px;
-  line-height:1.25
+  line-height:1.25;
+}
+
+.indexbar{
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  bottom:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s ease;
+  color: gray;
+}
+
+.titlebar{
+  width: 50%;
+  padding: 10px 20px;
+  font-size: 18px;
+  position:absolute;
+  bottom:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s ease;
+  background: whitesmoke;
+}
+
+.titlebar p{text-transform:uppercase;letter-spacing:0.5px;font-size:20px}
+.titlebar a{
+  color:gray;
+}
+.titlebar a:hover{
+  color:blue;
+}
+.jumpto{
+  width:30%;display:flex;justify-content:space-between
+}
+
+.navbar{
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  transition: 1s ease;
+  background: whitesmoke;
+}
+
+.navbar a{color:gray;transition:0.2s ease}
+.navbar a:hover{color:blue}
+
+.navbar .nav{
+  width:20%;
+  display:flex;
+  justify-content: space-between;
 }
 
 .menubar{
   width: 100%;
-  padding: 20px 60px;
+  padding: 10px 20px;
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  z-index: 99;
+  z-index: 9999;
   transition: 1s ease;
+  background: whitesmoke;
 }
 
 .menubar div{
   display:flex;
   justify-content:space-between;
+  /* justify-content: flex-end; */
 }
 
 .menubar div a{
   text-transform:uppercase;
+  letter-spacing: 1px;
   transition: 0.2s ease;
+  color: gray;
 }
 .menubar div a:hover{
   color:blue;
-  border-bottom: 3px dotted blue;
+  /* padding: 2px 5px;
+  border: 2px solid blue; */
+  /* padding: 0 5px;
+  border: 1px dotted blue;
+  border-radius:50%; */
+}
+
+.menubar div a.active{
+  color:blue;
+  border-bottom:1px solid blue;
 }
 
 .menubar .nav{
-  width: 20%;
-  font-size: 20px;
+  width: 25%;
+  font-size: 18px;
 }
 
 .menubtn svg{
@@ -204,7 +274,7 @@ a.last{margin-bottom:20px}
 
 
 .logo{
-  font-size: 30px;
+  font-size: 24px;
   display: flex;
   align-items: center;
   cursor:pointer;
@@ -226,9 +296,9 @@ a.last{margin-bottom:20px}
 }
 
 .eye{
-  width: 24px;
-  height: 24px;
-  border: 2.5px solid black;
+  width: 19px;
+  height: 19px;
+  border: 2px solid black;
   border-radius: 50%;
   margin: 0 1px;
   position: relative;
@@ -246,12 +316,12 @@ a.last{margin-bottom:20px}
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
-.logo:hover{border-bottom: 3px dotted blue;}
+
 .logo:hover div{
   color:blue;
 }
 .logo:hover .eye{
-  border: 2.5px solid blue;
+  border: 2px solid blue;
 }
 .logo:hover .eyeball{
   background:blue;
@@ -260,19 +330,16 @@ a.last{margin-bottom:20px}
 .container{
   width:100vw;
   height:100%;
+  /* position:relative; */
   display: flex;
-  align-items: center;
-  padding: 10px 40px;
+  padding: 10px 20px;
   /* border:1px solid red; */
 }
 
-.full{height:100vh;margin:0;padding:0}
+.full{height:100vh;margin:0;padding:0;align-items:center;overflow:hidden}
 .center, .single{justify-content: center;}
 .single img{width:60%}
 
-.container div{
-  /* border:1px solid blue; */
-}
 .container img, .container div img{
   /* width:100%; */
 }
@@ -281,7 +348,6 @@ a.last{margin-bottom:20px}
   position:fixed;
   bottom:20px;right:20px;
   font-size:20px;
-  z-index:99999999;
 }
 
 .col1, .col2{
@@ -299,28 +365,30 @@ a.last{margin-bottom:20px}
   justify-content: flex-start;
 }
 
-/* .caption{
-  width: 40vw;
-  font-size: calc(12px + 4 * (100vw - 480px) / 760);
-  line-height: 1.3;
-  color: dimgray;
-  background: white;
-  color: dimgray;
-  padding: 40px;
-  margin:40px 0;
-  border: 2px solid;
-  border-radius: 1px;
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
-} */
-
 .info{
   width:75vw;
-  margin:40px 0;
-  padding: 20px;
+  margin:40px 20px;
+  /* padding: 10px; */
 }
 
 .info p{
   width: 75%;
+}
+
+.info-nav{
+  width:25%;
+  margin: 80px 0 20px -60px;
+  display:flex;
+  flex-flow:column;
+  justify-content: flex-end;
+  font-size:18px;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  /* border: 1px solid red; */
+}
+
+.info-nav a{
+  padding:20px 0
 }
 
 .caption{
@@ -336,5 +404,15 @@ a.last{margin-bottom:20px}
 iframe{
   width:75vw;
   height:100%;
-  margin-bottom:-20px;
 }
+
+.test{
+  width:100%;height:60vh;
+  background:gray;overflow:hidden;
+  display:flex;align-items:center;justify-content: center;
+  /* box-shadow:0px 1px 5px rgba(0,0,0,0.15) */
+}
+.test img{width:105%}
+
+.indexbar p{transition:0.5s ease}
+a:hover .indexbar p{color:blue}
