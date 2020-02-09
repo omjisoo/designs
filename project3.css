@@ -373,6 +373,7 @@ a.last{margin-bottom:20px}
 
 .info p{
   width: 75%;
+  font-size: calc(16px + 4 * (100vw - 480px) / 760);
 }
 
 .info-nav{
