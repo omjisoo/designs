@@ -25,7 +25,8 @@ b{color:inherit}
 
 h1{
   font-variant: small-caps;
-  font-size: calc(12px + 4 * (100vw - 480px) / 760);
+  font-size: 16px;
+  /* font-size: calc(12px + 4 * (100vw - 480px) / 760); */
   line-height: 1.5;
 }
 
