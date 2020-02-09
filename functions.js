@@ -2,14 +2,15 @@ function goBack() {
   window.history.back();
 }
 
-function goBackMobile() {
-  window.history.back();
-}
-
 function showMenu() {
   document.querySelector('.menu').classList.toggle("showMenu");
   document.querySelector('body').classList.toggle("stopscroll");
 };
+
+function showProcess() {
+  document.querySelector('.process').classList.toggle("showProcess");
+  document.querySelector('body').classList.toggle("stopscroll");
+}
 
 function openMenu() {
   document.getElementById("menu").classList.toggle("open");
