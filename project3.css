@@ -20,9 +20,6 @@ h1, h2, h3, a, p, i, em{
   color: inherit;
 }
 
-b{color:inherit}
-
-
 h1{
   font-variant: small-caps;
   font-size: 16px;
@@ -39,6 +36,8 @@ p{
   line-height:1.25;
 }
 
+a{cursor:pointer}
+
 
 .indexbar{
   width: 100%;
@@ -52,8 +51,16 @@ p{
   color: gray;
 }
 
-.indexbar p{transition:0.5s ease}
+.indexbar p{font-size:20px;transition:0.5s ease}
 a:hover .indexbar p{color:blue}
+
+.thumb{
+  width:100%;height:50vh;
+  background:white;overflow:hidden;
+  display:flex;align-items:center;justify-content: center;
+  /* box-shadow:0px 1px 5px rgba(0,0,0,0.15) */
+}
+.thumb img{width:100%}
 
 .titlebar{
   width: 50%;
@@ -70,16 +77,18 @@ a:hover .indexbar p{color:blue}
 }
 
 .titlebar p{text-transform:uppercase;letter-spacing:0.5px;font-size:20px}
-.titlebar a, .processbar a{
-  color:gray;
-  cursor:pointer;
-  transition:0.2 ease;
+.titlebar a, .processbar a, .navbar a, .list a{
+  color:darkgray;
+  transition:0.2s ease;
 }
-.titlebar a:hover, .processbar a:hover{
+.titlebar a:hover, .processbar a:hover, .navbar a:hover, .list a:hover{
   color:blue;
 }
-.jumpto{
-  width:30%;display:flex;justify-content:space-between
+.titlebar .nav{
+  display:flex;justify-content:flex-end
+}
+.titlebar .nav a{
+  margin-left:20px;
 }
 
 .navbar{
@@ -94,22 +103,20 @@ a:hover .indexbar p{color:blue}
   background: whitesmoke;
 }
 
-.navbar a{color:gray;transition:0.2s ease}
-.navbar a:hover{color:blue}
-
 .navbar .nav{
-  width:20%;
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+.navbar .nav a{
+  margin-right:20px;
 }
 
 .menubar{
   width: 100%;
-  padding: 10px 20px;
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   z-index: 9999;
   transition: 1s ease;
   background: whitesmoke;
@@ -137,8 +144,11 @@ a:hover .indexbar p{color:blue}
 }
 
 .menubar .nav{
-  width: 25%;
-  font-size: 18px;
+  width: 20vw;
+  padding: 10px 20px;
+  font-size: 16px;
+  display:flex;
+  justify-content: space-between;
 }
 
 .menubtn svg{
@@ -277,10 +287,12 @@ a.last{margin-bottom:20px}
 
 .logo{
   font-size: 24px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   cursor:pointer;
   transition: 0.2s ease;
+  /* transform: scale(1.1) */
 }
 
 .logo div{
@@ -338,14 +350,14 @@ a.last{margin-bottom:20px}
   /* border:1px solid red; */
 }
 
+.container img, .container div img{
+  width:100%;
+}
+
 .full{height:100vh;margin:0;padding:0;align-items:center;overflow:hidden}
 .full img{width:100%}
 .center, .single{justify-content: center;}
 .single img{width:60%}
-
-.container img, .container div img{
-  /* width:100%; */
-}
 
 .proj-nav{
   position:fixed;
@@ -353,14 +365,14 @@ a.last{margin-bottom:20px}
   font-size:20px;
 }
 
-.col1, .col2{
+.col1, .col2, .indexitem{
   width:50%;
 }
 .col1{
   margin-right:20px;
 }
-.col1 img, .col2 img, .center img{
-  width:100%
+.col1 img, .col2 img, .center img, .indexitem img{
+  width:100%;
 }
 
 .info{
@@ -389,18 +401,10 @@ iframe{
   height:100%;
 }
 
-.thumb{
-  width:100%;height:60vh;
-  background:gray;overflow:hidden;
-  display:flex;align-items:center;justify-content: center;
-  /* box-shadow:0px 1px 5px rgba(0,0,0,0.15) */
-}
-.thumb img{width:105%}
-
 .test{
   width: 100%;
-  padding: 5px 20px;
-  font-size: 28px;
+  padding: 0 20px 20px 20px;
+  font-size: 24px;
   display: flex;
   align-items: center;
   transition: 1s ease;
@@ -440,30 +444,31 @@ iframe{
 .process{
   position:fixed;
   top:0;
-  left:0;
-  width:calc(70vw);
+  left: -75vw;
+  width:75vw;
+  /* left:calc(-50vw - 10px);
+  width:calc(50vw + 10px); */
   height:100vh;
   background:whitesmoke;
   z-index:99999;
   overflow-x: hidden;
   padding: 20px;
   font-size: 28px;
-  transform: translateX(-70vw);
   transition: 1.5s ease;
   /* box-shadow:0px 2px 3px rgba(0,0,0,0.1) */
 }
 
 .process img{width:100%;margin-bottom:10px;}
 
-.showProcess{
-  transform: translateX(0);
-}
-
 .processbox{
-  width:100%;
+  /* width:100%; */
   height:100%;
   position:relative;
   overflow-y:auto;
+}
+
+.processbox::-webkit-scrollbar {
+  display: none;
 }
 
 .processbar{
@@ -480,10 +485,52 @@ iframe{
   background: whitesmoke;
 }
 
-.processflex{
-  display:flex;
+.listmenu{
+  position:fixed;
+  top:0;
+  right:-20vw;
+  width:20vw;
+  height:100vh;
+  background: gainsboro;
+  z-index:99999;
+  overflow-x: hidden;
+  padding: 20px;
+  transition: 1.5s ease;
 }
 
-.processflex img{
-  width:100%;
+.list{
+  display:flex;
+  flex-flow:column;
+  /* margin-top:20px; */
+  font-size:18px;
 }
+
+.list a{
+  margin-bottom:20px;
+  color:gray;
+}
+
+.listmenu .nav{
+  position:absolute;
+  bottom:10px;right:20px;
+  width:100%;
+  display:flex;
+  justify-content: flex-end;
+  font-size:18px;
+  color:gray;
+}
+
+/* .showProcess{transform:translateX(calc(50vw + 10px))} */
+.showProcess{transform:translateX(75vw)}
+
+.showList{
+  transform: translateX(-20vw);
+}
+
+.index{
+  flex-flow: row wrap;
+  padding-right:0;
+  padding-top:80px;
+}
+
+.indexitem{padding-right:20px;margin-bottom:40px;}

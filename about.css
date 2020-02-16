@@ -30,8 +30,12 @@ h1, h2, h3, a, p{
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
+.intro{
+  animation: fadeIn 2s ease;
+}
+
 .paragraph{
-  width: 70%;
+  width: 60%;
   display: inline-flex;
   flex-flow: wrap;
   justify-content: flex-start;
@@ -39,7 +43,6 @@ h1, h2, h3, a, p{
   line-height: 1.35;
   font-size: 32px;
   margin-bottom: 40px;
-  animation: fadeIn 2s ease;
 }
 
 @keyframes fadeIn{
@@ -69,6 +72,7 @@ h1, h2, h3, a, p{
   text-align: center;
   display: flex;
   align-items: center;
+  margin-top:-1px;
 }
 
 .eye{
@@ -179,11 +183,18 @@ button {padding:0 5px}
   margin-bottom:0;
 }
 
+.filler{
+  position:absolute;
+  bottom:20px; right:20px;
+  width:70px;
+}
+
 @media screen and (max-width: 800px){
   .paragraph{width:100%;}
   .dropbtn, .paragraph{font-size: 22px}
   .dropbtn{background:pink}
-  .eye{width:20px;height:20px;border:2.4px solid black;}
+  .eyes{margin-top:0.75px}
+  .eye{width:18px;height:18px;border:2.4px solid black;}
   .dropdown-content{width:260px}
   .dropdown-content a{font-size:16px}
 }

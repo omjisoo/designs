@@ -6,19 +6,31 @@
     <meta background="viewport" section="width=device-width, initial-scale=1">
     <title>Joob Joob - JISOO</title>
     <link rel="stylesheet" href="project3.css">
-    <link rel="icon" type="img/png" href="img/favi.png">
+    <link rel="icon" type="img/joob/png" href="img/joob/favi.png">
   </head>
 
   <div class="process">
     <div class="processbox">
-      <img src="img/joob-task-diagram.jpg">
-      <div class="processflex">
-        <img src="img/joob-wireframe.png">
-        <img src="img/joob-wireframe2.png">
-      </div>
+      <img src="img/joob/joob-task-diagram.jpg">
+      <img src="img/joob/joob-wireframe.jpg">
     </div>
     <div class="processbar">
-      <a onclick="showProcess()">⮑ Back to Project</a>
+      <a onclick="hideProcess()">⮑ Back to Project</a>
+    </div>
+  </div>
+
+  <div class="listmenu">
+    <div class="list">
+      <a>More Work</a>
+      <a>⮑ a space dedicated to self-love</a>
+      <a>⮑ a map of work at an IT call center</a>
+      <a>⮑ a mobile app to pick up Korean words</a>
+      <a>⮑ an award-winning wrapping paper</a>
+      <a>⮑ a world dictated by certainty</a>
+      <a>⮑ a series of multicultural events</a>
+    </div>
+    <div class="nav">
+      <a onclick="hideList()">X Close</a>
     </div>
   </div>
 
@@ -42,10 +54,10 @@
     </header>
 
     <div class="container full">
-        <img src="img/joob-mockup3.jpg" style="width:100%">
+        <img src="img/joob/joob-mockup3.jpg" style="width:100%">
       <div class="titlebar" id="project">
         <p>Joob Joob</p>
-        <div class="jumpto">
+        <div class="nav">
           <a href=#project>⮑ Project</a>
           <a onclick="showProcess()">⮑ Process</a>
         </div>
@@ -54,9 +66,9 @@
 
     <div class="container">
       <div class="info">
-        <p>Joob Joob is a mobile application to help English speakers learn the Korean language and culture. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions in the process. The user also gains interesting facts and insider tips by collecting Kollectibles after each mission.</p><br><br>
+        <p>Joob Joob is a mobile application that helps English speakers learn the Korean language and culture. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions in the process. The user also gains interesting facts and insider tips by collecting Kollectibles after each mission.</p><br><br>
         <h1>category</h1>
-        <h2>Experience, Illustration, Video</h2><br>
+        <h2>Experience, Video</h2><br>
         <h1>year</h1>
         <h2>2018</h2>
       </div>
@@ -77,10 +89,10 @@
     </div>
     <div class="container">
       <div class="col1">
-        <img src="img/joob1.png">
+        <img src="img/joob/joob1.png">
       </div>
       <div class="col2">
-        <img src="img/joob2.png">
+        <img src="img/joob/joob2.png">
       </div>
     </div>
 
@@ -92,12 +104,22 @@
     </div>
 
     <div class="container center">
-        <img src="img/joob-mockup4.jpg">
+        <img src="img/joob/joob-mockup4.5.jpg">
     </div>
 
-    <div class="container full center">
+    <div class="container center" style="height:calc(100vh - 80px)">
       <iframe src="https://player.vimeo.com/video/304927978?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
+
+    <footer>
+      <div class="navbar">
+        <div class="nav">
+          <a href="#">⮑ Back to Top</a>
+          <a onclick="showProcess()">⮑ Process</a>
+        </div>
+          <a onclick="showList()">⮑ More Work</a>
+      </div>
+    </footer>
 
   </body>
   <script src="functions.js"></script>

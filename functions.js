@@ -8,8 +8,25 @@ function showMenu() {
 };
 
 function showProcess() {
-  document.querySelector('.process').classList.toggle("showProcess");
-  document.querySelector('body').classList.toggle("stopscroll");
+  document.querySelector('.process').classList.add("showProcess");
+  document.querySelector('body').classList.add("stopscroll");
+  document.querySelector('.listmenu').classList.remove("showList");
+}
+
+function hideProcess() {
+  document.querySelector('.process').classList.remove("showProcess");
+  document.querySelector('body').classList.remove("stopscroll");
+}
+
+function showList() {
+  document.querySelector('.listmenu').classList.add("showList");
+  document.querySelector('body').classList.add("stopscroll");
+  document.querySelector('.process').classList.remove("showProcess");
+}
+
+function hideList() {
+  document.querySelector('.listmenu').classList.remove("showList");
+  document.querySelector('body').classList.remove("stopscroll");
 }
 
 function openMenu() {
