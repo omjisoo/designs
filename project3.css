@@ -33,7 +33,9 @@ h2{
 }
 
 h3{
-  font-size:60px;font-family:proxima-soft,sans-serif;
+  font-size:60px;
+  font-size: calc(18px + 32 * (100vw - 480px) / 760);
+  font-family:proxima-soft,sans-serif;
   color:darkgray;
   line-height:1;
   animation: fadeIn 1s ease;
