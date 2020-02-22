@@ -9,24 +9,28 @@ function showMenu() {
 
 function showProcess() {
   document.querySelector('.process').classList.add("showProcess");
+  document.querySelector('.processbar').classList.add("showProcess");
   document.querySelector('body').classList.add("stopscroll");
   document.querySelector('.listmenu').classList.remove("showList");
+  document.querySelector('.overlay').classList.add("showOverlay");
 }
 
 function hideProcess() {
   document.querySelector('.process').classList.remove("showProcess");
+  document.querySelector('.processbar').classList.remove("showProcess");
   document.querySelector('body').classList.remove("stopscroll");
+  document.querySelector('.overlay').classList.remove("showOverlay");
 }
 
 function showList() {
   document.querySelector('.listmenu').classList.add("showList");
-  document.querySelector('body').classList.add("stopscroll");
+  // document.querySelector('body').classList.add("stopscroll");
   document.querySelector('.process').classList.remove("showProcess");
 }
 
 function hideList() {
   document.querySelector('.listmenu').classList.remove("showList");
-  document.querySelector('body').classList.remove("stopscroll");
+  // document.querySelector('body').classList.remove("stopscroll");
 }
 
 function openMenu() {
@@ -72,37 +76,3 @@ document.onmousemove = function(){
     eyeball[i].style.transform = "translate(-"+x+", -"+y+")";
   }
 };
-
-var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'left',
-  contain: true,
-  selectedAttraction: 0.01,
-  sfriction: 0.15
-});
-
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-};
-
-// Get the modal
-var modal = document.getElementById('.menu');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.classList.toggle("show");
-  }
-}
