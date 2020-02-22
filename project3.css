@@ -433,16 +433,16 @@ iframe{
 .about{
   position:absolute;
   top:calc(50vh + 40px);
-  /* align-items: center; */
   height:90vh;
   margin:0;
-  /* padding-top:80px; */
-  overflow-y:hidden;
+  overflow:hidden;
 }
 .about .col1{
   opacity:0;
   animation:fadeIn 2s ease forwards;
   animation-delay: 1s;
+}
+.about .col2{
 }
 .about p{
   line-height:1.35;
@@ -463,14 +463,14 @@ iframe{
 
 #brainstorm{
   position:absolute;
-  bottom:-50px;right:0;
-  padding-right:20px;
+  bottom:-50px;right:20px;
+  /* padding-right:20px; */
   width:50vw;
 }
 #brainstorm_obj{
   position:absolute;
-  right:0;
-  padding-right:20px;
+  right:20px;
+  /* padding-right:20px; */
   width:50vw;
   z-index:-1;
   animation:float 1s ease alternate infinite;
