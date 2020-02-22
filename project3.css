@@ -247,8 +247,11 @@ a:hover .indexbar p{color:blue}
 .single img{width:60%}
 .column{flex-direction:column}
 
-.half{height:75vh;align-items:center;}
-.half p{letter-spacing: 1px;font-family:proxima-soft,sans-serif;color:dimgray;}
+.half{height:75vh;align-items:center;margin-bottom:-40px;}
+.half p{
+  letter-spacing: 1px;font-family:proxima-soft,sans-serif;color:dimgray;
+  width:75%;
+}
 
 .proj-nav{
   position:fixed;
