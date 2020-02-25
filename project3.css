@@ -37,7 +37,7 @@ h3{
   font-size: calc(18px + 22 * (100vw - 480px) / 760);
   font-family:proxima-soft,sans-serif;
   color:darkgray;
-  line-height:1;
+  line-height:1.1;
   animation: fadeIn 1s ease;
 }
 
@@ -249,7 +249,7 @@ a:hover .indexbar p{color:blue}
 .single img{width:60%}
 .column{flex-direction:column}
 
-.half{height:75vh;align-items:center;margin-bottom:-40px;}
+.half{height:70vh;align-items:center;margin-bottom:-40px;}
 .half p{
   letter-spacing: 1px;font-family:proxima-soft,sans-serif;color:dimgray;
   width:75%;
@@ -473,21 +473,16 @@ iframe{
 #brainstorm{
   position:absolute;
   bottom:-50px;right:20px;
-  /* padding-right:20px; */
   width:50vw;
 }
-#brainstorm_obj{
+#float2{
   position:absolute;
-  right:20px;
-  /* padding-right:20px; */
   width:50vw;
+  bottom:-50px;right:20px;
   z-index:-1;
-  animation:float 1s ease alternate infinite;
+  animation:float 1.5s ease alternate infinite;
 }
 
-@keyframes float{
-  from{bottom:-55px} to {bottom:-40px}
-}
 
 .extra{
   margin:0;
@@ -509,3 +504,32 @@ iframe{
   height:auto;
   background:none;
 }
+
+.landing{
+  padding:0;
+  align-items: flex-end;
+  justify-content: center;
+  animation: fadeIn 1s ease;
+}
+.landing img{
+  width:100vh;
+  position:absolute;
+}
+
+#float{
+  transform:translateY(0);
+  z-index:-1;
+  animation: float 1.5s ease alternate infinite;
+}
+@keyframes float{
+  from{transform:translateY(0)} to {transform:translateY(20px)}
+}
+
+
+.landing h3{
+  font-size: calc(18px + 32 * (100vw - 480px) / 760);
+  margin-bottom:40px;
+}
+/* .landing a{
+  font-size: calc(18px + 6 * (100vw - 480px) / 760);
+} */
