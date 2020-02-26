@@ -22,7 +22,7 @@
             <div>&nbsp;SHIN</div>
           </a>
         <div class="nav">
-          <a href="work.html" class="active">Work</a>
+          <a href="work.html" class="selected">Work</a>
           <a href="extra.html">Extra</a>
           <a href="info.html">Info</a>
         </div>
@@ -31,18 +31,21 @@
 
     <div class="container half" style="padding-left:40px">
       <div class="col1">
-        <!-- <h3>Work</h3><br>
-        <h3><a href=#teleport>↓</a></h3> -->
       </div>
-      <div class="col2">
-        <h3>Filter by:<br>Experience, Illustration,<br>Print, Video</h3><br>
-        <!-- <h3>Experience, Illustration,<br>Print, Video</h3><br> -->
+      <div class="col2" id="filterby">
+        <h3>Filter by:<br>
+          <a class="filter" onclick="filterSelection('exp')">Experience</a>,
+          <a class="filter" onclick="filterSelection('il')">Illustration</a>,<br>
+          <a class="filter" onclick="filterSelection('pr')">Print</a>,
+          <a class="filter" onclick="filterSelection('vi')">Video</a>,
+          <a class="filter active" onclick="filterSelection('all')">All</a>
+        </h3><br>
         <h3><a href=#teleport>↙</a></h3>
       </div>
     </div>
       <div id="teleport"></div>
       <div class="container index">
-        <div class="indexitem"><a href="fears-are-beings-too.html">
+        <div class="indexitem pr il"><a href="fears-are-beings-too.html">
           <div class="thumb">
             <img src="img/fears/fears_stack.jpg">
         </div>
@@ -50,7 +53,7 @@
             <p>⮑ a book of conversation with fears</p>
           </div></a>
         </div>
-        <div class="indexitem"><a href="itsc-journey-map.html">
+        <div class="indexitem il"><a href="itsc-journey-map.html">
           <div class="thumb">
             <img src="img/itsc/itsc_detail2.jpg" style="height:100%">
           </div>
@@ -58,7 +61,7 @@
             <p>⮑ a map of a part-time IT technician</p>
           </div></a>
         </div>
-        <div class="indexitem"><a href="project-marry-me.html">
+        <div class="indexitem exp pr"><a href="project-marry-me.html">
           <div class="thumb">
             <img src="img/marryme/marryme_card1.jpg">
           </div>
@@ -66,7 +69,7 @@
             <p>⮑ a space dedicated to self-love</p>
           </div></a>
         </div>
-        <div class="indexitem"><a href="joob-joob.html">
+        <div class="indexitem exp vi"><a href="joob-joob.html">
           <div class="thumb">
             <img src="img/joob/joob-mockup4.55.jpg">
           </div>
