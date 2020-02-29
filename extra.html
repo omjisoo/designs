@@ -21,20 +21,30 @@
             </div>
             <div>&nbsp;SHIN</div>
           </a>
-        <div class="nav">
-          <a href="work.html">Work</a>
-          <a href="extra.html" class="selected">Extra</a>
-          <a href="info.html">Info</a>
-        </div>
+          <div class="nav">
+            <a href="work.html" class="pc">Work</a>
+            <a href="extra.html" class="selected pc">Extra</a>
+            <a href="info.html" class="pc">Info</a>
+            <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
+          </div>
       </div>
     </header>
+
+    <div class="mb menu">
+      <a class="close" onclick="toggleMenu()">X Close</a>
+      <div>
+        <a href="work.html">Work</a>
+        <a href="extra.html">Extra</a>
+        <a href="info.html">Info</a>
+      </div>
+    </div>
 
     <div class="container half">
       <div class="col1">
       </div>
       <div class="col2">
         <h3>Something extra for your visual craving...</h3><br>
-        <h3><a href=#teleport>↙</h3>
+        <h3><a class="pc" href=#teleport>↙</a></h3>
       </div>
     </div>
 

@@ -51,12 +51,22 @@
             <div>&nbsp;SHIN</div>
           </a>
         <div class="nav">
-          <a href="work.html">Work</a>
-          <a href="extra.html">Extra</a>
-          <a href="info.html">Info</a>
+          <a href="work.html" class="selected pc">Work</a>
+          <a href="extra.html" class="pc">Extra</a>
+          <a href="info.html" class="pc">Info</a>
+          <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
         </div>
       </div>
     </header>
+
+    <div class="mb menu">
+      <a class="close" onclick="toggleMenu()">X Close</a>
+      <div>
+        <a href="work.html">Work</a>
+        <a href="extra.html">Extra</a>
+        <a href="info.html">Info</a>
+      </div>
+    </div>
 
     <div class="container full">
         <img class="titleimg" src="img/fears/fears_stack2.jpg">

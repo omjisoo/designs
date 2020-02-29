@@ -2,9 +2,10 @@ function goBack() {
   window.history.back();
 }
 
-function showMenu() {
+function toggleMenu() {
   document.querySelector('.menu').classList.toggle("showMenu");
   document.querySelector('body').classList.toggle("stopscroll");
+  document.querySelector('#menu').classList.toggle("selected");
 };
 
 function showProcess() {
