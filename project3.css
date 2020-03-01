@@ -647,7 +647,7 @@ iframe{
 }
 .menu a:hover{color:blue}
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1024px){
   .pc, .titlebar{display:none}
   .mb{display:block}
   h3{font-size: calc(40px + 32 * (100vw - 480px) / 760);}
