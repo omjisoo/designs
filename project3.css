@@ -245,10 +245,17 @@ a:hover .indexbar p{color:blue}
 .single img{width:60%}
 .column{flex-direction:column}
 
-.half{height:70vh;align-items:center;margin-bottom:-40px;}
-.half p{
-  letter-spacing: 1px;font-family:proxima-soft,sans-serif;color:dimgray;
-  width:75%;
+.half{height:70vh;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom:-60px;
+}
+.half div{
+  width:50%;
+}
+
+#abouth3{
+  margin-bottom:-120px;
 }
 
 .proj-nav{
@@ -278,13 +285,23 @@ a:hover .indexbar p{color:blue}
 }
 
 .caption{
-  width: 50vw;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin:40px 0;
+}
+.caption div{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.caption div p{
+  width: 50%;
+  padding-left:30px;
+  padding-right:80px;
+  color: dimgray;
   font-size: calc(12px + 4 * (100vw - 480px) / 760);
   line-height: 1.4;
-  color: dimgray;
-  padding: 20px;
-  padding-right:80px;
-  margin:40px 0;
 }
 
 .category{
@@ -299,6 +316,25 @@ iframe{
   width:75vw;
   height:100%;
 }
+
+.video{
+  height:calc(100vh - 80px)
+}
+
+#marryme{
+  display:flex;align-items:center;
+  background:white;
+  height:100vh
+}
+
+@media screen and (max-width:900px){
+  #marryme{
+    flex-direction:column;
+    height:100%;
+    margin-top:40px;
+  }
+}
+
 
 .process{
   position:fixed;
@@ -354,6 +390,9 @@ iframe{
   z-index:999;
 }
 
+.showProcess{transform:translateX(80vw)}
+
+
 .listmenu{
   position:fixed;
   bottom:0;
@@ -392,10 +431,6 @@ iframe{
   font-size:18px;
   color:gray;
 }
-
-/* .showProcess{transform:translateX(calc(50vw + 10px))} */
-/* .showProcess{transform:translateX(75vw))} */
-.showProcess{transform:translateX(80vw)}
 
 .showList{
   transform: translateX(-25vw);
@@ -440,26 +475,29 @@ iframe{
 
 .overview{
   margin-top:60px;
+  padding-left:40px;
 }
-.overview .col1{
+/* .overview .col1{
   padding-left:20px;
   width:75%
+} */
+.overview h3{
+  width:60%
 }
 
 .about{
   position:absolute;
-  top:calc(50vh + 40px);
   height:90vh;
   margin:0;
   overflow:hidden;
 }
 .about .col1{
+  width:60%;
   opacity:0;
   animation:fadeIn 2s ease forwards;
   animation-delay: 1s;
 }
-.about .col2{
-}
+
 .about p{
   line-height:1.35;
   padding-left:20px;
@@ -527,7 +565,6 @@ iframe{
 }
 
 .landing h3{
-  /* font-size: calc(40px + 32 * (100vw - 480px) / 760); */
   margin-bottom:40px;
 }
 
@@ -548,6 +585,7 @@ iframe{
 }
 .headline a{
   transition: 0.2s ease;
+  /* color:lightgray; */
 }
 .headline a:hover{color:blue}
 
@@ -610,18 +648,46 @@ iframe{
 .menu a:hover{color:blue}
 
 @media screen and (max-width:900px){
-  .pc {display:none}
+  .pc, .titlebar{display:none}
   .mb{display:block}
-  h3{  font-size: calc(40px + 32 * (100vw - 480px) / 760);}
+  h3{font-size: calc(40px + 32 * (100vw - 480px) / 760);}
   p, .indexbar p, .extra p{font-size:18px}
   .menubar .nav{width:auto}
   .container{flex-direction:column}
-  .half{padding-top:100px;margin-bottom:40px;height:inherit}
-  .landing{align-items: center;justify-content: flex-end;}
-  .landing img{width:100vw;max-height:450px}
-  .headline{left:40px;align-items:flex-start;}
+  .half{padding-left:40px;height:100%;padding-top:80px;margin-bottom:40px}
+  .half div{width:100%}
+  .landing{align-items: center;justify-content:flex-end;}
+  .landing img{width:100vw;max-height:450px;bottom:-25px}
+  .headline{left:40px;align-items:flex-start;top:80px;padding-right:40px}
   .col1, .col2{width:100%}
   .col1{margin-bottom:20px}
+
+  .single img{width:100%}
+
   .indexitem{width:100%}
   .thumb{height:auto}
+  .full{height:100%}
+
+  .titlebar, .caption div p, .overview h3, .about .col1, .about col2{width:100%}
+  .caption div p{padding-left:20px;padding-right:20px;font-size:16px}
+  .navbar{font-size:16px}
+
+  .process{left:-100vw;width:100vw;}
+  .showProcess{transform:translateX(100vw)}
+
+  .listmenu{right:-75vw;width:75vw}
+  .showList{transform:translateX(-75vw)}
+
+  .video{height:calc(100vh - 300px)}
+  iframe{width:100vw;padding-right:40px}
+
+  #brainstorm, #float2{width:100vw;right:0;max-height:500px}
+  #abouth3 {margin-bottom:0}
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .pc, .titlebar{display:none}
 }

@@ -58,7 +58,7 @@
   <body>
     <header>
       <div class="menubar">
-          <a class="logo" href="index.html">
+          <a class="logo pc" href="index.html">
             <div>JIS</div>
             <div class="eyes">
               <div class="eye"><div class="eyeball"></div></div>
@@ -66,10 +66,14 @@
             </div>
             <div>&nbsp;SHIN</div>
           </a>
+          <a class="logo mb" href="index.html">
+            <div>JISOO SHIN</div>
+          </a>
         <div class="nav">
-          <a href="work.html">Work</a>
-          <a href="extra.html">Extra</a>
-          <a href="info.html">Info</a>
+          <a href="work.html" class="selected pc">Work</a>
+          <a href="extra.html" class="pc">Extra</a>
+          <a href="info.html" class="pc">Info</a>
+          <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
         </div>
       </div>
     </header>
@@ -86,18 +90,14 @@
     </div>
 
     <div class="container overview">
-      <div class="col1">
+      <div>
         <h3>Joob Joob is a mobile app to pick up the Korean language and culture in a fun and interactive way.</h3><br>
-      </div>
-      <div class="col2">
       </div>
     </div>
 
-    <div class="container">
-      <div class="col1">
-      </div>
-      <div class="col2">
-        <p class="caption">The name of the app comes from the Korean slang word 줍줍, which is a sort of onomatopoeia for picking up items in games or memes online. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions in the process. The user also gains interesting facts and insider tips by collecting Kollectibles after each mission.<br><br>
+    <div class="container caption">
+      <div>
+        <p>The name of the app comes from the Korean slang word 줍줍, which is a sort of onomatopoeia for picking up items in games or memes online. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions in the process. The user also gains interesting facts and insider tips by collecting Kollectibles after each mission.<br><br>
         <span class="category">Experience, Video<br>
         2018</span>
       </div>
@@ -139,10 +139,9 @@
         <img src="img/joob/joob-ref2.png"  style="background:#ebebec">
     </div>
 
-    <div class="container">
-      <div class="col1"></div>
-      <div class="col2">
-        <p class="caption">The visual elements were inspired from various traditional Korean motifs and my personal knowledge of Korea. The color scheme is based on <a href="https://en.wikipedia.org/wiki/Obangsaek" target="_blank">Obangsaek</a>, the five symbolic colors, as well as my favorite shade of green from Buddhist temples. </p>
+    <div class="container caption">
+      <div>
+        <p>The visual elements were inspired from various traditional Korean motifs and my personal knowledge of Korea. The color scheme is based on <a href="https://en.wikipedia.org/wiki/Obangsaek" target="_blank">Obangsaek</a>, the five symbolic colors, as well as my favorite shade of green from Buddhist temples. </p>
       </div>
     </div>
 
@@ -157,7 +156,7 @@
         <img src="img/joob/joob-mockup4.55.jpg">
     </div>
 
-    <div class="container center" style="height:calc(100vh - 80px)">
+    <div class="container center video">
       <iframe src="https://player.vimeo.com/video/304927978?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
 
