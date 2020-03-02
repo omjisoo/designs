@@ -19,10 +19,8 @@
       <div class="container">
         <img src="img/joob/joob_sketch4.jpg">
       </div>
-      <div class="container">
-        <div class="col1"><p class="caption">Concept sketches</p></div>
-        <div class="col2">
-        </div>
+      <div class="container caption">
+        <div><p>Concept sketches</p></div>
       </div>
       <div class="container">
         <img src="img/joob/joob-task-diagram.jpg">
@@ -30,10 +28,8 @@
       <div class="container">
         <img src="img/joob/joob-wireframe2.jpg">
       </div>
-      <div class="container">
-        <div class="col1"><p class="caption">Task diagram & final wireframes</p></div>
-        <div class="col2">
-        </div>
+      <div class="container caption">
+        <div><p>Task diagram & final wireframes</p></div>
       </div>
     </div>
     <div class="processbar">
@@ -70,13 +66,22 @@
             <div>JISOO SHIN</div>
           </a>
         <div class="nav">
-          <a href="work.html" class="selected pc">Work</a>
+          <a href="work.html" class="pc">Work</a>
           <a href="extra.html" class="pc">Extra</a>
           <a href="info.html" class="pc">Info</a>
           <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
         </div>
       </div>
     </header>
+
+    <div class="mb menu">
+      <a class="close" onclick="toggleMenu()">X Close</a>
+      <div>
+        <a href="work.html">Work</a>
+        <a href="extra.html">Extra</a>
+        <a href="info.html">Info</a>
+      </div>
+    </div>
 
     <div class="container full">
         <img class="titleimg" src="img/joob/joob-mockup4.55.jpg">
@@ -99,28 +104,9 @@
       <div>
         <p>The name of the app comes from the Korean slang word 줍줍, which is a sort of onomatopoeia for picking up items in games or memes online. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions in the process. The user also gains interesting facts and insider tips by collecting Kollectibles after each mission.<br><br>
         <span class="category">Experience, Video<br>
-        2018</span>
+        2018</span></p>
       </div>
     </div>
-
-
-    <!-- <div class="container">
-      <div class="info">
-        <p>Joob Joob is a mobile application that helps English speakers learn the Korean language and culture. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions in the process. The user also gains interesting facts and insider tips by collecting Kollectibles after each mission.</p><br><br>
-        <h1>category</h1>
-        <h2>Experience, Video</h2><br>
-        <h1>year</h1>
-        <h2>2018</h2>
-      </div>
-    </div> -->
-
-    <!-- <div class="container" style="margin-top:-60px">
-      <div class="col1"></div>
-      <div class="col2">
-        <p class="caption">The name of the app comes from the Korean slang word 줍줍, which is a sort of onomatopoeia for picking up items in games or memes online.</p>
-      </div>
-    </div> -->
-
 
     <div class="container">
       <div class="col1">
@@ -141,7 +127,7 @@
 
     <div class="container caption">
       <div>
-        <p>The visual elements were inspired from various traditional Korean motifs and my personal knowledge of Korea. The color scheme is based on <a href="https://en.wikipedia.org/wiki/Obangsaek" target="_blank">Obangsaek</a>, the five symbolic colors, as well as my favorite shade of green from Buddhist temples. </p>
+        <p>The visual elements were inspired from various traditional Korean motifs and my personal knowledge of Korea. The color scheme is based on <a href="https://en.wikipedia.org/wiki/Obangsaek" target="_blank">Obangsaek</a>, the five symbolic colors, as well as my favorite shade of green from Buddhist temples.</p>
       </div>
     </div>
 
@@ -166,7 +152,8 @@
           <a href="#">⮑ Back to Top</a>
           <a onclick="showProcess()">⮑ Process</a>
         </div>
-          <a onclick="showList()">⮑ More Work</a>
+          <!-- <a onclick="showList()">⮑ More Work</a> -->
+          <a href="work.html#teleport">⮑ More Work</a>
       </div>
     </footer>
 
