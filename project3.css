@@ -634,11 +634,11 @@ iframe{
   color:blue;
 }
 .showMenu{transform:translateY(0)}
-.close{
-  position:absolute;
+#close{
+  /* position:absolute;
   bottom:20px;
-  right:20px;
-  font-size:16px;
+  right:20px; */
+  /* font-size:16px; */
   color:darkgray;
 }
 .menu a:hover{color:blue}
@@ -693,11 +693,12 @@ iframe{
 }
 
 @media only screen and (min-width: 768px) and (max-width:1024px){
-  p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .close, .about p
+  p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .about p
   {font-size:4vw;}
 
+  #close{font-size:8vw}
   h3, .menu div a{font-size:10vw}
-  .close{bottom:80px;right:40px}
+  /* .close{bottom:80px;right:40px} */
   .logo {
     font-size:5vw;
     padding:20px 40px}
