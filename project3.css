@@ -636,15 +636,13 @@ iframe{
     justify-content: center;
   }
 
-  h3{font-size: calc(30px + 50 * (100vw - 480px) / 760);}
+  h3{font-size: calc(40px + 50 * (100vw - 480px) / 760);line-height:1.2;padding-right:40px;}
 
   p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .about p
   {font-size: calc(20px + 30 * (100vw - 480px) / 760);}
   .menubar .nav{width:auto}
 
   .container, #marryme{flex-direction:column}
-  .half{padding-left:40px;height:100vh;padding-top:80px;margin-bottom:40px}
-  .half div{width:100%}
 
   .landing{align-items:center;justify-content:flex-start;}
 
@@ -655,12 +653,12 @@ iframe{
 
   .single img{width:100%}
 
-  .indexitem{width:100%}
+  .indexitem{width:100%;padding-right:0}
   .thumb{height:auto}
   .filter{color:darkgray}
   .filter.active{color:rgba(0,0,255,0.75)}
 
-  .full{height:100%;overflow-x:hidden}
+  .full{height:100%;overflow-x:hidden;padding:0}
   .full img{width:200%}
 
   .caption div p, .overview h3, .about{width:100%}
@@ -682,20 +680,22 @@ iframe{
   #itsc {align-items: center;}
   #marryme {justify-content: center;}
 
-/* } */
-
-/* @media only screen and (min-width: 600px) and (max-width:1024px){ */
-  /* p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .about p
-  {font-size:4vw;} */
-  .logo {
-    font-size:5vw;
-    padding:20px 40px}
+  .logo {font-size:5vw;padding:20px 40px}
   .menubar{width:100vw}
   .menubar .nav{padding:20px 40px}
   .navbar .nav a{margin-right:40px}
 
   .container{padding:20px 40px}
   .overview{padding:20px 60px}
+
+  .half{
+    padding-left:60px;
+    margin-bottom:40px;
+    height:100%;
+    padding-top:160px;
+  }
+  .half div{width:100%}
+
 
   .landing{padding:0}
   .headline{width:100%;height:50%;padding-left:80px;padding-top:120px}
@@ -704,9 +704,6 @@ iframe{
   .landing div img{width:100%}
   .landing-img{width:100%;height:50%}
 
-  .full{padding:0}
-  .half{height:100%;padding-top:160px;}
-
   .processbox, .processbar, .navbar{padding:40px}
   .processbox .caption{align-items:flex-start}
   .processbar{width:100vw;left:-100vw;}
@@ -714,8 +711,6 @@ iframe{
   .video{height:30vh;overflow-x:hidden;align-items: center;}
   iframe{width:100vw}
 
-
-  .indexitem{padding-right:0}
   .indexbar{padding:30px 40px}
 
   #abouth3{padding: 20px 60px}
