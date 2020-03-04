@@ -487,23 +487,17 @@ iframe{
 }
 
 .about{
-  /* position:absolute; */
-  display: flex;
-  align-items: center;
-  height:100vh;
-  margin:0;
-  overflow:hidden;
-}
-.about .col1{
   width:50%;
-  opacity:0;
-  animation:fadeIn 2s ease forwards;
-  /* animation-delay: 1s; */
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeIn 1s ease;
 }
 
 .about p{
   line-height:1.35;
-  padding-left:20px;
+  padding-left:40px;
   font-size: calc(18px + 4 * (100vw - 480px) / 760)
 }
 
@@ -640,12 +634,12 @@ iframe{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+  }
 
   h3{font-size: calc(30px + 50 * (100vw - 480px) / 760);}
 
   p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .about p
-  {font-size: calc(18px + 30 * (100vw - 480px) / 760);}
+  {font-size: calc(20px + 30 * (100vw - 480px) / 760);}
   .menubar .nav{width:auto}
 
   .container, #marryme{flex-direction:column}
@@ -669,8 +663,11 @@ iframe{
   .full{height:100%;overflow-x:hidden}
   .full img{width:200%}
 
-  .caption div p, .overview h3, .about .col1, .about col2{width:100%}
-  .caption div p{padding-left:20px;padding-right:20px}
+  .caption div p, .overview h3, .about{width:100%}
+  .caption div p {padding-left:20px;padding-right:20px}
+
+  .about{height:100%;padding-top:120px}
+  .about p{padding-left:80px;padding-right:80px}
 
   .process{left:-100vw;width:100vw;}
   .showProcess{transform:translateX(100vw)}
@@ -704,6 +701,7 @@ iframe{
   .headline{width:100%;height:50%;padding-left:80px;padding-top:120px}
   .headline h3, .headline a{margin-left:0}
   .headline a{font-size:5vw}
+  .landing div img{width:100%}
   .landing-img{width:100%;height:50%}
 
   .full{padding:0}
@@ -721,5 +719,4 @@ iframe{
   .indexbar{padding:30px 40px}
 
   #abouth3{padding: 20px 60px}
-  .landing div img{width:100vw}
 }
