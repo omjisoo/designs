@@ -711,7 +711,7 @@ iframe{
   .headline h3, .headline a{margin-left:0}
   .headline a{font-size:5vw}
   .landing div img{width:90%}
-  .landing-img{width:100%;height:40%;margin-top:80px;justify-content: center;}
+  .landing-img{width:100%;height:40%;margin-top:160px;justify-content: center;}
 
   .processbox, .processbar, .navbar{padding:40px}
   .processbox .caption{align-items:flex-start}
