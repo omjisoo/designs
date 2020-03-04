@@ -613,43 +613,39 @@ iframe{
   z-index:2;
   width:100vw;
   height:100vh;
-  /* background:gainsboro; */
   background:whitesmoke;
-  /* background-image: linear-gradient(to bottom, rgba(245,245,245,1) 90%, rgba(245,245,245,0)); */
   text-transform: uppercase;
   transition:1s ease;
 }
-.menu div{
-  height:100%;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.menu div a{
-  font-size:60px;
+
+.menu a{
+  font-size:10vw;
   font-family:proxima-soft,sans-serif;
   line-height: 1.5;
-  /* color:darkgray; */
   color:blue;
 }
 .showMenu{transform:translateY(0)}
+
 #close{
-  /* position:absolute;
-  bottom:20px;
-  right:20px; */
-  /* font-size:16px; */
   color:darkgray;
+  font-size:60px;
 }
 .menu a:hover{color:blue}
 
-@media screen and (max-width:1024px){
+@media only screen and (max-width:1000px){
   .pc, .titlebar{display:none}
   .mb{display:block}
 
-  h3{font-size: calc(30px + 30 * (100vw - 480px) / 760);}
+  .menu{display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
-  p, .indexbar p, .extra p{font-size:18px}
+  h3{font-size: calc(30px + 50 * (100vw - 480px) / 760);}
+
+  p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .about p
+  {font-size: calc(18px + 30 * (100vw - 480px) / 760);}
   .menubar .nav{width:auto}
 
   .container, #marryme{flex-direction:column}
@@ -674,8 +670,7 @@ iframe{
   .full img{width:200%}
 
   .caption div p, .overview h3, .about .col1, .about col2{width:100%}
-  .caption div p{padding-left:20px;padding-right:20px;font-size:16px}
-  .navbar{font-size:16px}
+  .caption div p{padding-left:20px;padding-right:20px}
 
   .process{left:-100vw;width:100vw;}
   .showProcess{transform:translateX(100vw)}
@@ -690,15 +685,11 @@ iframe{
   #itsc {align-items: center;}
   #marryme {justify-content: center;}
 
-}
+/* } */
 
-@media only screen and (min-width: 768px) and (max-width:1024px){
-  p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .about p
-  {font-size:4vw;}
-
-  #close{font-size:8vw}
-  h3, .menu div a{font-size:10vw}
-  /* .close{bottom:80px;right:40px} */
+/* @media only screen and (min-width: 600px) and (max-width:1024px){ */
+  /* p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .about p
+  {font-size:4vw;} */
   .logo {
     font-size:5vw;
     padding:20px 40px}
