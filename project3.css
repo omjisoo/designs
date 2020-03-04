@@ -627,11 +627,12 @@ iframe{
 }
 .menu a:hover{color:blue}
 
-@media only screen and (max-width:1024px){
+@media only screen and (max-device-width:767px){
   .pc, .titlebar{display:none}
   .mb{display:block}
 
-  .menu{display:flex;
+  .menu{
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
