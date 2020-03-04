@@ -16,6 +16,7 @@ body{
 
 h1, h2, h3, a, p, i, em{
   margin: 0;
+  padding: 0;
   text-decoration: none;
   font-weight: normal;
   color: inherit;
@@ -486,16 +487,18 @@ iframe{
 }
 
 .about{
-  position:absolute;
-  height:90vh;
+  /* position:absolute; */
+  display: flex;
+  align-items: center;
+  height:100vh;
   margin:0;
   overflow:hidden;
 }
 .about .col1{
-  width:60%;
+  width:50%;
   opacity:0;
   animation:fadeIn 2s ease forwards;
-  animation-delay: 1s;
+  /* animation-delay: 1s; */
 }
 
 .about p{
@@ -509,25 +512,19 @@ iframe{
   border: 1px solid;
   transition: 0.2s ease;
 }
-.about a:hover{
-  color:whitesmoke;
-  background:blue;
-  border: 1px solid blue;
-}
 
 #brainstorm{
   position:absolute;
-  bottom:-50px;right:20px;
+  bottom:-50px;right:0;
   width:50vw;
 }
 #float2{
   position:absolute;
   width:50vw;
-  bottom:-50px;right:20px;
+  bottom:-50px;right:0;
   z-index:-1;
   animation:float 1.5s ease alternate infinite;
 }
-
 
 .extra{
   margin:0;
@@ -552,44 +549,49 @@ iframe{
 
 .landing{
   height:100vh;
-  /* padding:0; */
-  align-items: flex-end;
-  justify-content: center;
-  animation: fadeIn 1s ease;
-}
-
-.landing img{
-  position:absolute;
-  bottom:-50px;
-  width:100vh;
-}
-
-.landing h3{
-  margin-bottom:40px;
-}
-
-.headline{
-  position:absolute;
-  top:120px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
+  padding:0;
+  /* flex-direction:column; */
+  /* align-items: center; */
   /* justify-content: center; */
 }
 
-.headline div{display:flex;flex-direction: column}
-.headline div a{
-  font-size:24px;
-  color:dimgray;
-  margin-bottom:20px;
+.headline{
+  width:50%;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeIn 1s ease;
 }
+
+.headline h3, .headline a{
+  margin-left:60px;
+}
+
 .headline a{
-  transition: 0.2s ease;
-  /* color:lightgray; */
+  margin-top:60px;
+  border:1px solid;
+  line-height:1.5;
+  padding:0 10px;
+  font-size: calc(20px + 4 * (100vw - 480px) / 760);
+  font-family:proxima-soft,sans-serif;
+  text-transform:uppercase;
 }
-.headline a:hover{color:blue}
+
+.landing-img{
+  width:50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom:-50px;
+}
+
+.landing div img{
+  width:50vw;
+}
 
 #float{
+  position: absolute;
   transform:translateY(0);
   z-index:-1;
   animation: float 1.5s ease alternate infinite;
@@ -598,13 +600,7 @@ iframe{
   from{transform:translateY(0)} to {transform:translateY(20px)}
 }
 
-
-/* .landing a{
-  font-size: calc(18px + 6 * (100vw - 480px) / 760);
-} */
-
 .show{opacity:1}
-/* #filterby{z-index:1} */
 #filterby span{color:lightgray}
 .filter{font-family:proxima-soft,sans-serif;color:lightgray}
 .filter.active {color:darkgray}
@@ -650,17 +646,18 @@ iframe{
 @media screen and (max-width:1024px){
   .pc, .titlebar{display:none}
   .mb{display:block}
-  h3{font-size: calc(40px + 40 * (100vw - 480px) / 760);}
+
+  h3{font-size: calc(30px + 30 * (100vw - 480px) / 760);}
+
   p, .indexbar p, .extra p{font-size:18px}
   .menubar .nav{width:auto}
-
 
   .container, #marryme{flex-direction:column}
   .half{padding-left:40px;height:100%;padding-top:80px;margin-bottom:40px}
   .half div{width:100%}
-  .landing{align-items: center;justify-content:flex-end;}
-  .landing img{width:100vw;max-height:450px;bottom:-25px}
-  .headline{left:40px;align-items:flex-start;top:80px;padding-right:40px}
+
+  .landing{align-items:center;justify-content:flex-start;}
+
   .col1, .col2{width:100%}
   .col1{margin-bottom:40px}
 
@@ -689,23 +686,33 @@ iframe{
   .video{height:calc(100vh - 300px)}
   iframe{width:100vw}
 
-  /* #brainstorm, #float2{width:100vw;right:0;max-height:500px} */
   #abouth3 {margin-bottom:0}
   #itsc {align-items: center;}
   #marryme {justify-content: center;}
+
 }
 
-@media only screen and (min-width : 600px) and (max-width:1024px){
+@media only screen and (min-width: 768px) and (max-width:1024px){
   p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .close, .about p
   {font-size:4vw;}
-  .menu div a{font-size:10vw}
-  .close{bottom:40px;right:40px}
-  .logo {font-size:5vw;padding:20px 40px}
+
+  h3, .menu div a{font-size:10vw}
+  .close{bottom:80px;right:40px}
+  .logo {
+    font-size:5vw;
+    padding:20px 40px}
+  .menubar{width:100vw}
   .menubar .nav{padding:20px 40px}
   .navbar .nav a{margin-right:40px}
 
   .container{padding:20px 40px}
   .overview{padding:20px 60px}
+
+  .landing{padding:0}
+  .headline{width:100%;height:50%;padding-left:80px;padding-top:120px}
+  .headline h3, .headline a{margin-left:0}
+  .headline a{font-size:5vw}
+  .landing-img{width:100%;height:50%}
 
   .full{padding:0}
   .half{height:25vh}
@@ -722,8 +729,5 @@ iframe{
   .indexbar{padding:30px 40px}
 
   #abouth3{padding: 20px 60px}
-  .headline{left:60px;top:200px;}
-  .headline h3{font-size:10vw}
-  .headline div a {font-size:5vw}
-  .landing img{width:100vw;max-height:800px;bottom:-25px}
+  .landing div img{width:100vw}
 }
