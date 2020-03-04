@@ -626,7 +626,7 @@ iframe{
 }
 .menu a:hover{color:blue}
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1024px){
   .pc, .titlebar{display:none}
   .mb{display:block}
 
