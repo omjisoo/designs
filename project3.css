@@ -316,10 +316,6 @@ a:hover .indexbar p{color:blue}
   color: darkgray;
 }
 
-@media screen and (min-width:1441px){
-  .caption {width:45vw}
-}
-
 iframe{
   width:75vw;
   height:100%;
