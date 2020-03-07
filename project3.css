@@ -648,7 +648,7 @@ iframe{
   h3{font-size: calc(40px + 50 * (100vw - 480px) / 760);line-height:1.2;padding-right:80px;}
 
   p, .indexbar p, .extra p, .caption div p, .navbar, .menubar .nav, .processbar a, .about p
-  {font-size: calc(30px + 30 * (100vw - 480px) / 760);}
+  {font-size: calc(20px + 30 * (100vw - 480px) / 760);}
   .menubar .nav{width:auto}
 
   .container, #marryme{flex-direction:column}
