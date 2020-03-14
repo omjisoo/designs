@@ -56,7 +56,7 @@ a:hover{color:blue}
 
 .indexbar{
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px;
   font-size: 18px;
   bottom:0;
   display: flex;
@@ -73,9 +73,6 @@ a:hover .indexbar p{color:blue}
   overflow:hidden;
   display:flex;align-items:center;justify-content: center;
   /* box-shadow:0px 1px 5px rgba(0,0,0,0.15) */
-}
-
-.thumb img{
 }
 
 .titleimg{animation:fadeIn 1.5s ease}
@@ -109,6 +106,10 @@ a:hover .indexbar p{color:blue}
 }
 .titlebar .nav a{
   margin-left:20px;
+}
+
+@media only screen and (max-width:1200px){
+  .titlebar{width:100vw}
 }
 
 .navbar{
@@ -246,6 +247,13 @@ a:hover .indexbar p{color:blue}
 
 .full{height:99.9vh;margin:0;padding:0;align-items:center;overflow-y:hidden}
 .full img{width:100%}
+
+@media only screen and (max-width:900px){
+  .full{justify-content: center;}
+  .full img{width:200%}
+}
+
+
 .center, .single{justify-content: center;}
 .single img{width:60%}
 .column{flex-direction:column}
@@ -312,6 +320,10 @@ a:hover .indexbar p{color:blue}
   line-height: 1.4;
 }
 
+@media only screen and (max-width:1024px){
+  .caption div p{width:100%}
+}
+
 .category{
   color: darkgray;
 }
@@ -359,12 +371,31 @@ iframe{
   overflow-y:auto;
 }
 
+.processbox .caption{
+  display:flex;
+  flex-flow:row;
+  justify-content: flex-end;
+}
+.processbox .caption p{
+  width:50%;
+  padding-left:30px;
+  padding-right:80px;
+  color: dimgray;
+  font-size: calc(12px + 4 * (100vw - 480px) / 760);
+  line-height: 1.4;
+}
+
 .process .container{
   width:100%;
-  height:auto;
+  height: auto;
   padding:0;
+  margin:0;
   align-items:center;
 }
+.processbox div .col1, .process .col2,{
+  margin:0;
+}
+
 .process p{
   font-size:16px;
   width:100%;
@@ -544,6 +575,44 @@ iframe{
   background:none;
 }
 
+.extraspecial{
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.extraspecial img, .extraspecial p{
+  width:30vw;
+}
+.extraspecial p{
+  margin-top:10px;
+  font-size: calc(12px + 4 * (100vw - 480px) / 760);
+}
+
+.italy{
+  justify-content: center;
+}
+
+.italy .col1, .italy .col2{
+  width: 45%;
+}
+
+.shift .col2{
+  margin-top:25vh;
+}
+.italy p, .three p{
+  margin-top:10px;
+  margin-bottom:10px;
+  font-size: calc(12px + 4 * (100vw - 480px) / 760);
+  width:100%;
+}
+
+.three{justify-content:center}
+.three .col1, .three .col2{
+  width:25%;
+}
+.three p{
+  width:100vw;
+}
+
 .landing{
   height:100vh;
   padding:0;
@@ -629,6 +698,10 @@ iframe{
   font-size:60px;
 }
 .menu a:hover{color:blue}
+
+
+
+
 
 @media only screen and (max-device-width:767px){
   .pc, .titlebar{display:none}
