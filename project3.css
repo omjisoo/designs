@@ -57,7 +57,6 @@ a:hover{color:blue}
 .indexbar{
   width: 100%;
   padding: 10px;
-  font-size: 18px;
   bottom:0;
   display: flex;
   justify-content: space-between;
@@ -65,7 +64,7 @@ a:hover{color:blue}
   color: gray;
 }
 
-.indexbar p{font-size:20px;transition:color 0.5s ease}
+.indexbar p{font-size:18px;transition:color 0.5s ease}
 a:hover .indexbar p{color:blue}
 
 .thumb{
@@ -598,7 +597,7 @@ iframe{
 .shift .col2{
   margin-top:25vh;
 }
-.italy p, .three p{
+.italy p, .three p, .shift p{
   margin-top:10px;
   margin-bottom:10px;
   font-size: calc(12px + 4 * (100vw - 480px) / 760);
