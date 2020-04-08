@@ -736,7 +736,7 @@ iframe{
 }
 
 .headline h1{
-  /* letter-spacing: 0.025rem; */
+  color: dimgray;
 }
 
 h1 span{
@@ -750,11 +750,11 @@ h1 span{
   font-size: 2rem;
   color: darkgray;
   font-family:cy,sans-serif;
-  transition:.5s ease;
+  transition:.3s ease;
 }
 
 .headline a:hover{
-  color: #4666ff
+  color: #4666ff;
 }
 
 .landing-img{
