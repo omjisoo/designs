@@ -432,9 +432,9 @@ footer a:hover{
   color:#4666ff;
 }
 
-@media only screen and (max-width:1024px){
+/* @media only screen and (max-width:1024px){
   .caption div p{width:100%}
-}
+} */
 
 .category{
   color: darkgray;
