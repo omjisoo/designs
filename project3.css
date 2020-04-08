@@ -306,8 +306,13 @@ body:not(.mobile) .hover-title:hover + .hover-image {
   color: #4666ff
 }
 
-.first{
-  /* animation: fadeIn 1s ease; */
+.slideIn{
+  animation: slideIn 1s ease;
+}
+
+@keyframes slideIn{
+  from{transform:translateY(1rem)}
+  to{transform:translateY(0)}
 }
 
 footer{
