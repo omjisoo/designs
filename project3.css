@@ -58,7 +58,7 @@ p{
   from {opacity:0} to {opacity:1}
 }
 
-.fadeIn{animation: fadeIn 1.5s ease}
+.fadeIn{animation: fadeIn 1s ease}
 
 /* @keyframes clickme{
   0%{transform:translateX(0)}
@@ -852,7 +852,7 @@ h1 span{
     justify-content: flex-start;
     margin-top: 10rem;
     height: 100%;
-    animation: fadeIn 1.5s ease;
+    animation: fadeIn 1s ease;
   }
   .work h1{
     margin-bottom: 2rem;
