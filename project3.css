@@ -622,12 +622,11 @@ iframe{
 }
 
 .about a{
-  color: darkgray;
+  color: #4666ff;
   transition: 0.3s ease;
 }
 
 .about a:hover{
-  color: #4666ff;
   border-bottom: 0.2rem solid;
 }
 
