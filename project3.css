@@ -748,9 +748,10 @@ iframe{
 
 .headline h1{
   color: #4666ff;
-  font-size: 3rem;
+  font-size: 2.6rem;
   line-height:1.2;
   margin-bottom: 1.4rem;
+  padding-right:1rem;
 }
 
 .headline a{
@@ -847,7 +848,7 @@ iframe{
 
   .landing{align-items:center;justify-content:center;padding:0}
   .headline{width:100%;height:60%;justify-content:flex-end}
-  .headline h1{font-size:9vw;line-height:1.2;margin:0;margin-bottom:4rem}
+  .headline h1{font-size:7vw;line-height:1.3;margin:0;margin-bottom:4rem}
   .headline span{color:inherit}
   .headline a{font-size:6vw;margin:0}
   .landing div img{width:90%}
