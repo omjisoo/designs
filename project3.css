@@ -207,6 +207,16 @@ a:hover .indexbar p{color:#4666ff;}
   padding: 0.75rem 2rem;
 }
 
+.container a{
+  font-size: 1.2rem;
+  color:darkgray;
+  transition: color 0.3s ease;
+}
+
+.container a:hover{
+  color: #4666ff
+}
+
 .start{
   height: 25vh;
   display: flex;
