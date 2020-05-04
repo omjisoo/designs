@@ -12,6 +12,10 @@ body{
   overflow-x: hidden;
 }
 
+.darkmode{
+  background: rgb(20,20,20);
+}
+
 .stopscroll{overflow-y:hidden}
 
 h1, h2, h3, a, p, i, em{
@@ -52,6 +56,31 @@ p{
   color: gray;
   font-family: rubik, sans-serif;
   line-height: 1.5;
+}
+
+.shadow video, .shadow img{
+  box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+  border-radius:4px;
+}
+
+.mobile-sim {
+  display: flex;
+  flex-direction:column;
+  box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+  border-radius:25px;
+}
+.mobile-sim img{
+  /* box-shadow:0 1rem 2rem rgba(0,0,0,0.5); */
+  /* margin-top:2rem;
+  margin-bottom:2rem; */
+}
+/* .mobile-sim img{
+  box-shadow:0 1rem 2rem rgba(0,0,0,0.5);
+  width:25%;
+} */
+
+#iland-sketch{
+  border-radius:25px;
 }
 
 @keyframes fadeIn{
@@ -526,10 +555,10 @@ iframe{
   padding-left: 1.25rem;
   margin-bottom: 2rem;
 }
-.process img{
+.process img, .process video{
   width:100%;
   margin-bottom:20px;
-  box-shadow:0px 0px 3px rgba(0,0,0,0.1)
+  box-shadow:0px 1px 5px rgba(0,0,0,0.2)
 }
 
 .processflex{display:flex;align-items:center}
@@ -837,6 +866,12 @@ iframe{
 }
 .menu a:hover{color:blue}
 
+
+.web-sim{
+  box-shadow:0 0.5rem 1rem rgba(0,0,0,0.5);
+  border-radius:4px;
+}
+
 @media only screen and (max-device-width:767px){
   .pc, .titlebar{display:none}
   .mb{display:block}
@@ -927,6 +962,7 @@ iframe{
   .extraspecial h3{margin-top:2rem}
   .extraspecial p{margin-bottom:3rem}
   .extraspecial footer{position:static;padding:0;padding-bottom:1rem;margin-top:4rem}
+  a.extra{font-size:4vw}
 
   .logo {font-size:6vw;padding:2rem 4rem}
   .menubar{width:100vw}
