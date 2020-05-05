@@ -13,53 +13,78 @@
     </script>
     <meta charset="utf-8">
     <meta background="viewport" content="width=device-width, initial-scale=1">
-    <title>JISOO SHIN</title>
+    <title>Work - JISOO</title>
     <link rel="icon" type="img/png" href="img/favi.png">
     <link rel="stylesheet" href="project3.css">
     <link rel="stylesheet" href="https://use.typekit.net/ntm3whi.css">
   </head>
 
-  <body style="overflow:hidden">
-    <header>
-      <div class="menubar">
-          <a class="logo pc" href="index.html">
-            <div>JIS</div>
-            <div class="eyes">
-              <div class="eye"><div class="eyeball"></div></div>
-              <div class="eye"><div class="eyeball"></div></div>
-            </div>
-            <div>&nbsp;SHIN</div>
-          </a>
-          <a class="logo mb" href="index.html">
-            <div>JISOO SHIN</div>
-          </a>
-        <div class="nav">
-          <a href="work.html" class="pc">Work</a>
-          <a href="extra.html" class="pc">Extra</a>
-          <a href="info.html" class="pc">Info</a>
-          <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
+  <body>
+      <header>
+        <div class="menubar">
+            <a class="logo pc" href="index.html">
+              <div>JIS</div>
+              <div class="eyes">
+                <div class="eye"><div class="eyeball"></div></div>
+                <div class="eye"><div class="eyeball"></div></div>
+              </div>
+              <div>&nbsp;SHIN</div>
+            </a>
+            <a class="logo mb" href="index.html">
+              <div>JISOO SHIN</div>
+            </a>
+          <div class="nav">
+            <a href="index.html" class="selected pc">Work</a>
+            <a href="extra.html" class="pc">Extra</a>
+            <a href="info.html" class="pc">Info</a>
+            <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
 
     <div class="mb menu">
-        <a href="work.html">Work</a>
+        <a href="index.html">Work</a>
         <a href="extra.html">Extra</a>
         <a href="info.html">Info</a><br>
         <a id="close" onclick="toggleMenu()">Close X</a>
     </div>
 
-    <div class="container landing">
-      <div class="headline">
-        <h1>Hi, I’m Jisoo, a designer and illustrator with a passion for visual experiments.</h1>
-        <a href="work.html">⟶ See my work</a>
-        <a href="info.html">⟶ Read more</a>
+    <div class="container work pc fadeIn">
+      <h1>I've created:</h1>
+      <a class="hover-title" href="ontheline.html">An online graphic design exhibition</a>
+      <div class="hover-image" href="ontheline.html" id="otl">
+        <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+          <source src="img/ontheline/ontheline_main1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
       </div>
-      <div class="landing-img">
-        <img src="img/brainstorm.svg">
-        <img id="float" src="img/brainstorm_obj.svg">
-      </div>
+      <a class="hover-title" href="i-land.html">An atlas into the internal world</a>
+      <div class="hover-image" href="i-land.html"><img src="img/thumb_iland.png"></div>
+      <a class="hover-title" href="fears-are-beings-too.html">A book of conversation with fears</a>
+      <div class="hover-image" href="fears-are-beings-too.html"><img src="img/thumb_fears.jpg"></div>
+      <a class="hover-title" href="project-marry-me.html">A space dedicated to self-love</a>
+      <div class="hover-image"><img src="img/thumb_marryme.jpg"></div>
+      <a class="hover-title" href="joob-joob.html">A mobile app to pick up Korean words</a>
+      <div class="hover-image"><img src="img/thumb_joob.jpg"></div>
     </div>
+
+    <div class="container work mb">
+      <h1>My creations include:</h1><br>
+      <a href="ontheline.html"><img src="img/thumb_ontheline.jpg"></a>
+      <h3>An online graphic design exhibition</h3>
+      <a href="i-land.html"><img src="img/thumb_iland.png"></a>
+      <h3>An atlas into the internal world</h3>
+      <a href="fears-are-beings-too.html"><img src="img/thumb_fears.jpg"></a>
+      <h3>A book of conversation with fears</h3>
+      <a href="project-marry-me.html"><img src="img/thumb_marryme.jpg"></a>
+      <h3>A space dedicated to self-love</h3>
+      <a href="itsc-journey-map.html"><img src="img/thumb_itsc.jpg"></a>
+      <h3>A map of a part-time IT technician</h3>
+      <a href="joob-joob.html"><img src="img/thumb_joob.jpg"></a>
+      <h3>A mobile app to pick up Korean words</h3>
+    </div>
+
+    <a class="evenmore" href="extra.html">and even more ⟶</a>
 
   </body>
   <script src="functions.js"></script>
