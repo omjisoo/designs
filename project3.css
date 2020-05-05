@@ -104,7 +104,7 @@ p{
 a{cursor:pointer;transition:color 0.2s ease;}
 a:hover, .title{color:#4666ff;}
 
-.title{text-align:right}
+.title{margin-right:2rem}
 
 .indexbar{
   width: 100%;
@@ -249,6 +249,7 @@ a.extra:hover{
 .start{
   height: 25vh;
   display: flex;
+  justify-content: center;
   align-items: flex-end;
   animation: fadeIn 1s ease;
 }
