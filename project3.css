@@ -659,7 +659,6 @@ iframe{
   flex-direction:column;
   justify-content: center;
   align-items: flex-start;
-  animation: fadeIn 1s ease;
   padding-left: 3rem;
 
 }
