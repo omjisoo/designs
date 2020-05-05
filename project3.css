@@ -342,8 +342,8 @@ body:not(.mobile) .hover-title:hover + .hover-image {
 
 .evenmore{
   position: absolute;
-  bottom: 1rem;
-  right: 2rem;
+  bottom: 2rem;
+  left: 3rem;
   font-family:cy, sans-serif;
   font-weight:600;
   font-size:1.5rem;
