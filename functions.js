@@ -55,5 +55,5 @@ function copyEmail() {
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Email copied to clipboard: " + copyText.value);
+  alert("Email copied for your convenience: " + copyText.value);
 }
