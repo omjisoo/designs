@@ -109,7 +109,7 @@ video{
 a{cursor:pointer;transition:color 0.2s ease;}
 a:hover, .title{color:#4666ff;}
 
-.title{margin-right:2rem}
+.title{margin-right:1rem}
 
 .indexbar{
   width: 100%;
