@@ -16,7 +16,7 @@ body{
   background: rgb(20,20,20);
 }
 
-.stopscroll{overflow-y:hidden}
+.stopscroll{overflow:hidden}
 
 h1, h2, h3, a, p, i, em{
   margin: 0;
