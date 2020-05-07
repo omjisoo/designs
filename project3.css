@@ -18,7 +18,7 @@ body{
 
 .stopscroll{overflow:hidden}
 
-h2, h3, a, p, i, em{
+h1, h2, h3, a, p, i, em{
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -318,7 +318,7 @@ footer{
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 1rem 2rem;
+  padding: 2rem 3rem;
 }
 
 footer a{
@@ -338,8 +338,8 @@ footer a:hover{
 
 .process-a{
   position: fixed;
-  bottom: 1rem;
-  left: 2rem;
+  bottom: 2rem;
+  left: 3rem;
   /* mix-blend-mode: exclusion; */
 }
 
