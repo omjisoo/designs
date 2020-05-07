@@ -155,11 +155,11 @@ a:hover .indexbar p{color:#4666ff;}
   margin-left: 4rem;
 }
 .menubar div a:hover{
-  color:#4666ff;;
+  color:#4666ff;
 }
 
 .menubar div a.selected{
-  color:#4666ff;;
+  color:#4666ff;
   border-bottom:0.2rem solid #4666ff;;
 }
 
@@ -172,59 +172,21 @@ a:hover .indexbar p{color:#4666ff;}
 }
 
 .logo{
-  font-size: 1.5rem;
   padding: 1rem 2rem;
   display: flex;
-  align-items: center;
   cursor:pointer;
-  transition:color 0.2s ease;
 }
 
-.logo div{
-  font-family: cy, sans-serif;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
+.logo img{
+  max-width:140px;
 }
 
-.eyes{
-  width: auto;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  margin-top: 0.2rem;
+#logo_hover, .logo:hover #logo_normal{
+  display:none;
 }
 
-.eye{
-  width: 1.3rem;
-  height: 1.3rem;
-  border: 0.2rem solid;
-  border-radius: 50%;
-  margin: 0 1px;
-  position: relative;
-  overflow: hidden;
-  background: white;
-}
-
-.eyeball{
-  width: 0.65rem;
-  height: 0.65rem;
-  background: dimgray;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-}
-
-.logo:hover div{
-  color:#4666ff;
-}
-.logo:hover .eye{
-  border: 0.2rem solid #4666ff;
-}
-.logo:hover .eyeball{
-  background:#4666ff;
+.logo:hover #logo_hover{
+  display:block;
 }
 
 #menubar{
@@ -999,9 +961,8 @@ iframe{
   .extraspecial footer{position:static;padding:0;padding-bottom:1rem;margin-top:4rem}
   a.extra{font-size:4vw}
 
-  .logo {font-size:6vw;padding:2rem 4rem}
-  .menubar{width:100vw}
-  .menubar .nav{padding:2rem 4rem}
+  .logo img{max-width:50vw}
+  .menubar{width:100vw;padding:2rem}
   .navbar .nav a{margin-right:40px}
 
   .container{padding:1rem 4rem}

@@ -31,18 +31,6 @@ function hideProcess() {
   document.querySelector('.overlay').classList.remove("showOverlay");
 }
 
-var eyeball = document.getElementsByClassName("eyeball");
-document.onmousemove = function(){
-  var x = event.clientX * 100 / window.innerWidth + "%";
-  var y = event.clientY * 100 / window.innerHeight + "%";
-
-  for(var i=0;i<2;i++){
-    eyeball[i].style.left = x;
-    eyeball[i].style.top = y;
-    eyeball[i].style.transform = "translate(-"+x+", -"+y+")";
-  }
-};
-
 function copyEmail() {
   /* Get the text field */
   var copyText = document.getElementById("myInput");
