@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/ntm3whi.css">
   </head>
 
-  <body class="stopscroll">
+  <body>
       <header>
         <div class="menubar">
           <a href="index.html" class="logo">
@@ -27,7 +27,7 @@
             <img src="img/logo_hover.svg" id="logo_hover">
           <a>
           <div class="nav">
-            <a href="index.html" class="selected pc">Work</a>
+            <a href="index.html" class="pc">Work</a>
             <a href="extra.html" class="pc">Extra</a>
             <a href="info.html" class="pc">Info</a>
             <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
@@ -42,7 +42,7 @@
         <a id="close" onclick="toggleMenu()">Close X</a>
     </div>
 
-    <div class="container fadeIn pc" style="position:absolute;padding-bottom:2rem;margin-left:75%;z-index:-1">
+    <!-- <div class="container fadeIn pc" style="position:absolute;padding-bottom:2rem;margin-left:75%;z-index:-1">
       <div class="landing-img">
         <img src="img/brainstorm-plain.svg">
       </div>
@@ -52,11 +52,26 @@
       <div class="landing-img">
         <img src="img/brainstorm-arm.svg">
       </div>
-    </div>
+    </div> -->
 
-    <div class="container work pc fadeIn">
-      <h1>Selected Works:</h1>
-      <a class="hover-title" href="ontheline.html">An online graphic design exhibition</a>
+    <!-- <div class="container">
+      <div class="col1" style="display:flex;">
+        <h1>Hi, I'm Jisoo, a designer and illustrator with a passion for visual experiments.<br>
+        Check out my highlighted works:</h1>
+      </div>
+      <div class="col2">
+        <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+          <source src="img/ontheline/ontheline_main1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </h1> -->
+
+    <div class="container" style="margin-top:4rem;width:50%;height:50vh;display:flex;align-items:center">
+      <h1>Hi, I'm Jisoo, a designer and illustrator with a passion for visual experiments.<br>
+      Here are some of my creations:
+    </h1>
+      <!-- <a class="hover-title" href="ontheline.html">An online graphic design exhibition</a>
       <div class="hover-image" href="ontheline.html" id="otl">
         <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
           <source src="img/ontheline/ontheline_main1.mp4" type="video/mp4">
@@ -70,8 +85,32 @@
       <a class="hover-title" href="project-marry-me.html">A space dedicated to self-love</a>
       <div class="hover-image"><img src="img/thumb_marryme.jpg"></div>
       <a class="hover-title" href="joob-joob.html">A mobile app to pick up Korean words</a>
-      <div class="hover-image"><img src="img/thumb_joob.jpg"></div>
+      <div class="hover-image"><img src="img/thumb_joob.jpg"></div> -->
     </div>
+
+    <div class="container pc gallery">
+      <figure class="gallery__item gallery__item--1 shadow">
+        <a href="ontheline.html">
+        <video class="gallery__img" width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+          <source src="img/ontheline/ontheline_main1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </a>
+      </figure>
+      <figure class="gallery__item gallery__item--2">
+        <img src="img/thumb_iland.png" class="gallery__img" alt="Image 2">
+      </figure>
+      <figure class="gallery__item gallery__item--3 shadow">
+        <img src="img/thumb_fears.jpg" class="gallery__img" alt="Image 3">
+      </figure>
+      <figure class="gallery__item gallery__item--4">
+        <img src="img/thumb_marryme.jpg" class="gallery__img" alt="Image 4">
+      </figure>
+      <figure class="gallery__item gallery__item--5">
+        <img src="img/thumb_joob.jpg" class="gallery__img" alt="Image 5">
+      </figure>
+    </div>
+
 
     <div class="container work mb">
       <h1>Selected Works:</h1><br>
@@ -94,7 +133,7 @@
       <h3>A mobile app to pick up Korean words</h3>
     </div>
 
-    <a class="evenmore" href="extra.html">⟶ and even more</a>
+    <!-- <a class="evenmore" href="extra.html">⟶ and even more</a> -->
 
   </body>
   <script src="functions.js"></script>
