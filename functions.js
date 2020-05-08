@@ -1,3 +1,7 @@
+function goBack() {
+  window.history.back();
+}
+
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
