@@ -243,6 +243,15 @@ a:hover, .title{color:#4666ff;}
   to{opacity:1;transform:translateY(0)}
 }
 
+.slideInOnly{
+  animation: slideInOnly 1s ease;
+}
+@keyframes slideInOnly{
+  from{transform:translateY(1rem)}
+  to{transform:translateY(0)}
+}
+
+
 footer{
   width: 100%;
   display: flex;
