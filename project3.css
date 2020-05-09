@@ -12,6 +12,13 @@ body{
   overflow-x: hidden;
 }
 
+body.preload{
+  *{
+animation-duration: 0s !important;
+-webkit-animation-duration: 0s !important;
+transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+}
+
 .stopscroll{overflow:hidden}
 
 h1, h2, h3, a, p, i, em{
@@ -546,6 +553,7 @@ img.nospace{
 
 .web-sim{
   width:100%;
+  height:100%;
   display:flex;
   flex-direction:column;
   align-items: flex-start;
@@ -553,7 +561,8 @@ img.nospace{
 }
 
 #browser{
-  width:auto !important
+  width:auto !important;
+  height:auto !important
 }
 
 #myInput{display:none}

@@ -1,3 +1,7 @@
+setTimeout(function(){
+    document.body.className="";
+},500);
+
 function goBack() {
   window.history.back();
 }
