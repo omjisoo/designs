@@ -257,6 +257,7 @@ footer{
   display: flex;
   justify-content: flex-end;
   padding: 3rem;
+  padding-top:2rem;
 }
 
 footer div{
@@ -326,6 +327,10 @@ footer a{
   width:50%;
   padding-left:1rem;
   padding-right:3rem;
+}
+
+.summary{
+  align-items:flex-start;padding-left:2rem;margin-bottom:2rem;
 }
 
 iframe{
@@ -534,7 +539,7 @@ iframe{
   .full img{width:200%}
   .thumbnail, #thumb-otl{width:100%}
   .container{flex-direction:column}
-  .col1, .col2, .heading, .caption div h2, .caption div p, .single img{width:100%}
+  .col1, .col2, .heading, .single img{width:100%}
   .col1{margin-right:0;margin-bottom:2rem}
   .menu{
     display:flex;flex-direction: column;
@@ -597,6 +602,7 @@ iframe{
   .full img{width:100%}
 
   .caption {margin:6rem 0}
+  .summary {padding-left:3rem}
 
   .landing{padding:2rem 4rem 0 4rem; flex-direction:column;justify-content: flex-start}
   .landing-img, .landing div img{width:100%}
