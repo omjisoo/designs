@@ -4,6 +4,7 @@
   font-family: rubik, sans-serif;
   font-weight: lighter;
   color: dimgray;
+  background: rgb(248, 248, 248);
 }
 
 body{
@@ -675,6 +676,7 @@ img.nospace{
 
   .extravid{height:30vh;}
 
+  .logo{width:100%}
   .logo img{max-width:50vw}
   .menubar{width:100vw;padding:4rem}
 
