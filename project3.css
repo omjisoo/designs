@@ -12,11 +12,8 @@ body{
   overflow-x: hidden;
 }
 
-body.preload{
-  *{
-animation-duration: 0s !important;
--webkit-animation-duration: 0s !important;
-transition:background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;}
+body.preload *{
+  animation-play-state:paused;
 }
 
 .stopscroll{overflow:hidden}
@@ -514,6 +511,7 @@ img.nospace{
   transform:translateY(0);
   z-index:-1;
   animation: float 1.5s ease alternate infinite;
+  animation-delay:0.5s;
 }
 @keyframes float{
   from{transform:translateY(0)} to {transform:translateY(20px)}
@@ -556,13 +554,12 @@ img.nospace{
   height:100%;
   display:flex;
   flex-direction:column;
-  align-items: flex-start;
+  align-items: stretch;
   box-shadow:0 0.5rem 1rem rgba(0,0,0,0.5);
 }
 
 #browser{
-  width:auto !important;
-  height:auto !important
+  width: auto;
 }
 
 #myInput{display:none}

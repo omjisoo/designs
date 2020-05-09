@@ -1,6 +1,5 @@
-setTimeout(function(){
-    document.body.className="";
-},500);
+window.onload = function() {
+    document.body.className="";}
 
 function goBack() {
   window.history.back();
