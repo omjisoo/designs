@@ -20,29 +20,16 @@
   </head>
 
   <div class="process">
-    <div class="processbox">
-      <div class="container">
-        <div class="col1"><img src="img/joob/joob_sketch1.jpg"></div>
-        <div class="col2"><img src="img/joob/joob_sketch3.jpg"></div>
-      </div>
-      <div class="container">
-        <img src="img/joob/joob_sketch4.jpg">
-      </div>
-      <p>I had fun playing with Korean alphabets for the mascot design. For example, ㅎ stands for Korea/Korean and people often say it looks like a person wearing a hat. ㅈ stands for Joob Joob and is used as the ribbon for the mascot's hat.</p>
-      <div class="container">
-        <img src="img/joob/joob-task-diagram.jpg">
-      </div>
-      <div class="container">
-        <img src="img/joob/joob-wireframe2.jpg">
-      </div>
-      <p>Tools like task diagrams and wireframes were utilized to create a seamless user experience, from signing up as a new user to navigating through the app as a returning user.</p>
+    <div class="process-img">
+      <img src="img/joob/joob_sketch1.jpg">
+      <img src="img/joob/joob_sketch3.jpg">
     </div>
-    <div class="processbar">
-      <a onclick="hideProcess()">⟵ Back to Project</a>
-    </div>
-  </div>
-
-  <div class="listmenu">
+    <img src="img/joob/joob_sketch4.jpg">
+    <p>I had fun playing with Korean alphabets for the mascot design. For example, ㅎ stands for Korea/Korean and people often say it looks like a person wearing a hat. ㅈ stands for Joob Joob and is used as the ribbon for the mascot's hat.</p>
+    <img src="img/joob/joob-task-diagram.jpg">
+    <img src="img/joob/joob-wireframe2.jpg">
+    <p>Tools like task diagrams and wireframes were utilized to create a seamless user experience, from signing up as a new user to navigating through the app as a returning user.</p>
+    <a id="hideProcess" onclick="hideProcess()">Back to Project</a>
   </div>
 
   <div class="overlay"></div>
@@ -70,7 +57,8 @@
         <a id="close" onclick="toggleMenu()">Close X</a>
     </div>
 
-    <div class="container info fadeIn">
+  <section class="fadeIn">
+    <div class="container info">
       <h1 class="title">Joob Joob</h1>
       <h1>Experience, Video, 2018</h1>
     </div>
@@ -79,11 +67,9 @@
         <img src="img/joob/joob-mockup4.55.jpg">
     </div>
 
-    <div class="container caption">
-      <div>
-        <h2>Joob Joob is a mobile app to pick up the Korean language and culture in a fun and interactive way.</h2>
-        <p>The name of the app comes from the Korean slang word <i>joobjoob</i> (줍줍), which is an onomatopoeia for picking up items in games or memes online. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions on the way. The user also gains interesting facts and insider tips by collecting Kollectibles after each mission.</p>
-      </div>
+    <div class="caption">
+      <h2>Joob Joob is a mobile app to pick up the Korean language and culture in a fun and interactive way.</h2>
+      <p>The name of the app comes from the Korean slang word <i>joobjoob</i> (줍줍), which is an onomatopoeia for picking up items in games or memes online. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions on the way. The user also gains interesting facts and insider tips by collecting Kollectibles after each mission.</p>
     </div>
 
     <div class="container">
@@ -103,10 +89,8 @@
         <img src="img/joob/joob-ref2.png"  style="background:#ebebec">
     </div>
 
-    <div class="container caption">
-      <div>
-        <p>The visual elements were inspired from various traditional Korean motifs and my personal knowledge of Korea. The color scheme is based on <a href="https://en.wikipedia.org/wiki/Obangsaek" target="_blank"><i>obangsaek</i> (오방색)</a>, the five symbolic colors, as well as my favorite shade of green from Buddhist temples.</p>
-      </div>
+    <div class="caption">
+      <p>The visual elements were inspired from various traditional Korean motifs and my personal knowledge of Korea. The color scheme is based on <a href="https://en.wikipedia.org/wiki/Obangsaek" target="_blank"><i>obangsaek</i> (오방색)</a>, the five symbolic colors, as well as my favorite shade of green from Buddhist temples.</p>
     </div>
 
     <div class="container column">
@@ -116,16 +100,15 @@
         <img src="img/joob/joob_screenshot4.jpg">
       </div>
 
-    <div class="container video">
-      <div>
-      <iframe src="https://player.vimeo.com/video/304927978?title=0&byline=0&portrait=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      </div>
+    <div class="video">
+      <iframe src="https://player.vimeo.com/video/304927978?title=0&byline=0&portrait=0" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
+  </div>
 
     <footer>
-      <a class="process-a" onclick="showProcess()">⟶ Process</a>
-      <a class="footer-a" href="work.html">⟶ Index</a>
-      <a class="footer-a" href="ontheline.html">⟶ Next Work</a>
+      <a id="showProcess" onclick="showProcess()">Process</a>
+      <a href="work.html">Index</a>
+      <a href="ontheline.html">Next Work</a>
     </footer>
 
   </body>

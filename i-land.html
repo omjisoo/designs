@@ -18,23 +18,20 @@
     <link rel="icon" type="img/png" href="img/favi.png">
   </head>
 
-  <div class="process nospace">
-    <div class="processbox">
-      <img src="img/iland/iland_process_sketch1.3.jpg">
-      <div class="container process-img">
-        <div class="col1"><img src="img/iland/iland_process_sketch1.1.jpg"></div>
-        <div class="col2"><img src="img/iland/iland_process_sketch1.2.jpg"></div>
-      </div>
+  <div class="process">
+    <img src="img/iland/iland_process_sketch1.3.jpg">
+    <div class="process-img">
+      <img src="img/iland/iland_process_sketch1.1.jpg">
+      <img src="img/iland/iland_process_sketch1.2.jpg">
+    </div>
       <img src="img/iland/iland_process_sketch2.1.png" id="iland-sketch">
       <img src="img/iland/iland_process_sketch2.2.png" id="iland-sketch">
       <img src="img/iland/iland_process_sketch2.3.jpg">
-    </div>
-    <div class="processbar">
-      <a onclick="hideProcess()">⟵ Back to Project</a>
-    </div>
+      <a id="hideProcess" onclick="hideProcess()">Back to Project</a>
   </div>
-  <div class="listmenu"></div>
+
   <div class="overlay"></div>
+
   <body class="preload">
     <header>
       <div class="menubar">
@@ -57,7 +54,8 @@
         <a id="close" onclick="toggleMenu()">Close X</a>
     </div>
 
-    <div class="container info fadeIn">
+  <section class="fadeIn">
+    <div class="container info">
       <h1 class="title">I-land: An Atlas into the Mind</h1>
       <h1>Print, Illustration, Web, 2020</h1>
     </div>
@@ -66,12 +64,10 @@
         <img src="img/iland/iland_fullview.png">
     </div>
 
-    <div class="container caption">
-      <div>
+    <div class="caption">
         <h2>I-land is a visual and natural representation of our mind under constant change.</h2>
         <p><i>I-land: An Atlas of the Mind</i> is a colorful guidebook that walks you through the internal world and its interconnected natural system, represented in the form of the I-land. It examines the relationship between each feature, as well as the natural phenomena that unfold in real time as we process the external world.</p><br>
         <p>The book is now available for purchase on <a href="https://www.blurb.com/b/10076941" target="_blank">Blurb</a>.</p>
-      </div>
     </div>
 
     <div class="container image">
@@ -104,10 +100,8 @@
         <img src="img/iland/iland_mockup_7.jpg">
     </div>
 
-    <div class="container caption">
-      <div>
-        <p>The digital edition of the original guidebook is also exhibited at <a href="http://vcugdes-seniorshow.net" target="_blank">ON(THE)LINE</a>, the online capstone exhibition of VCUarts Graphic Design Class of 2020.<br><br>Visit the I-land at: <a href="http://iland.cargo.site" target="_blank">iland.cargo.site</a></p>
-      </div>
+    <div class="caption">
+      <p>The digital edition of the original guidebook is also exhibited at <a href="http://vcugdes-seniorshow.net" target="_blank">ON(THE)LINE</a>, the online capstone exhibition of VCUarts Graphic Design Class of 2020.<br><br>Visit the I-land at: <a href="http://iland.cargo.site" target="_blank">iland.cargo.site</a></p>
     </div>
 
     <div class="container" style="margin-bottom:2rem">
@@ -143,11 +137,12 @@
       <div class="col2">
       </div>
     </div>
+  </section>
 
     <footer>
-      <a class="process-a" onclick="showProcess()">⟶ Process</a>
-      <a class="footer-a" href="work.html">⟶ Index</a>
-      <a class="footer-a" href="fears-are-beings-too.html">⟶ Next Work</a>
+      <a id="showProcess" onclick="showProcess()">Process</a>
+      <a href="work.html">Index</a>
+      <a href="fears-are-beings-too.html">Next Work</a>
     </footer>
 
   </body>

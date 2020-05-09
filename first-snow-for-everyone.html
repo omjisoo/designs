@@ -20,15 +20,10 @@
   </head>
 
   <div class="process">
-    <div class="processbox">
-      <img src="img/firstsnow/firstsnow_sketch.jpg" style="width:75%">
-    </div>
-    <div class="processbar">
-      <a onclick="hideProcess()">⟵ Back to Project</a>
-    </div>
+    <img src="img/firstsnow/firstsnow_sketch.jpg" style="width:75%">
+    <a id="hideProcess" onclick="hideProcess()">Back to Project</a>
   </div>
 
-  <div class="listmenu"></div>
   <div class="overlay"></div>
 
   <body class="preload">
@@ -54,7 +49,8 @@
           <a id="close" onclick="toggleMenu()">Close X</a>
       </div>
 
-      <div class="container info fadeIn">
+    <section class="fadeIn">
+      <div class="container info">
         <h1 class="title">First Snow for Everyone</h1>
         <h1>Print, Illustration, 2018</h1>
       </div>
@@ -63,21 +59,17 @@
         <img src="img/firstsnow/firstsnow2.jpg">
       </div>
 
-      <div class="container caption">
-        <div>
-          <h2>First Snow for Everyone is a wintry wrapping paper celebrating cultural diversity in America.</h2>
-          <p>The moment of first snow is always magical no matter where we are from. It signals the true start of winter, of festivity and family to come together. Created in response to the theme, "The Most Wonderful Time of the Year," the entry won the Best in Show award at the 4th Annual <a href="https://worthhiggins.com/wrapping-paper-design-contest/" target="_blank">Worth Higgins & Associates Wrapping Paper Design Contest</a>.</p>
-        </div>
+      <div class="caption">
+        <h2>First Snow for Everyone is a wintry wrapping paper celebrating cultural diversity in America.</h2>
+        <p>The moment of first snow is always magical no matter where we are from. It signals the true start of winter, of festivity and family to come together. Created in response to the theme, "The Most Wonderful Time of the Year," the entry won the Best in Show award at the 4th Annual <a href="https://worthhiggins.com/wrapping-paper-design-contest/" target="_blank">Worth Higgins & Associates Wrapping Paper Design Contest</a>.</p>
       </div>
 
       <div class="container single">
           <img src="img/firstsnow/firstsnow_digital.jpg">
       </div>
 
-      <div class="container caption">
-        <div>
-          <p>The illustration depicts households that observe not only Christmas but also Hanukkah, Kwanzaa, and the Islamic tradition.</p>
-        </div>
+      <div class="caption">
+        <p>The illustration depicts households that observe not only Christmas but also Hanukkah, Kwanzaa, and the Islamic tradition.</p>
       </div>
 
       <div class="container image">
@@ -93,10 +85,8 @@
         </div>
       </div>
 
-      <div class="container caption">
-        <div>
-          <p>With the help of <a href="worthhiggins.com" target="_blank">Worth Higgins & Associates</a>, the wrapping paper came into the world in an edition of 50 rolls (6 sheets per roll). Clear varnish was applied on snowflakes and other little elements to accentuate them in the light.</p>
-        </div>
+      <div class="caption">
+        <p>With the help of <a href="worthhiggins.com" target="_blank">Worth Higgins & Associates</a>, the wrapping paper came into the world in an edition of 50 rolls (6 sheets per roll). Clear varnish was applied on snowflakes and other little elements to accentuate them in the light.</p>
       </div>
 
       <div class="container">
@@ -111,10 +101,11 @@
       <div class="container image">
         <img src="img/firstsnow/firstsnow3.jpg">
       </div>
+  </section>
 
       <footer>
-        <a class="process-a" onclick="showProcess()">⟶ Process</a>
-        <a class="footer-a" onclick="goBack()">⟶ Back to Index</a>
+        <a id="showProcess" onclick="showProcess()">Process</a>
+        <a onclick="goBack()">Index</a>
       </footer>
 
   </body>

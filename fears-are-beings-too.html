@@ -20,26 +20,19 @@
   </head>
 
   <div class="process">
-    <div class="processbox">
-      <img src="img/fears/sketch_conversation.jpg">
-      <p>It started with little doodles back in 2019 in which I gave a face and a voice to each of my fears as these supernatural beings. The visualized conversations ended up being very profound so I decided to expand on it as an Independent Study project for the semester.</p>
-      <div class="container process-img">
-        <div class="col1"><img src="img/fears/sketch_storyboard1.jpg"></div>
-        <div class="col2"><img src="img/fears/sketch_storyboard2.jpg"></div>
-      </div>
-      <p>Storyboards were used to determine the flow of the book.</p>
-      <img src="img/fears/sketch_fears1.jpg" class="nospace">
-      <img src="img/fears/sketch_fears2.jpg">
-      <p>Character sketches: Eye Contact, Conversation, Body Weight, Awkward Silence.</p>
-      <img src="img/fears/sketch_toes.jpg">
-      <p>In the beginning of the book, I look visibly tense because I don't know what to expect from my fears. Once I get to know them, however, I become more comfortable. The bare toes also signify being open and vulnerable to the inner conversations.</p>
+    <img src="img/fears/sketch_conversation.jpg">
+    <p>It started with little doodles back in 2019 in which I gave a face and a voice to each of my fears as these supernatural beings. The visualized conversations ended up being very profound so I decided to expand on it as an Independent Study project for the semester.</p>
+    <div class="process-img">
+      <img src="img/fears/sketch_storyboard1.jpg">
+      <img src="img/fears/sketch_storyboard2.jpg">
     </div>
-    <div class="processbar">
-      <a onclick="hideProcess()">⟵ Back to Project</a>
-    </div>
-  </div>
-
-  <div class="listmenu">
+    <p>Storyboards were used to determine the flow of the book.</p>
+    <img src="img/fears/sketch_fears1.jpg">
+    <img src="img/fears/sketch_fears2.jpg">
+    <p>Character sketches: Eye Contact, Conversation, Body Weight, Awkward Silence.</p>
+    <img src="img/fears/sketch_toes.jpg">
+    <p>In the beginning of the book, I look visibly tense because I don't know what to expect from my fears. Once I get to know them, however, I become more comfortable. The bare toes also signify being open and vulnerable to the inner conversations.</p>
+    <a id="hideProcess" onclick="hideProcess()">Back to Project</a>
   </div>
 
   <div class="overlay"></div>
@@ -68,7 +61,8 @@
         <a id="close" onclick="toggleMenu()">Close X</a>
     </div>
 
-    <div class="container info fadeIn">
+  <section class="fadeIn">
+    <div class="container info">
       <h1 class="title">Fears Are Beings Too</h1>
       <h1>Print, Illustration, 2019</h1>
     </div>
@@ -77,11 +71,9 @@
         <img src="img/fears/fears_stack2.jpg">
     </div>
 
-    <div class="container caption">
-      <div>
-        <h2>Fears Are Beings Too is a book of conversation and reconciliation with my own fears.</h2>
-        <p>The book features eight subjects I fear of: Eye Contact, Conversation, Body Weight, Belonging Nowhere, Asking for Help, Awkward Silence, Rejection, and Being Honest. After years of shunning the fears, I finally sit down and have a heart-to-heart talk with each one to understand why they are still with me. In the process, I discover that they have much insight to offer.</p>
-      </div>
+    <div class="caption">
+      <h2>Fears Are Beings Too is a book of conversation and reconciliation with my own fears.</h2>
+      <p>The book features eight subjects I fear of: Eye Contact, Conversation, Body Weight, Belonging Nowhere, Asking for Help, Awkward Silence, Rejection, and Being Honest. After years of shunning the fears, I finally sit down and have a heart-to-heart talk with each one to understand why they are still with me. In the process, I discover that they have much insight to offer.</p>
     </div>
 
     <div class="container image">
@@ -97,10 +89,8 @@
       </div>
     </div>
 
-    <div class="container caption">
-      <div>
-        <p>The first edition was produced in limited quantities by hand with coptic stitch binding and letterpressed hardcovers. Currently I'm looking for a way to publish a second edition that will be available for more widespread distribution.</p>
-      </div>
+    <div class="caption">
+      <p>The first edition was produced in limited quantities by hand with coptic stitch binding and letterpressed hardcovers. Currently I'm looking for a way to publish a second edition that will be available for more widespread distribution.</p>
     </div>
 
     <div class="container">
@@ -137,11 +127,12 @@
     <div class="container image last">
         <img src="img/fears/fears_off_back.jpg">
     </div>
+  </section>
 
     <footer>
-      <a class="process-a" onclick="showProcess()">⟶ Process</a>
-      <a class="footer-a" href="work.html">⟶ Index</a>
-      <a class="footer-a" href="project-marry-me.html">⟶ Next Work</a>
+      <a id="showProcess" onclick="showProcess()">Process</a>
+      <a href="work.html">Index</a>
+      <a href="project-marry-me.html">Next Work</a>
     </footer>
 
   </body>

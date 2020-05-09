@@ -12,7 +12,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.querySelector('.menubar').style.top = "0";
   } else {
-    document.querySelector('.menubar').style.top = "-7rem";
+    document.querySelector('.menubar').style.top = "-8rem";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -23,19 +23,26 @@ function toggleMenu() {
   document.querySelector('#menu').classList.toggle("selected");
 };
 
+var process = document.querySelector('.process');
+var overlay = document.querySelector('.overlay')
+var body = document.querySelector('body')
+
 function showProcess() {
-  document.querySelector('.process').classList.add("showProcess");
-  document.querySelector('.processbar').classList.add("showProcess");
-  document.querySelector('body').classList.add("stopscroll");
-  document.querySelector('.listmenu').classList.remove("showList");
-  document.querySelector('.overlay').classList.add("showOverlay");
-}
+    process.classList.add("open");
+    overlay.classList.add("showOverlay");
+    body.classList.add("stopscroll");
+};
+
+window.addEventListener('mouseup', function(event){
+  if(event.target != process && event.target.parentNode != process){
+    process.classList.remove("open"); overlay.classList.remove("showOverlay");
+    body.classList.remove("stopscroll");
+  }
+});
 
 function hideProcess() {
-  document.querySelector('.process').classList.remove("showProcess");
-  document.querySelector('.processbar').classList.remove("showProcess");
-  document.querySelector('body').classList.remove("stopscroll");
-  document.querySelector('.overlay').classList.remove("showOverlay");
+  process.classList.remove("open"); overlay.classList.remove("showOverlay");
+  body.classList.remove("stopscroll");
 }
 
 function copyEmail() {

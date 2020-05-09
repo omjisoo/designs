@@ -19,22 +19,15 @@
   </head>
 
   <div class="process">
-    <div class="processbox">
-      <img src="img/itsc/itsc_process1.jpg">
-      <p>First, a very rough sketch in pencil to get an idea of how the map will look.</p>
-      <img src="img/itsc/itsc_process2.jpg">
-      <p>Another sketch is drawn to size (approx. 18 x 24 in.) and traced with micron pens.</p>
-      <img src="img/itsc/itsc_process3.jpg">
-      <p>Then the artwork is scanned, digitally cleaned and typeset.</p>
-      <img src="img/itsc/itsc_map.png">
-      <p>Finally, colors and textures are added using Photoshop.</p>
-    </div>
-    <div class="processbar">
-      <a onclick="hideProcess()">⟵ Back to Project</a>
-    </div>
-  </div>
-
-  <div class="listmenu">
+    <img src="img/itsc/itsc_process1.jpg">
+    <p>First, a very rough sketch in pencil to get an idea of how the map will look.</p>
+    <img src="img/itsc/itsc_process2.jpg">
+    <p>Another sketch is drawn to size (approx. 18 x 24 in.) and traced with micron pens.</p>
+    <img src="img/itsc/itsc_process3.jpg">
+    <p>Then the artwork is scanned, digitally cleaned and typeset.</p>
+    <img src="img/itsc/itsc_map.png">
+    <p>Finally, colors and textures are added using Photoshop.</p>
+    <a id="hideProcess" onclick="hideProcess()">Back to Project</a>
   </div>
 
   <div class="overlay"></div>
@@ -62,7 +55,8 @@
         <a id="close" onclick="toggleMenu()">Close X</a>
     </div>
 
-    <div class="container info fadeIn">
+  <section class="fadeIn">
+    <div class="container info">
       <h1 class="title">ITSC Journey Map</h1>
       <h1>Print, Illustration, 2019</h1>
     </div>
@@ -71,21 +65,17 @@
         <img src="img/itsc/itsc_map.png">
     </div>
 
-    <div class="container caption">
-      <div>
-        <h2>ITSC Journey Map is a map of various tasks as a part-time IT technician.</h2>
-        <p>Based on my experience working at the IT Support Center (ITSC) of my university, the map visualizes the troubleshooting process as navigating through an unknown terrain. Within one call by the customer, the figurative and emotional course widely varies depending on my knowledge of the issue at hand.</p>
-      </div>
+    <div class="caption">
+      <h2>ITSC Journey Map is a map of various tasks as a part-time IT technician.</h2>
+      <p>Based on my experience working at the IT Support Center (ITSC) of my university, the map visualizes the troubleshooting process as navigating through an unknown terrain. Within one call by the customer, the figurative and emotional course widely varies depending on my knowledge of the issue at hand.</p>
     </div>
 
     <div class="container single image">
         <img src="img/itsc/itsc_map.png">
     </div>
 
-    <div class="container caption">
-      <div>
-        <p>The left half of the map illustrates familiar issues as a friendly neighborhood that I can lead the user through in an easy breezy stroll, while on the right side awaits an epic adventure as I attempt all sorts of troubleshooting methods.</p>
-      </div>
+    <div class="caption">
+      <p>The left half of the map illustrates familiar issues as a friendly neighborhood that I can lead the user through in an easy breezy stroll, while on the right side awaits an epic adventure as I attempt all sorts of troubleshooting methods.</p>
     </div>
 
     <div class="container">
@@ -105,10 +95,13 @@
         <img src="img/itsc/itsc_detail10.jpg">
       </div>
     </div>
+  </section>
 
     <footer>
-      <a class="process-a" onclick="showProcess()">⟶ Process</a>
-      <a class="footer-a" onclick="goBack()">⟶ Back to Index</a>
+      <a id="showProcess" onclick="showProcess()">Process</a>
+      <div>
+        <a onclick="goBack()">Index</a>
+      </div>
     </footer>
 
   </body>
