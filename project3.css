@@ -33,6 +33,8 @@ h1, h2, h3{
 }
 
 h1{
+  font-family:cy, sans-serif;
+  font-weight:600;
   font-size: 2rem;
   color:darkgray;
 }
@@ -41,7 +43,11 @@ h2{
   font-size: 1.6rem;
   margin-bottom:1.2rem;
   color: #4666ff;
-  animation: fadeIn 1s ease;
+}
+
+.grid h2{
+  font-family:cy, sans-serif;
+  font-weight:600;
 }
 
 h3{
