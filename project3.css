@@ -28,26 +28,19 @@ h1, h2, h3, a, p, i, em{
 }
 
 h1, h2, h3{
-  /* font-family:cy, sans-serif; */
+  font-family:poppins, sans-serif;
   font-weight:500;
 }
 
 h1{
-  font-family:cy, sans-serif;
-  font-weight:600;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color:darkgray;
 }
 
 h2{
-  font-size: 1.6rem;
-  margin-bottom:1.2rem;
+  font-size: 2rem;
+  margin-bottom:2rem;
   color: #4666ff;
-}
-
-.grid h2{
-  font-family:cy, sans-serif;
-  font-weight:600;
 }
 
 h3{
@@ -61,30 +54,6 @@ p{
   color: gray;
   font-family: rubik, sans-serif;
 }
-
-/* .nav a, footer a{
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-
-.nav a::before, footer a::before{
-   content: '';
-  position: absolute;
-  width:100%;
-    transform:scaleX(0);
-    height: 2px;
-    bottom:-1px;
-  	left: 0;
-    background-color: darkgray;
-    transform-origin: bottom left;
-    transition: transform 0.3s ease-out;
-}
-
-.nav a:hover::before, footer a:hover::before{
-  transform:scaleX(1);
-  background-color: #4666ff;
-} */
 
 video{
   margin:0;padding:0;
@@ -112,7 +81,7 @@ video{
 .fadeIn{animation: fadeIn 1s ease}
 
 a{cursor:pointer;transition:color 0.2s ease;color:darkgray}
-a:hover, .title{color:#4666ff;}
+a:hover, .title{color:#4666ff !important;}
 
 .menubar{
   width: 100%;
@@ -123,7 +92,8 @@ a:hover, .title{color:#4666ff;}
   align-items: center;
   z-index: 3;
   transition: top 0.5s ease;
-  padding:3rem;
+  padding: 3rem;
+  padding-top:3rem;
 }
 
 .menubar div{
@@ -131,11 +101,11 @@ a:hover, .title{color:#4666ff;}
 }
 
 .menubar div a{
-  font-family: cy, sans-serif;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-family: poppins, sans-serif;
+  font-weight:500;
+  letter-spacing: 0.5px;
   transition:color 0.2s ease;
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 .menubar div a:hover{
   color:#4666ff;
@@ -148,6 +118,7 @@ a:hover, .title{color:#4666ff;}
 
 .menubar .nav{
   width:50%;
+  height:1.7rem;
   font-size: 1.2rem;
   display:flex;
   justify-content: flex-end;
@@ -160,7 +131,7 @@ a:hover, .title{color:#4666ff;}
 }
 
 .logo img{
-  max-width:140px;
+  height:1.2rem;
 }
 
 #logo_hover, .logo:hover #logo_normal{
@@ -177,6 +148,10 @@ a:hover, .title{color:#4666ff;}
   display:flex !important;flex-flow:column;
 }
 
+.heading h1{
+  padding-right:1rem;
+}
+
 .thumbnail{
   width:60%;
   position:relative;
@@ -189,8 +164,8 @@ a:hover, .title{color:#4666ff;}
   width:100%;
 }
 
-.highlight h1{
-  color:#4666ff
+.highlight h2{
+  color:#4666ff;
 }
 
 .fullsize{
@@ -203,7 +178,7 @@ a:hover, .title{color:#4666ff;}
   background:rgba(248,248,248,0.96);
   opacity:0;
   transition:opacity 0.3s ease;
-  padding:4rem;
+  padding: 3rem;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -287,8 +262,7 @@ footer{
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 3rem;
-  padding-top:2rem;
+  padding: 2rem 3rem 3rem 3rem;
 }
 
 footer div{
@@ -299,10 +273,10 @@ footer div{
 }
 
 footer a{
-  font-family: cy, sans-serif;
-  font-weight: 600;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
   font-size: 1.2rem;
-  margin-left:4rem;
+  margin-left:3rem;
 }
 
 #showProcess{
@@ -346,6 +320,11 @@ footer a{
   flex-direction:column;
 }
 
+.info h1{
+  color:lightgray;
+  margin-bottom:0;
+}
+
 .caption{
   display:flex;
   flex-direction:column;
@@ -360,9 +339,10 @@ footer a{
   padding-right:3rem;
 }
 
-.summary{
+.add{
   align-items:flex-start;padding-left:2rem;margin-bottom:2rem;
 }
+.add p{color:darkgray}
 
 iframe{
   width:100%;
@@ -432,8 +412,8 @@ iframe{
 }
 
 #hideProcess{
-  font-family: cy, sans-serif;
-  font-weight: 600;
+  font-family: poppins, sans-serif;
+  font-weight: 500;
   font-size: 1.2rem;
   color: darkgray;
   padding-bottom:3rem
@@ -466,13 +446,14 @@ iframe{
   justify-content: center;
   align-items: flex-start;
 }
-.about h1{
+.about h2{
   color: #4666ff;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
+  padding-right:3rem;
 }
 
 .about p{
-  font-size: 1.4rem;
+  width:90%;
   margin-bottom: 1.2rem;
 }
 
@@ -530,14 +511,14 @@ iframe{
   font-size:3rem;
   position: absolute;
   top:3rem;right:3rem;
-  font-family:cy,sans-serif;
-  font-weight: 600;
+  font-family:poppins,sans-serif;
+  font-weight:500;
 }
 
 .menu a{
   font-size:5rem;
-  font-family:cy,sans-serif;
-  font-weight: 600;
+  font-family: poppins,sans-serif;
+  font-weight: 500;
   line-height: 1.5;
   color:#4666ff;
 }
@@ -611,14 +592,13 @@ iframe{
   }
 
   h1{font-size: 4rem}
-  h2{margin-bottom: 2rem}
+  h2{margin-bottom: 4rem}
   h3{font-size: 2.5rem}
 
   p, .caption p, .about p
   {
     /* font-size: calc(20px + 30 * (100vw - 480px) / 760); */
     font-size: 2.5rem;
-    line-height:1.5;
   }
   .menubar .nav{width:auto}
   .menubar div a.selected{
@@ -639,7 +619,7 @@ iframe{
   .full img{width:100%}
 
   .caption {margin:6rem 0}
-  .summary {padding-left:3rem}
+  .add {padding-left:3rem}
 
   .landing{padding:2rem 4rem 0 4rem; flex-direction:column;justify-content: flex-start}
   .landing-img, .landing div img{width:100%}
@@ -649,20 +629,21 @@ iframe{
   .process{left:-100vw;width:100vw;padding:4rem}
   .process.open{transform:translateX(100vw)}
   .process-img{grid-template-columns:1fr;margin-bottom:6rem}
-  .process p{width:100%;font-size:2.5rem;line-height:1.5;margin-top:0;margin-bottom:6rem}
+  .process p{width:100%;font-size:2.5rem;margin-top:2rem;margin-bottom:6rem}
 
   #marryme {justify-content: center;}
   #awndy{margin-bottom:0}
 
-  .awndy{padding: 1rem 4rem}
+  .awndy{padding: 1rem 3rem}
   #item1{grid-column:span 2;grid-row:span 2}
   #item2{grid-row:span 1}
 
   .logo{width:100%}
   .logo img{max-width:none;height:2.5rem}
-  .menubar{width:100vw;padding:4rem}
+  .menubar{width:100%;padding:4rem}
+  #menu{top:3rem;right:4rem;}
 
-  .container{padding:2rem 4rem}
+  .container{padding:3rem 4rem}
 
   .video{overflow-x:hidden;margin:auto 4rem;width:calc(100% - 8rem)}
   iframe{width:100vw}
