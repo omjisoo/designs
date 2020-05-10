@@ -55,6 +55,21 @@ p{
   font-family: rubik, sans-serif;
 }
 
+.buttons{display:flex;margin-top:2rem}
+button{
+  font-family: rubik, sans-serif;
+  font-weight:500;
+  font-size:1rem;
+  padding:8px 1rem;
+  border:2px solid #4666ff;
+  border-radius:25px;
+  background:none;
+  margin-right:2rem;
+  width:100px;
+  display:flex;
+  justify-content: center;
+}
+
 video{
   margin:0;padding:0;
 }
