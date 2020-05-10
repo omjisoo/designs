@@ -526,7 +526,7 @@ iframe{
 
 #myInput{display:none}
 
-@media (max-width:1024px){
+@media (max-width:1023px){
   .col1, .col2, .heading, .about, .caption p, .caption h2, .caption h3 {width:100% !important}
   .landing{flex-direction:column;margin-top:12rem}
   .landing-img{width:100%}
