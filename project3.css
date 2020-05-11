@@ -91,7 +91,7 @@ a:hover, .title{color:#4666ff !important;}
   align-items: center;
   z-index: 3;
   transition: top 0.5s ease;
-  padding: 3rem;
+  padding: 3rem 4rem;
   padding-top:3rem;
 }
 
@@ -104,7 +104,7 @@ a:hover, .title{color:#4666ff !important;}
   font-weight:500;
   letter-spacing: 0.5px;
   transition:color 0.2s ease;
-  margin-left: 3rem;
+  margin-left: 4rem;
 }
 .menubar div a:hover{
   color:#4666ff;
@@ -177,7 +177,7 @@ a:hover, .title{color:#4666ff !important;}
   background:rgba(248,248,248,0.96);
   opacity:0;
   transition:opacity 0.3s ease;
-  padding: 3rem;
+  padding: 3rem 4rem;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -197,7 +197,7 @@ a:hover, .title{color:#4666ff !important;}
 }
 
 .grid{
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   display: grid;
   grid-gap: 2rem;
 }
@@ -210,7 +210,7 @@ a:hover, .title{color:#4666ff !important;}
 }
 
 .awndy{
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-auto-rows: 1fr;
   grid-auto-flow: dense;
@@ -261,7 +261,7 @@ footer{
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding: 2rem 3rem 3rem 3rem;
+  padding: 2rem 4rem 3rem 4rem;
 }
 
 footer div{
@@ -275,13 +275,13 @@ footer a{
   font-family: poppins, sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
-  margin-left:3rem;
+  margin-left:4rem;
 }
 
 #showProcess{
   position: fixed;
   bottom: 3rem;
-  left: 3rem;
+  left: 4rem;
   margin-left:0;
   z-index:1
 }
@@ -290,7 +290,7 @@ footer a{
   width:100%;
   height:100%;
   display: flex;
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   align-items: flex-start;
 }
 
@@ -329,7 +329,7 @@ footer a{
   flex-direction:column;
   align-items: flex-end;
   margin:4rem 0;
-  padding:0 3rem;
+  padding:0 4rem;
 }
 
 .caption p, .caption h2, .caption h3{
@@ -343,7 +343,7 @@ footer a{
 }
 
 .add{
-  align-items:flex-start;padding-left:2rem;margin-bottom:2rem;
+  align-items:flex-start;padding-left:3rem;margin-bottom:2rem;
 }
 .add p{color:darkgray}
 
@@ -353,10 +353,10 @@ iframe{
 }
 
 .video{
-  padding:55% 0 0 0;
+  padding:53% 0 0 0;
   position:relative;
-  margin: auto 3rem;
-  width:calc(100% - 6rem);
+  margin: auto 4rem;
+  width:calc(100% - 8rem);
 }
 
 #marryme{
@@ -383,7 +383,7 @@ iframe{
   z-index:999;
   overflow-x: hidden;
   transition: 1.5s ease;
-  padding: 3rem;
+  padding: 3rem 4rem;
   overflow-y:auto;
 }
 
@@ -472,7 +472,7 @@ iframe{
 .landing{
   width:100%;
   height:100vh;
-  padding:1rem 2rem 0 3rem;
+  padding:1rem 2rem 0 4rem;
   display: flex;
   overflow:hidden;
 }
