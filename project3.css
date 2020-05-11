@@ -457,7 +457,7 @@ iframe{
 }
 
 .about p{
-  width:90%;
+  padding-right:3rem;
   margin-bottom: 1.2rem;
 }
 
@@ -472,7 +472,7 @@ iframe{
 .landing{
   width:100%;
   height:100vh;
-  padding:1rem 3rem 0 3rem;
+  padding:1rem 2rem 0 3rem;
   display: flex;
   overflow:hidden;
 }
@@ -486,9 +486,8 @@ iframe{
   margin-bottom:-50px;
 }
 
-.landing div img{
+.landing img{
   width:100%;
-  padding-right:-2rem;
 }
 
 #float{
