@@ -610,7 +610,8 @@ iframe{
   p, .caption p, .about p
   {
     /* font-size: calc(20px + 30 * (100vw - 480px) / 760); */
-    font-size: 2.5rem;
+    font-size: 3rem;
+    width:100%;
   }
   .menubar .nav{width:auto}
   .menubar div a.selected{
@@ -621,6 +622,7 @@ iframe{
   .heading, .info{width:100%;padding-top:18rem !important}
 
   h2{font-size:3rem}
+  .about h2{font-size:4rem;margin-bottom:2rem}
 
   .col1, .col2{width:100%}
   .col1{margin-right:0;margin-bottom:2rem}
@@ -636,7 +638,7 @@ iframe{
   .landing{padding:2rem 4rem 0 4rem; flex-direction:column;justify-content: flex-start}
   .landing-img, .landing div img{width:100%}
   .about{justify-content: flex-start;}
-  .about h1, .about p{margin-bottom:2rem}
+  .about p{margin-bottom:2rem}
 
   .process{left:-100vw;width:100vw;padding:4rem}
   .process.open{transform:translateX(100vw)}
