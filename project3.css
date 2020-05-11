@@ -38,8 +38,7 @@ h1{
 }
 
 h2{
-  font-size: 2rem;
-  margin-bottom:2rem;
+  font-size: 1.6rem;
   color: #4666ff;
 }
 
@@ -339,6 +338,10 @@ footer a{
   padding-right:3rem;
 }
 
+.caption h2{
+  margin-bottom:2rem;
+}
+
 .add{
   align-items:flex-start;padding-left:2rem;margin-bottom:2rem;
 }
@@ -448,7 +451,8 @@ iframe{
 }
 .about h2{
   color: #4666ff;
-  margin-bottom: 2rem;
+  font-size:2rem;
+  margin-bottom: 1.2rem;
   padding-right:3rem;
 }
 
