@@ -1,5 +1,6 @@
 window.onload = function() {
-    document.body.className="";}
+    document.body.className="";
+}
 
 function goBack() {
   window.history.back();
