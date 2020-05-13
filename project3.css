@@ -746,6 +746,7 @@ iframe{
   .overview{flex-direction:column}
   .caption {margin:6rem 0;flex-direction:column}
   .add {padding-left:3rem}
+  .add p{width:100% !important}
 
   .landing{padding:2rem 4rem 0 4rem;height:100%;flex-direction:column;justify-content: flex-start}
   .landing div img{width:100%}
@@ -777,4 +778,5 @@ iframe{
   footer a, #hideProcess{font-size:3rem}
   footer{padding:4rem}
   #showProcess{bottom:4rem;left:4rem}
+
 }
