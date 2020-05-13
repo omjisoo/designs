@@ -664,7 +664,7 @@ iframe{
   .full img{width:200%}
   .thumbnail, #thumb-otl{width:100%}
   .container{flex-direction:column}
-  .col1, .col2, .heading, .single img{width:100%}
+  .col1, .col2, .single img{width:100%}
   .col1{margin-right:0;margin-bottom:2rem}
   .menu{
     display:flex;flex-direction: column;
@@ -716,7 +716,8 @@ iframe{
   }
 
   .container, #marryme{flex-direction:column}
-  .heading, .info{width:100%;padding-top:18rem !important}
+  .info{width:100%;padding-top:18rem !important}
+  .heading{margin-top:18rem;padding-left:4rem;margin-bottom:9rem}
 
   h2{font-size:3rem}
   .about h2{font-size:4rem;margin-bottom:2rem}
@@ -747,8 +748,8 @@ iframe{
   .add {padding-left:3rem}
 
   .landing{padding:2rem 4rem 0 4rem; flex-direction:column;justify-content: flex-start}
-  .landing-img, .landing div img{width:100%}
-  .about{justify-content: flex-start;}
+  .landing div img{width:100%}
+  /* .about{justify-content: flex-start;} */
   .about p{margin-bottom:2rem}
 
   .process{left:-100vw;width:100vw;padding:4rem}
