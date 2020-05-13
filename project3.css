@@ -170,7 +170,8 @@ a:hover, .title{color:#4666ff !important;}
 
 .highlight video, .highlight img{
   display:block;
-  width:100%;
+  width:100% !important;
+  padding:0 !important;
 }
 
 .highlight h2{
@@ -355,6 +356,7 @@ footer a{
 .column{flex-direction:column;justify-content: center;}
 
 .right{justify-content:flex-end}
+.right img{width:50%;padding-left:1rem}
 .center, .single{justify-content: center;}
 .single{align-items: flex-start;}
 .single img{width:60%}
@@ -622,6 +624,7 @@ iframe{
 
 @media (max-width:1023px){
   .col1, .col2, .heading, .about, .caption p, .caption h2, .caption h3 {width:100% !important}
+  .overview{flex-direction:column}
   .landing{flex-direction:column;margin-top:12rem}
   .landing-img{width:100%}
   .awndy {display:flex; flex-flow: wrap}
@@ -629,6 +632,7 @@ iframe{
   .bg-single, .bg-grid{padding:3rem 4rem}
   .fullheight{height:70vh}
   .add p{width:50% !important}
+  .right img{width:100%;padding:0}
 }
 
 @media (max-width:900px){
@@ -637,7 +641,7 @@ iframe{
   .full{justify-content: center;}
   .full img{width:200%}
   .thumbnail, #thumb-otl{width:100%}
-  .container, .overview{flex-direction:column}
+  .container{flex-direction:column}
   .col1, .col2, .heading, .single img{width:100%}
   .col1{margin-right:0;margin-bottom:2rem}
   .menu{
@@ -656,7 +660,6 @@ iframe{
   .landing-img, .landing div img{width:100%}
   #menu{font-size:1.2rem}
   .fullheight{height:100%}
-
   .add p{width:70% !important}
 }
 
@@ -717,6 +720,7 @@ iframe{
   .mobile-frame{width:100%;padding:6rem 2rem;border-radius:30px}
   .mobile-grid{background:none;padding:0}
 
+  .overview{flex-direction:column}
   .caption {margin:6rem 0;flex-direction:column}
   .add {padding-left:3rem}
 
