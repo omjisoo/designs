@@ -68,10 +68,10 @@ video{
   /* width:calc(375px * 0.75); */
   /* height:calc(812px * 0.75); */
   display: flex;
-  border-radius:20px;
+  border-radius:30px;
   /* padding:3rem 8px; */
   padding:3vw 1vw;
-  background:lightgray;
+  background:#333333
 }
 .mobile-screen{
   width:100%;
@@ -215,12 +215,6 @@ a:hover, .title{color:#4666ff !important;}
   grid-gap:2rem;
   padding:6rem 8rem;
   margin:2rem 3rem;
-  background:black;
-}
-
-.mobile-grid{
-  /* grid-template-columns:repeat(3, 1fr) */
-  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 }
 
 .flexright{
