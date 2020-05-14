@@ -210,29 +210,19 @@ a:hover, .title{color:#4666ff !important;}
   padding-top:12rem;
 }
 
-.test{
-  width:100%;display:flex;flex-direction:column;align-items:center;
-  margin:6rem 0;
+.icf-grid{
+  width:100%; display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:2rem;
+  padding:1rem 3rem;
 }
 
-.candy{
-  display:none;
-  transition:1s ease;
+.icf-grid img{
+  width:100%
 }
 
-.getcandy{
-  font-family:poppins, sans-serif;
-  font-weight:500;
-  font-size:1.5rem;
-  border:2px solid #4666ff;
-  padding:0.5rem 1rem;
-  background:transparent;
-  color:#4666ff;
-}
-
-.showcandy{
-  display:block;
-  animation:slideIn 1s ease;
+#postcard{
+  grid-column: span 2;
 }
 
 .bg-grid{
@@ -649,8 +639,8 @@ iframe{
   .overview{flex-direction:column}
   .landing{flex-direction:column;margin-top:12rem}
   .landing-img{width:100%}
-  .awndy {display:flex; flex-flow: wrap}
-  .awndy article{margin-bottom:2rem}
+  .awndy, .icf-grid{display:flex; flex-flow: wrap}
+  .awndy article, #postcard{margin-bottom:2rem}
   .bg-single, .bg-grid{padding:3rem 4rem}
   .fullheight{height:70vh}
   .add p{width:50% !important}
@@ -761,7 +751,7 @@ iframe{
   #marryme {justify-content: center;}
   #awndy{margin-bottom:0}
 
-  .awndy{padding: 1rem 3rem}
+  .awndy, .icf-grid{padding: 0 4rem}
   #item1{grid-column:span 2;grid-row:span 2}
   #item2{grid-row:span 1}
 
