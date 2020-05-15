@@ -639,7 +639,7 @@ iframe{
   .overview{flex-direction:column}
   .landing{flex-direction:column;margin-top:12rem}
   .landing-img{width:100%}
-  .awndy, .icf-grid{display:flex; flex-flow: wrap}
+  .awndy, .icf-grid{display:flex;flex-flow: wrap;align-items: flex-start;}
   .awndy article, #postcard{margin-bottom:2rem}
   .bg-single, .bg-grid{padding:3rem 4rem}
   .fullheight{height:70vh}
