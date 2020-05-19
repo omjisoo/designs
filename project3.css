@@ -704,7 +704,7 @@ iframe{
   h2{margin-bottom: 4rem}
   h3{font-size: 2.5rem}
 
-  p, .caption p, .about p
+  p, .caption p, .about p, h3
   {
     /* font-size: calc(20px + 30 * (100vw - 480px) / 760); */
     font-size: 3rem;
