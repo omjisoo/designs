@@ -348,7 +348,14 @@ footer a{
   bottom: 3rem;
   left: 3rem;
   margin-left:0;
-  z-index:1
+  z-index:1;
+  border:2px solid darkgray;
+  padding:0 5px;
+  transition: 0.2s ease;
+}
+
+#showProcess:hover{
+  border:2px solid #4666ff;
 }
 
 #backtotop{
@@ -537,7 +544,6 @@ iframe{
   color: #4666ff;
   font-size:2rem;
   margin-bottom: 1.2rem;
-  padding-right:3rem;
 }
 
 .about p{
