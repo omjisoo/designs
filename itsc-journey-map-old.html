@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164906002-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-164906002-1');
+    </script>
+    <meta charset="utf-8">
+    <meta background="viewport" section="width=device-width, initial-scale=1">
+    <title>ITSC Journey Map - JISOO SHIN</title>
+    <link rel="stylesheet" href="project3.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ntm3whi.css">
+    <link rel="icon" type="img/png" href="img/favi.png">
+  </head>
+
+  <div class="process">
+    <img src="img/itsc/itsc_process1.jpg">
+    <p>First, a very rough sketch in pencil to get an idea of how the map will look.</p>
+    <img src="img/itsc/itsc_process2.jpg">
+    <p>Another sketch is drawn to size (approx. 18 x 24 in.) and traced with micron pens.</p>
+    <img src="img/itsc/itsc_process3.jpg">
+    <p>Then the artwork is scanned, digitally cleaned and typeset.</p>
+    <img src="img/itsc/itsc_map.png">
+    <p>Finally, colors and textures are added using Photoshop.</p>
+    <a id="hideProcess" onclick="hideProcess()">Back to Project</a>
+  </div>
+
+  <div class="overlay"></div>
+
+  <body class="preload">
+    <header>
+      <div class="menubar">
+        <a href="index.html" class="logo">
+          <img src="img/logo.svg" id="logo_normal">
+          <img src="img/logo_hover.svg" id="logo_hover">
+        </a>
+        <div class="nav pc">
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+        </div>
+        <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
+      </div>
+    </header>
+
+    <div class="mb menu">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a id="close" onclick="toggleMenu()">Close X</a>
+    </div>
+
+  <section class="fadeIn">
+    <div class="container info">
+      <h1 class="title">ITSC Journey Map</h1>
+      <h1>Print, Illustration, 2019</h1>
+    </div>
+
+    <div class="container slideIn">
+        <img src="img/itsc/itsc_map.png">
+    </div>
+
+    <div class="caption overview">
+      <h2>What does the journey map of an inexperienced IT technician look like?</h2>
+      <p>Based on my experience working at the IT Support Center (ITSC) of my university, the map visualizes the troubleshooting process as navigating through an unknown terrain. Within one call by the customer, the figurative and emotional course widely varies depending on my knowledge of the issue at hand.<br><br>The left half of the map illustrates familiar issues as a friendly neighborhood that I can lead the user through in an easy breezy stroll, while on the right side awaits an epic adventure as I attempt all sorts of troubleshooting methods.</p>
+    </div>
+
+    <div class="container">
+      <div class="col1">
+        <img src="img/itsc/itsc_detail2.jpg">
+      </div>
+      <div class="col2">
+        <img src="img/itsc/itsc_detail6.jpg">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col1">
+        <img src="img/itsc/itsc_detail8.jpg">
+      </div>
+      <div class="col2">
+        <img src="img/itsc/itsc_detail10.jpg">
+      </div>
+    </div>
+
+    <div class="caption add">
+        <p>
+          Project Duration:<br>
+          1 month
+          <br><br>
+          Size:<br>
+          18 in x 24 in
+        </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <a id="showProcess" onclick="showProcess()">Process</a>
+    <!-- <a href="work.html">Index</a> -->
+    <a onclick="goBack()">Back</a>
+  </footer>
+
+  </body>
+  <script src="functions.js"></script>
+</html>

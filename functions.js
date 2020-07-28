@@ -7,13 +7,24 @@ function goBack() {
 }
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.querySelector('.menubar').style.top = "0";
+//   } else {
+//     document.querySelector('.menubar').style.top = "-8rem";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.querySelector('.menubar').style.top = "0";
+    document.querySelector('#totop').style.bottom = "-7vw";
   } else {
-    document.querySelector('.menubar').style.top = "-8rem";
+    document.querySelector('#totop').style.bottom = "7vw";
   }
   prevScrollpos = currentScrollPos;
 }

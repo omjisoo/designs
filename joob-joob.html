@@ -14,108 +14,93 @@
     <meta charset="utf-8">
     <meta background="viewport" section="width=device-width, initial-scale=1">
     <title>Joob Joob - JISOO SHIN</title>
-    <link rel="stylesheet" href="project3.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ntm3whi.css">
     <link rel="icon" type="img/png" href="img/favi.png">
   </head>
 
-  <div class="process">
-    <div class="process-img">
-      <img src="img/joob/joob_sketch1.jpg">
-      <img src="img/joob/joob_sketch3.jpg">
-    </div>
-    <img src="img/joob/joob_sketch4.jpg">
-    <p>I had fun playing with Korean alphabets for the mascot design. For example, ㅎ stands for Korea/Korean and people often say it looks like a person wearing a hat. ㅈ stands for Joob Joob and is used as the ribbon for the mascot's hat.</p>
-    <img src="img/joob/joob-task-diagram.jpg">
-    <img src="img/joob/joob-wireframe2.jpg">
-    <p>Tools like task diagrams and wireframes were utilized to create a seamless user experience, from signing up as a new user to navigating through the app as a returning user.</p>
-    <a id="hideProcess" onclick="hideProcess()">Back to Project</a>
-  </div>
-
-  <div class="overlay"></div>
-
   <body class="preload">
     <header>
-      <div class="menubar">
-        <a href="index.html" class="logo">
-          <img src="img/logo.svg" id="logo_normal">
-          <img src="img/logo_hover.svg" id="logo_hover">
-        </a>
-        <div class="nav pc">
-          <a href="work.html">Work</a>
-          <a href="about.html">About</a>
-        </div>
-        <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
-      </div>
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" id="logo_normal">
+        <img src="img/logo_hover.svg" id="logo_hover">
+      </a>
+      <nav>
+        <a href="illustration.html" class="pc">Illustration</a>
+        <a href="design.html" class="active pc">Design</a>
+        <a href="about.html" class="pc">About</a>
+        <a class="mb" onclick="toggleMenu()" id="mobile-nav">Menu</a>
+      </nav>
     </header>
     <div class="mb menu">
-        <a href="work.html">Work</a>
+        <a href="illustration.html">Illustration</a>
+        <a href="design.html">Design</a>
         <a href="about.html">About</a>
         <a id="close" onclick="toggleMenu()">Close X</a>
     </div>
 
-  <section class="fadeIn">
-    <div class="container info">
-      <h1 class="title">Joob Joob</h1>
-      <h1>Experience, Video, 2018</h1>
-    </div>
-
-    <div class="container slideIn">
-        <img src="img/joob/joob-mockup4.55.jpg">
-    </div>
-
-    <div class="caption overview">
-      <h2>How can English speakers learn Korean in a fun and interactive way?</h2>
-      <p>Joob Joob is a mobile app to help English speakers pick up the Korean language and culture. As a Joober, the user completes location-based missions in the virtual city to engage with locals and pick up practical words and expressions. Along the way the user also gains interesting facts and insider tips by collecting Kollectibles after each mission.</p>
-    </div>
-
-    <div class="container">
-      <div class="col1">
-        <img src="img/joob/joob-icons.png">
+    <main class="slideIn">
+      <div class="grid col-2">
+        <div class="grid-item span-2">
+          <img src="img/joob/joob-mockup4.55.jpg">
+        </div>
       </div>
-      <div class="col2">
-        <img src="img/joob/joob2.png">
+      <div class="grid col-2 sketch">
+        <div class="grid-item">
+          <img src="img/joob/joob_sketch1.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="img/joob/joob_sketch3.jpg">
+        </div>
       </div>
-    </div>
-
-    <div class="container image">
-        <img src="img/joob/joob-ref1.png"style="background:#ebebec;padding-top:3rem">
-    </div>
-
-    <div class="container image" style="margin-top:-2rem">
-        <img src="img/joob/joob-ref2.png"  style="background:#ebebec">
-    </div>
-
-    <div class="caption">
-      <h2></h2>
-      <p>The name of the app comes from the Korean slang word <i>joobjoob</i> (줍줍), which is an onomatopoeia for picking up items in games or memes online. The visual elements were also inspired by various traditional Korean motifs and my personal knowledge of Korea. For example, the color scheme is based on <a href="https://en.wikipedia.org/wiki/Obangsaek" target="_blank"><i>obangsaek</i> (오방색)</a>, the five symbolic colors, as well as my favorite shade of green from Buddhist temples.</p>
-    </div>
-
-    <div class="container column">
-        <img src="img/joob/joob_screenshot1.jpg">
-        <img src="img/joob/joob_screenshot2.jpg">
-        <img src="img/joob/joob_screenshot3.jpg">
-        <img src="img/joob/joob_screenshot4.jpg">
+      <div class="grid col-2">
+        <div class="grid-item span-2">
+          <img src="img/joob/joob-task-diagram.jpg">
+        </div>
+        <div class="grid-item span-2">
+          <img src="img/joob/joob-wireframe2.jpg">
+        </div>
+        <div class="grid-item">
+          <img src="img/joob/joob-icons.png">
+        </div>
+        <div class="grid-item">
+          <img src="img/joob/joob2.png">
+        </div>
+        <div class="grid-item span-2">
+          <img src="img/joob/joob-ref1.png" style="background:#ebebec;padding-top:3rem">
+        </div>
+        <div class="grid-item span-2">
+          <img src="img/joob/joob-ref2.png" style="background:#ebebec">
+        </div>
+        <div class="grid-item span-2">
+          <img src="img/joob/joob_screenshot1.jpg">
+        </div>
+        <div class="grid-item span-2">
+          <img src="img/joob/joob_screenshot2.jpg">
+        </div>
+        <div class="grid-item span-2">
+          <img src="img/joob/joob_screenshot3.jpg">
+        </div>
+        <div class="grid-item span-2">
+          <img src="img/joob/joob_screenshot4.jpg">
+        </div>
+        <div class="grid-item span-2">
+          <div class="video">
+            <iframe src="https://player.vimeo.com/video/304927978?title=0&byline=0&portrait=0" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="grid col-2 project-info">
+          <p>JOOB JOOB</p>
+          <p>2018</p>
+          <p>UX/UI, Video</p>
+        </div>
       </div>
-
-    <div class="video">
-      <iframe src="https://player.vimeo.com/video/304927978?title=0&byline=0&portrait=0" frameborder="0" style="position:absolute;top:0;left:0;width:100%;height:100%;" allow="autoplay; fullscreen" allowfullscreen></iframe>
-    </div>
-
-    <div class="caption add">
-        <p>
-          Project Duration:<br>
-          3 months
-        </p>
-    </div>
-
-  </div>
-
-    <footer>
-      <a id="showProcess" onclick="showProcess()">Process</a>
-      <a href="work.html">Index</a>
-      <a href="first-snow-for-everyone.html">Next work</a>
-    </footer>
+    </main>
+  <footer>
+    <a href="#">↪ Back to top</a>
+    <a href="design.html">↪ Index</a>
+    <a href="first-snow-for-everyone.html">↪ Next</a>
+  </footer>
 
   </body>
   <script src="functions.js"></script>

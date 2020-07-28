@@ -14,14 +14,14 @@
     <meta charset="utf-8">
     <meta background="viewport" section="width=device-width, initial-scale=1">
     <title>ON(THE)LINE - JISOO SHIN</title>
-    <link rel="stylesheet" href="project3.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/ntm3whi.css">
     <link rel="icon" type="img/png" href="img/favi.png">
   </head>
 
   <body class="preload">
 
-    <div class="process">
+    <!-- <div class="process">
       <div class="process-img">
         <img src="img/ontheline/ontheline_process_proposal.png">
       </div>
@@ -47,34 +47,151 @@
         </div>
         <p>Earlier versions of the poster also experiment with the idea of line. The exhibition website essentially serves as a portal to the individual websites of each student, so I visualized this thought into a magical gradient consistent throughout the visual identity.</p>
         <a id="hideProcess" onclick="hideProcess()">Back to Project</a>
-    </div>
+    </div> -->
 
-    <div class="overlay"></div>
+    <!-- <div class="overlay"></div> -->
 
     <header>
-      <div class="menubar">
+      <header>
         <a href="index.html" class="logo">
           <img src="img/logo.svg" id="logo_normal">
           <img src="img/logo_hover.svg" id="logo_hover">
         </a>
-        <div class="nav pc">
-          <a href="work.html">Work</a>
+        <nav>
+          <a href="illustration.html" class="pc">Illustration</a>
+          <a href="design.html" class="active pc">Design</a>
+          <a href="about.html" class="pc">About</a>
+          <a class="mb" onclick="toggleMenu()" id="mobile-nav">Menu</a>
+        </nav>
+      </header>
+      <div class="mb menu">
+          <a href="illustration.html">Illustration</a>
+          <a href="design.html">Design</a>
           <a href="about.html">About</a>
-        </div>
-        <a class="mb" onclick="toggleMenu()" id="menu">Menu</a>
+          <a id="close" onclick="toggleMenu()">Close X</a>
       </div>
-    </header>
 
-    <div class="mb menu">
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a id="close" onclick="toggleMenu()">Close X</a>
+    <main class="slideIn">
+      <div class="grid col-2">
+        <div class="grid-item span-2">
+          <div class="bg-single black">
+            <div class="web-sim">
+              <img src="img/browserbar.png" id="browser">
+              <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+                <source src="img/ontheline/ontheline_landing.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item span-2">
+          <img src="img/ontheline/ontheline_process_proposal.png">
+        </div>
+        <div class="grid-item span-2">
+          <div class="bg-grid black fullheight">
+              <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+                <source src="img/ontheline/ontheline_cd1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+                <source src="img/ontheline/ontheline_cd2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+                <source src="img/ontheline/ontheline_cd3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+        </div>
+        <div class="grid-item span-2">
+          <div class="bg-single black">
+            <div class="web-sim">
+              <img src="img/browserbar.png" id="browser">
+              <img src="img/ontheline/ontheline_web_cd.png">
+            </div>
+          </div>
+        </div>
+        <div class="grid-item span-2">
+          <div class="bg-grid black">
+              <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+                <source src="img/ontheline/ontheline_main1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+                <source src="img/ontheline/ontheline_main2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+          </div>
+        </div>
+      </div>
+      <div class="grid col-4">
+        <div class="grid-item span-3">
+          <div class="bg-single black">
+            <img src="img/ontheline/ontheline_poster.png">
+          </div>
+        </div>
+      </div>
+      <div class="grid col-2">
+        <div class="grid-item span-2 no-change">
+          <div class="bg-grid black">
+            <img src="img/ontheline/ontheline_web_home_full.png">
+            <img src="img/ontheline/ontheline_web_exhibit.png">
+          </div>
+        </div>
+
+        <div class="grid-item span-2">
+          <div class="bg-single black">
+            <div class="web-sim">
+              <img src="img/browserbar.png" id="browser">
+              <video width="100%" height="auto" preload="auto" playsinline autoplay muted loop>
+                <source src="img/ontheline/ontheline_underline.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item span-2">
+          <div class="bg-grid black mobile-grid" style="align-items:flex-start">
+              <div class="mobile-frame">
+                <div class="mobile-screen">
+                <img src="img/ontheline/ontheline_mobile_home_full.png">
+                </div>
+              </div>
+              <div class="mobile-frame">
+                <div class="mobile-screen" style="overflow:hidden">
+                <img src="img/ontheline/ontheline_mobile_exhibit_full.png">
+                </div>
+              </div>
+              <div class="mobile-frame">
+                <div class="mobile-screen">
+                  <img src="img/ontheline/ontheline_mobile_project.png">
+                </div>
+              </div>
+          </div>
+        </div>
+      <div class="grid col-2 project-info">
+        <p>ON(THE)LINE</p>
+        <p>2020</p>
+        <p>Visual Identity, Website Design</p>
+        <p>VCUarts GDES Class of 2020<br><a href="https://vcugdes-seniorshow.net" target="_blank">vcugdes-seniorshow.net</a></p>
+        <p class="span-2">Collaborators:<br>
+            <a href="http://ceconnolly.myportfolio.com" target="_blank">Colleen Connolly</a> (Exhibition Statement)<br>
+            <a href="http://reycarlson.com" target="_blank">Rey Carlson</a> (Catalog)
+          </p>
+      </div>
     </div>
+    </main>
 
-  <section class="fadeIn">
-    <div class="container info">
-      <h1 class="title">ON(THE)LINE</h1>
-      <h1>Web, Experience, 2020</h1>
+  <!-- <main class="fadeIn">
+    <div class="project-info">
+      <h2 class="project-title">ON(THE)LINE<br>Web, Experience, 2020</h2>
+      <div class="project-text">
+      <h3 class="question">How do we hold a graphic design exhibition when the whole city is closed down?</h3>
+      <p class="answer">Due to the spread of <a href="https://g.co/kgs/aMV7sR" target="_blank">COVID-19</a>, exhibition spaces and galleries are closed indefinitely but it doesn't mean the end-of-year <a href="https://go.vcuarts.edu/graphicdesign" target="_blank">VCUarts Graphic Design</a> Senior Show is cancelled. To showcase the capstone projects of the graduating seniors, I crafted the digital space for the online exhibition as well as the visual identity to be used  across various media.<br><br>
+      ON(THE)LINE has been live since May 1st, 2020 and will continue to remain open 24/7, wherever you are in the world.
+      <br><br>Visit the ongoing exhibition at: <a href="http://vcugdes-seniorshow.net" target="_blank">vcugdes-seniorshow.net</a>
+      </p>
+      </div>
     </div>
 
     <div class="bg-single black slideIn">
@@ -85,11 +202,6 @@
     </div>
 
     <div class="caption overview">
-        <h2>How do we hold a graphic design exhibition when the whole city is closed down?</h2>
-        <p>Due to the spread of <a href="https://g.co/kgs/aMV7sR" target="_blank">COVID-19</a>, exhibition spaces and galleries are closed indefinitely but it doesn't mean the end-of-year <a href="https://go.vcuarts.edu/graphicdesign" target="_blank">VCUarts Graphic Design</a> Senior Show is cancelled. To showcase the capstone projects of the graduating seniors, I crafted the digital space for the online exhibition as well as the visual identity to be used  across various media.<br><br>
-        ON(THE)LINE has been live since May 1st, 2020 and will continue to remain open 24/7, wherever you are in the world.
-        <br>Visit the ongoing exhibition at: <a href="http://vcugdes-seniorshow.net" target="_blank">vcugdes-seniorshow.net</a>
-        </p>
     </div>
 
     <div class="bg-grid black fullheight">
@@ -188,15 +300,14 @@
           <a href="http://ceconnolly.myportfolio.com" target="_blank">Colleen Connolly</a> (Exhibition Statement)<br>
           <a href="http://reycarlson.com" target="_blank">Rey Carlson</a> (Catalog)
         </p>
-    </div>
-
-  </section>
+    </div></main> -->
 
     <footer>
-      <a id="showProcess" onclick="showProcess()">Process</a>
-      <a href="work.html">Index</a>
-      <a href="illustration.html">Next work</a>
+      <a href="#">↪ Back to top</a>
+      <a href="design.html">↪ Index</a>
+      <a href="unbound9.html">↪ Next</a>
     </footer>
+
 
   </body>
   <script src="functions.js"></script>
