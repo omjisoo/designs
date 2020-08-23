@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164906002-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-164906002-1');
+    </script>
+    <meta charset="utf-8">
+    <meta background="viewport" content="width=device-width, initial-scale=1">
+    <title>JISOO SHIN</title>
+    <link rel="icon" type="img/png" href="img/favi.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/ntm3whi.css">
+  </head>
+
+  <body class="preload">
+    <header>
+      <a href="index.html" class="logo">
+        <img src="img/logo.svg" id="logo_normal">
+        <img src="img/logo_hover.svg" id="logo_hover">
+      </a>
+      <nav>
+        <a href="character.html" class="pc active">Character</a>
+        <a href="environment.html" class="pc">Environment</a>
+        <a href="gdes.html" class="pc">GDES</a>
+        <a href="about.html" class="pc">About</a>
+        <div class="mb" onclick="toggleMenu()" id="mobile-nav">Menu</a>
+      </nav>
+    </header>
+    <div class="mb menu">
+      <a href="character.html">Character</a>
+      <a href="environment.html">Environment</a>
+      <a href="gdes.html">GDES</a>
+      <a href="about.html">About</a>
+      <a id="close" onclick="toggleMenu()">Close X</a>
+    </div>
+
+    <main class="slideIn">
+      <div class="grid col-2">
+        <div class="grid-item" href="lawn-dude.html">
+          <img src="img/lawnmower.png">
+        </div>
+        <div class="grid-item" href="mahri-and-serin.html">
+          <img src="img/mahri-and-serin.PNG">
+        </div>
+        <div class="grid-item" href="dinomic-duo.html">
+          <img src="img/dinomic-duo.png">
+        </div>
+        <div class="grid-item" href="tooth-fairy-king.html">
+          <img src="img/tooth-fairy-king.png">
+        </div>
+        <div class="grid-item span-2" href="living-with-my-fears.html">
+          <img src="img/lwmf_jina.png">
+        </div>
+        <div class="grid-item span-2" href="living-with-my-fears.html">
+          <img src="img/lwmf_others-eye.png">
+        </div>
+        <div class="grid-item span-2" href="living-with-my-fears.html">
+          <img src="img/lwmf_small-talk.png">
+        </div>
+        <div class="grid-item span-2" href="living-with-my-fears.html">
+          <img src="img/lwmf_scene1.png">
+        </div>
+        <div class="grid-item span-2" href="living-with-my-fears.html">
+          <img src="img/lwmf_scene2.png">
+        </div>
+      </div>
+
+</main>
+
+    <footer>
+      <nav>
+        <a onclick="copyEmail()">Email</a>
+        <a href="https://instagram.com/omjisoo" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/in/jisoodesigns" target="_blank">LinkedIn</a>
+      </nav>
+      <a href="#">↪ Back to top</a>
+    </footer>
+
+  </body>
+  <script src="functions.js"></script>
+</html>

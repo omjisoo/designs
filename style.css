@@ -55,8 +55,10 @@ p, p a{
   letter-spacing:0.02rem;
 }
 
+.link h1{color:darkgray !important;transition:color 0.2s ease}
+
 a{cursor:pointer;transition:color 0.2s ease}
-a.active {color:#4666ff}
+a.active, .link:hover h1 {color:#4666ff !important}
 a:hover{color:#dd47ff !important;}
 
 p a{border-bottom:1px dotted darkgray}
@@ -223,10 +225,6 @@ nav a:hover{
 .grid-item p{
   margin-top:1rem;
   margin-bottom:2rem
-}
-
-.grid-item span{
-  /* margin-right:2rem */
 }
 
 .span-2{
