@@ -55,6 +55,10 @@ p, p a{
   letter-spacing:0.02rem;
 }
 
+i{
+  font-family:aktiv-grotesk, sans-serif;
+}
+
 .intro {display:flex;flex-direction:column;align-items: start}
 .link {
   font-size: 2.2rem;font-weight:500;
