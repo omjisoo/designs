@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164906002-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-164906002-1');
+    </script>
+    <meta charset="utf-8">
+    <meta background="viewport" content="width=device-width, initial-scale=1">
+    <title>About - JISOO SHIN</title>
+    <link rel="icon" type="img/png" href="img/favi.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ntm3whi.css">
+  </head>
+
+  <body class="preload">
+    <header>
+      <a href="work.html" class="logo">
+        <img src="img/logo.svg" id="logo_normal">
+        <img src="img/logo_hover.svg" id="logo_hover">
+      </a>
+      <nav>
+        <a href="work.html" class="pc">Work</a>
+        <a href="about.html" class="active pc">About</a>
+        <a class="mb" onclick="toggleMenu()" id="mobile-nav">Menu</a>
+      </nav>
+    </header>
+    <div class="mb menu">
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a id="close" onclick="toggleMenu()">Close X</a>
+    </div>
+
+      <div class="landing">
+        <div class="about fadeIn">
+          <p>
+            My name is Jisoo, a designer and illustrator born in South Korea, raised in India, and trained in the United States. I graduated from the <a href="https://arts.vcu.edu/academics/departments/graphic-design/" target="_blank">VCUarts Graphic Design</a> program in May 2020 and I'm currently working as a design intern at <a href="https://www.phenomenon.com/" target="_blank">Phenomenon</a>.<br><br>When I'm not in front of the computer, you can find me dancing to some <a href="https://youtu.be/9TeyuDnwyrw" target="_blank">Latinx</a> and <a href="https://youtu.be/9410qCyQuJ4" target="_blank">Afro</a> beats in the privacy of my room.</p>
+          </p>
+          <p>
+          <p class="contact pc">I would love to chat with you — let's get in touch!<br>↪ <a onclick="copyEmail()">Email</a>, <a href="https://instagram.com/omjisoo" target="_blank">Instagram</a>, <a href="https://linkedin.com/in/jisoodesigns" target="_blank">LinkedIn</a>, <a href="Jisoo Shin - Resume - 2020.pdf" target="_blank">Resume</a></p>
+          <p class="contact mb">I would love to chat with you — let's get in touch!<br>↪ <a href="mailto:jisoodesigns@gmail.com">Email</a>, <a href="https://instagram.com/omjisoo" target="_blank">Instagram</a>, <a href="https://linkedin.com/in/jisoodesigns" target="_blank">LinkedIn</a>, <a href="Jisoo Shin - Resume - 2020.pdf" target="_blank">Resume</a></p>
+        </div>
+        <div class="landing-img slideInOnly">
+          <img src="img/brainstorm.svg">
+          <img id="float" src="img/brainstorm_obj.svg">
+        </div>
+      </div>
+      <input type="text" value="jisoodesigns@gmail.com" id="myInput">
+
+  </body>
+  <script src="functions.js"></script>
+</html>

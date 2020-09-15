@@ -114,7 +114,7 @@ header{
   margin-bottom:8vw;
 }
 
-header nav{width:50%;display: flex;justify-content: space-between;margin-left:2rem}
+header nav{width:50%;display: flex;justify-content: flex-end;margin-left:2rem}
 
 header nav a{
   font-weight:400;
@@ -122,7 +122,7 @@ header nav a{
   text-transform: uppercase;
   letter-spacing: 0.04rem;
   transition:color 0.2s ease;
-  /* margin-left: 3rem; */
+  margin-left: 3rem;
 }
 nav a:hover{
   color:#4666ff;
